@@ -1,16 +1,16 @@
 # Backstage Release 1.55.0-next.2 changelog
 
-Changes between 1.54.6 and 1.55.0-next.2 — 2 added, 0 removed, 188 upgraded, 22 unchanged packages.
+Changes between 1.54.7 and 1.55.0-next.2 — 2 added, 0 removed, 188 upgraded, 22 unchanged packages.
 
 ## Summary
 
 - [Newly added packages](#newly-added-packages): 2 packages
 - [Breaking changes](#breaking-changes): 4 packages
 - [0.x minor version bumps](#0x-minor-version-bumps): 2 packages
-- [0.x patch version bumps](#0x-patch-version-bumps): 52 packages
+- [0.x patch version bumps](#0x-patch-version-bumps): 53 packages
 - [Other minor version bumps](#other-minor-version-bumps): 7 packages
 - [Other patch version bumps](#other-patch-version-bumps): 11 packages
-- [Excluded dependency updates](#excluded-dependency-updates): 112 packages
+- [Excluded dependency updates](#excluded-dependency-updates): 111 packages
 
 ## Table of contents
 
@@ -47,6 +47,7 @@ Changes between 1.54.6 and 1.55.0-next.2 — 2 added, 0 removed, 188 upgraded, 2
   - [`@backstage/plugin-app-react` (0.2.6 → 0.2.7-next.1)](#backstageplugin-app-react-026--027-next1)
   - [`@backstage/plugin-auth-backend` (0.30.0 → 0.30.1-next.2)](#backstageplugin-auth-backend-0300--0301-next2)
   - [`@backstage/plugin-auth-backend-module-oidc-provider` (0.4.20 → 0.4.21-next.2)](#backstageplugin-auth-backend-module-oidc-provider-0420--0421-next2)
+  - [`@backstage/plugin-auth-node` (0.7.5 → 0.7.5-next.1)](#backstageplugin-auth-node-075--075-next1)
   - [`@backstage/plugin-bitbucket-cloud-common` (0.3.12 → 0.3.13-next.1)](#backstageplugin-bitbucket-cloud-common-0312--0313-next1)
   - [`@backstage/plugin-catalog-backend-module-aws` (0.4.27 → 0.4.28-next.2)](#backstageplugin-catalog-backend-module-aws-0427--0428-next2)
   - [`@backstage/plugin-catalog-backend-module-azure` (0.3.21 → 0.3.22-next.1)](#backstageplugin-catalog-backend-module-azure-0321--0322-next1)
@@ -453,6 +454,10 @@ verify-patches` to validate Yarn patch references, local patch files,
 ##### Patch Changes
 
 - [`a818233`](https://github.com/backstage/backstage/commit/a818233): Omit email addresses from the default OIDC profile unless the identity provider marks them as verified.
+
+### `@backstage/plugin-auth-node` (0.7.5 → [0.7.5-next.1](../../changelogs/@backstage/plugin-auth-node.md#075-next1))
+
+_No changelog entries found._
 
 ### `@backstage/plugin-bitbucket-cloud-common` (0.3.12 → [0.3.13-next.1](../../changelogs/@backstage/plugin-bitbucket-cloud-common.md#0313-next1))
 
@@ -1025,7 +1030,6 @@ verify-patches` to validate Yarn patch references, local patch files,
 - `@backstage/plugin-auth-backend-module-openshift-provider` (0.1.10 → [0.1.11-next.0](../../changelogs/@backstage/plugin-auth-backend-module-openshift-provider.md#0111-next0))
 - `@backstage/plugin-auth-backend-module-pinniped-provider` (0.3.17 → [0.3.18-next.1](../../changelogs/@backstage/plugin-auth-backend-module-pinniped-provider.md#0318-next1))
 - `@backstage/plugin-auth-backend-module-vmware-cloud-provider` (0.5.17 → [0.5.18-next.0](../../changelogs/@backstage/plugin-auth-backend-module-vmware-cloud-provider.md#0518-next0))
-- `@backstage/plugin-auth-node` (0.7.4 → [0.7.5-next.1](../../changelogs/@backstage/plugin-auth-node.md#075-next1))
 - `@backstage/plugin-auth-react` (0.1.30 → [0.1.31-next.1](../../changelogs/@backstage/plugin-auth-react.md#0131-next1))
 - `@backstage/plugin-catalog-backend-module-ai-model` (0.1.3 → [0.1.4-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-ai-model.md#014-next0))
 - `@backstage/plugin-catalog-backend-module-backstage-openapi` (0.5.17 → [0.5.18-next.1](../../changelogs/@backstage/plugin-catalog-backend-module-backstage-openapi.md#0518-next1))

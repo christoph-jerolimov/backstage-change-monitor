@@ -1,6 +1,6 @@
 # Backstage Release 1.55.0-next.2 (next)
 
-## Compared to 1.54.6 (latest release)
+## Compared to 1.54.7 (latest release)
 
 2 added, 0 removed, 188 upgraded, 22 unchanged.
 
@@ -8,7 +8,7 @@
 
 ### ⚠️ Major version bumps
 
-| Package | 1.54.6 | 1.55.0-next.2 |
+| Package | 1.54.7 | 1.55.0-next.2 |
 | --- | --- | --- |
 | `@backstage/plugin-catalog-backend` | **3.9.1** | **4.0.0-next.1** |
 
@@ -21,7 +21,7 @@
 
 ### Version bumps
 
-| Package | 1.54.6 | 1.55.0-next.2 | Type |
+| Package | 1.54.7 | 1.55.0-next.2 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.11 | 1.7.12-next.1 | Patch |
 | `@backstage/backend-app-api` | 1.7.3 | 1.7.4-next.1 | Patch |
@@ -87,7 +87,7 @@
 | `@backstage/plugin-auth-backend-module-openshift-provider` | 0.1.10 | 0.1.11-next.0 | Patch |
 | `@backstage/plugin-auth-backend-module-pinniped-provider` | 0.3.17 | 0.3.18-next.1 | Patch |
 | `@backstage/plugin-auth-backend-module-vmware-cloud-provider` | 0.5.17 | 0.5.18-next.0 | Patch |
-| `@backstage/plugin-auth-node` | 0.7.4 | 0.7.5-next.1 | Patch |
+| `@backstage/plugin-auth-node` | 0.7.5 | 0.7.5-next.1 | Patch |
 | `@backstage/plugin-auth-react` | 0.1.30 | 0.1.31-next.1 | Patch |
 | `@backstage/plugin-bitbucket-cloud-common` | 0.3.12 | 0.3.13-next.1 | Patch |
 | `@backstage/plugin-catalog` | 2.0.8 | 2.0.9-next.2 | Patch |
