@@ -1,6 +1,6 @@
 # Backstage Release 1.50.0 changelog
 
-Changes between 1.49.6 and 1.50.0 — 0 added, 0 removed, 197 upgraded, 10 unchanged packages.
+Changes between 1.49.7 and 1.50.0 — 0 added, 0 removed, 197 upgraded, 10 unchanged packages.
 
 ## Summary
 
@@ -18,7 +18,7 @@ Changes between 1.49.6 and 1.50.0 — 0 added, 0 removed, 197 upgraded, 10 uncha
   - [`@backstage/catalog-client` (1.14.0 → 1.15.0)](#backstagecatalog-client-1140--1150)
   - [`@backstage/frontend-plugin-api` (0.15.1 → 0.16.0)](#backstagefrontend-plugin-api-0151--0160)
   - [`@backstage/plugin-auth-backend` (0.27.3 → 0.28.0)](#backstageplugin-auth-backend-0273--0280)
-  - [`@backstage/plugin-auth-node` (0.6.14 → 0.7.0)](#backstageplugin-auth-node-0614--070)
+  - [`@backstage/plugin-auth-node` (0.6.15 → 0.7.0)](#backstageplugin-auth-node-0615--070)
   - [`@backstage/plugin-catalog-node` (2.1.0 → 2.2.0)](#backstageplugin-catalog-node-210--220)
   - [`@backstage/plugin-permission-react` (0.4.41 → 0.5.0)](#backstageplugin-permission-react-0441--050)
   - [`@backstage/plugin-signals-node` (0.1.29 → 0.2.0)](#backstageplugin-signals-node-0129--020)
@@ -150,7 +150,7 @@ Changes between 1.49.6 and 1.50.0 — 0 added, 0 removed, 197 upgraded, 10 uncha
 - [`482ceed`](https://github.com/backstage/backstage/commit/482ceed): Migrated from `assertError` to `toError` for error handling.
 - [`dc87ac1`](https://github.com/backstage/backstage/commit/dc87ac1): Fixed CIMD redirect URI matching to allow any port for localhost addresses per RFC 8252 Section 7.3. Native CLI clients use ephemeral ports for OAuth callbacks, which are now accepted when the registered redirect URI uses a localhost address.
 
-### `@backstage/plugin-auth-node` (0.6.14 → [0.7.0](../../changelogs/@backstage/plugin-auth-node.md#070))
+### `@backstage/plugin-auth-node` (0.6.15 → [0.7.0](../../changelogs/@backstage/plugin-auth-node.md#070))
 
 #### 0.7.0
 

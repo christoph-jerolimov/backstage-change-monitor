@@ -1,6 +1,6 @@
 # Number of changed packages — all releases
 
-**216 releases**, newest to oldest — each row compares a release with the direct previous release. The `next` release is compared against the latest stable release.
+**217 releases**, newest to oldest — each row compares a release with the direct previous release. The `next` release is compared against the latest stable release.
 
 | Release | Compared to | Added | Removed | Upgraded | Unchanged | Major ⚠️ | 0.x Minor ⚠️ | 0.0.x Patch ⚠️ |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -27,7 +27,8 @@
 | 1.50.3 | 1.50.2 | 0 | 0 | 3 | 204 | 0 | 0 | 0 |
 | 1.50.2 | 1.50.1 | 0 | 0 | 11 | 196 | 0 | 0 | 0 |
 | 1.50.1 | 1.50.0 | 0 | 0 | 11 | 196 | 0 | 0 | 0 |
-| 1.50.0 | 1.49.6 | 0 | 0 | 197 | 10 | 0 | 10 | 4 |
+| 1.50.0 | 1.49.7 | 0 | 0 | 197 | 10 | 0 | 10 | 4 |
+| 1.49.7 | 1.49.6 | 0 | 0 | 1 | 206 | 0 | 0 | 0 |
 | 1.49.6 | 1.49.5 | 0 | 0 | 4 | 203 | 0 | 0 | 0 |
 | 1.49.5 | 1.49.4 | 0 | 0 | 3 | 204 | 0 | 0 | 0 |
 | 1.49.4 | 1.49.3 | 0 | 0 | 4 | 203 | 0 | 0 | 0 |

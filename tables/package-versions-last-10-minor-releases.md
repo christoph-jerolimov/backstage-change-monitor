@@ -2,7 +2,7 @@
 
 Versions of **214 packages** across **11 releases** — columns ordered `next` first, then newest to oldest. Each minor release is represented by the latest patch of its minor line.
 
-| Package | next | 1.54.7 | 1.53.2 | 1.52.1 | 1.51.3 | 1.50.5 | 1.49.6 | 1.48.6 | 1.47.4 | 1.46.7 | 1.45.6 |
+| Package | next | 1.54.7 | 1.53.2 | 1.52.1 | 1.51.3 | 1.50.5 | 1.49.7 | 1.48.6 | 1.47.4 | 1.46.7 | 1.45.6 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.12-next.1 | 1.7.11 | 1.7.10 | 1.7.9 | 1.7.8 | 1.7.7 | 1.7.6 | 1.7.5 | 1.7.4 | 1.7.3 | 1.7.2 |
 | `@backstage/backend-app-api` | 1.7.4-next.1 | 1.7.3 | 1.7.2 | 1.7.1 | 1.7.0 | 1.6.1 | 1.6.0 | 1.5.0 | 1.4.1 | 1.4.0 | 1.3.0 |
@@ -86,7 +86,7 @@ Versions of **214 packages** across **11 releases** — columns ordered `next` f
 | `@backstage/plugin-auth-backend-module-openshift-provider` | 0.1.11-next.0 | 0.1.10 | 0.1.9 | 0.1.8 | 0.1.7 | 0.1.6 | 0.1.5 | 0.1.4 | 0.1.3 | 0.1.3 | 0.1.2 |
 | `@backstage/plugin-auth-backend-module-pinniped-provider` | 0.3.18-next.1 | 0.3.17 | 0.3.16 | 0.3.15 | 0.3.14 | 0.3.13 | 0.3.12 | 0.3.11 | 0.3.10 | 0.3.10 | 0.3.9 |
 | `@backstage/plugin-auth-backend-module-vmware-cloud-provider` | 0.5.18-next.0 | 0.5.17 | 0.5.16 | 0.5.15 | 0.5.14 | 0.5.13 | 0.5.12 | 0.5.11 | 0.5.10 | 0.5.10 | 0.5.9 |
-| `@backstage/plugin-auth-node` | 0.7.5-next.1 | 0.7.5 | 0.7.3 | 0.7.2 | 0.7.1 | 0.7.0 | 0.6.14 | 0.6.13 | 0.6.12 | 0.6.10 | 0.6.9 |
+| `@backstage/plugin-auth-node` | 0.7.5-next.1 | 0.7.5 | 0.7.3 | 0.7.2 | 0.7.1 | 0.7.0 | 0.6.15 | 0.6.13 | 0.6.12 | 0.6.10 | 0.6.9 |
 | `@backstage/plugin-auth-react` | 0.1.31-next.1 | 0.1.30 | 0.1.29 | 0.1.28 | 0.1.27 | 0.1.26 | 0.1.25 | 0.1.24 | 0.1.23 | 0.1.22 | 0.1.21 |
 | `@backstage/plugin-bitbucket-cloud-common` | 0.3.13-next.1 | 0.3.12 | 0.3.11 | 0.3.11 | 0.3.10 | 0.3.9 | 0.3.8 | 0.3.7 | 0.3.6 | 0.3.5 | 0.3.4 |
 | `@backstage/plugin-catalog` | 2.0.9-next.2 | 2.0.8 | 2.0.7 | 2.0.6 | 2.0.5 | 2.0.4 | 2.0.1 | 1.33.1 | 1.32.2 | 1.32.1 | 1.32.0 |

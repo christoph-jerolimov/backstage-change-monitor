@@ -41,7 +41,7 @@
 | `@backstage/plugin-techdocs` | 1.17.3 | 1.17.5 | Patch |
 | `@backstage/ui` | 0.14.0 | 0.14.2 | Patch |
 
-## Compared to 1.49.6 (previous minor release)
+## Compared to 1.49.7 (previous minor release)
 
 0 added, 0 removed, 199 upgraded, 8 unchanged.
 
@@ -49,7 +49,7 @@
 
 ### Version bumps
 
-| Package | 1.49.6 | 1.50.2 | Type |
+| Package | 1.49.7 | 1.50.2 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.6 | 1.7.7 | Patch |
 | `@backstage/backend-app-api` | 1.6.0 | 1.6.1 | Patch |
@@ -127,7 +127,7 @@
 | `@backstage/plugin-auth-backend-module-openshift-provider` | 0.1.5 | 0.1.6 | Patch |
 | `@backstage/plugin-auth-backend-module-pinniped-provider` | 0.3.12 | 0.3.13 | Patch |
 | `@backstage/plugin-auth-backend-module-vmware-cloud-provider` | 0.5.12 | 0.5.13 | Patch |
-| `@backstage/plugin-auth-node` | 0.6.14 | 0.7.0 | Minor ⚠️ |
+| `@backstage/plugin-auth-node` | 0.6.15 | 0.7.0 | Minor ⚠️ |
 | `@backstage/plugin-auth-react` | 0.1.25 | 0.1.26 | Patch |
 | `@backstage/plugin-bitbucket-cloud-common` | 0.3.8 | 0.3.9 | Patch |
 | `@backstage/plugin-catalog` | 2.0.1 | 2.0.4 | Patch |
