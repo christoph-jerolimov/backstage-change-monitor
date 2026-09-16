@@ -1,6 +1,6 @@
 # Backstage Release 1.51.0 changelog
 
-Changes between 1.50.5 and 1.51.0 — 2 added, 0 removed, 198 upgraded, 9 unchanged packages.
+Changes between 1.50.6 and 1.51.0 — 2 added, 0 removed, 198 upgraded, 9 unchanged packages.
 
 ## Summary
 
@@ -109,8 +109,8 @@ Changes between 1.50.5 and 1.51.0 — 2 added, 0 removed, 198 upgraded, 9 unchan
   - [`@backstage/catalog-model` (1.8.0 → 1.9.0)](#backstagecatalog-model-180--190)
   - [`@backstage/plugin-scaffolder` (1.36.2 → 1.37.0)](#backstageplugin-scaffolder-1362--1370)
   - [`@backstage/plugin-scaffolder-common` (2.1.1 → 2.2.0)](#backstageplugin-scaffolder-common-211--220)
-  - [`@backstage/plugin-techdocs-backend` (2.1.7 → 2.2.0)](#backstageplugin-techdocs-backend-217--220)
-  - [`@backstage/plugin-techdocs-node` (1.14.6 → 1.15.0)](#backstageplugin-techdocs-node-1146--1150)
+  - [`@backstage/plugin-techdocs-backend` (2.1.8 → 2.2.0)](#backstageplugin-techdocs-backend-218--220)
+  - [`@backstage/plugin-techdocs-node` (1.14.7 → 1.15.0)](#backstageplugin-techdocs-node-1147--1150)
   - [`@techdocs/cli` (1.10.8 → 1.11.0)](#techdocscli-1108--1110)
 - [Other patch version bumps](#other-patch-version-bumps)
   - [`@backstage/backend-plugin-api` (1.9.0 → 1.9.1)](#backstagebackend-plugin-api-190--191)
@@ -1273,7 +1273,7 @@ Changes between 1.50.5 and 1.51.0 — 2 added, 0 removed, 198 upgraded, 9 unchan
   The previous `EXPERIMENTAL_formDecorators` field continues to work and is
   kept as a deprecated alias.
 
-### `@backstage/plugin-techdocs-backend` (2.1.7 → [2.2.0](../../changelogs/@backstage/plugin-techdocs-backend.md#220))
+### `@backstage/plugin-techdocs-backend` (2.1.8 → [2.2.0](../../changelogs/@backstage/plugin-techdocs-backend.md#220))
 
 #### 2.2.0
 
@@ -1281,7 +1281,7 @@ Changes between 1.50.5 and 1.51.0 — 2 added, 0 removed, 198 upgraded, 9 unchan
 
 - [`5ef8d16`](https://github.com/backstage/backstage/commit/5ef8d16): Add support for disabling external font downloads via app-config option `techdocs.generator.mkdocs.disableExternalFonts`, useful for air-gapped Backstage instances.
 
-### `@backstage/plugin-techdocs-node` (1.14.6 → [1.15.0](../../changelogs/@backstage/plugin-techdocs-node.md#1150))
+### `@backstage/plugin-techdocs-node` (1.14.7 → [1.15.0](../../changelogs/@backstage/plugin-techdocs-node.md#1150))
 
 #### 1.15.0
 

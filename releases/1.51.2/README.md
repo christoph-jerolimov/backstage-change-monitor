@@ -24,7 +24,7 @@
 | `@backstage/plugin-catalog-backend` | 3.7.0 | 3.7.1 | Patch |
 | `@backstage/plugin-catalog-backend-module-msgraph` | 0.10.0 | 0.10.2 | Patch |
 
-## Compared to 1.50.5 (previous minor release)
+## Compared to 1.50.6 (previous minor release)
 
 2 added, 0 removed, 198 upgraded, 9 unchanged.
 
@@ -32,7 +32,7 @@
 
 ### ⚠️ Major version bumps
 
-| Package | 1.50.5 | 1.51.2 |
+| Package | 1.50.6 | 1.51.2 |
 | --- | --- | --- |
 | `@backstage/plugin-catalog-react` | **2.1.4** | **3.0.0** |
 | `@backstage/plugin-scaffolder-backend` | **3.4.1** | **4.0.0** |
@@ -47,7 +47,7 @@
 
 ### Version bumps
 
-| Package | 1.50.5 | 1.51.2 | Type |
+| Package | 1.50.6 | 1.51.2 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.7 | 1.7.8 | Patch |
 | `@backstage/backend-app-api` | 1.6.1 | 1.7.0 | Minor |
@@ -237,9 +237,9 @@
 | `@backstage/plugin-signals-react` | 0.0.21 | 0.0.22 | Patch ⚠️ |
 | `@backstage/plugin-techdocs` | 1.17.5 | 1.17.6 | Patch |
 | `@backstage/plugin-techdocs-addons-test-utils` | 2.0.4 | 2.0.5 | Patch |
-| `@backstage/plugin-techdocs-backend` | 2.1.7 | 2.2.0 | Minor |
+| `@backstage/plugin-techdocs-backend` | 2.1.8 | 2.2.0 | Minor |
 | `@backstage/plugin-techdocs-module-addons-contrib` | 1.1.35 | 1.1.36 | Patch |
-| `@backstage/plugin-techdocs-node` | 1.14.6 | 1.15.0 | Minor |
+| `@backstage/plugin-techdocs-node` | 1.14.7 | 1.15.0 | Minor |
 | `@backstage/plugin-techdocs-react` | 1.3.10 | 1.3.11 | Patch |
 | `@backstage/plugin-user-settings` | 0.9.2 | 0.9.3 | Patch |
 | `@backstage/plugin-user-settings-backend` | 0.4.2 | 0.4.3 | Patch |
