@@ -1,6 +1,6 @@
 # Package descriptions — all
 
-**325 packages** overall — **212 active** on the `main` branch, **113 removed**. *Last included in* is only set for removed packages.
+**328 packages** overall — **215 active** on the `main` branch, **113 removed**. *Last included in* is only set for removed packages.
 
 | Package | Backstage role | Description | Last included in |
 | --- | --- | --- | --- |
@@ -23,6 +23,7 @@
 | `@backstage/cli-module-actions` | cli-module | CLI module for executing distributed actions |  |
 | `@backstage/cli-module-auth` | cli-module | CLI module for Backstage CLI |  |
 | `@backstage/cli-module-build` | cli-module | CLI module for Backstage CLI |  |
+| `@backstage/cli-module-catalog` | cli-module | CLI module for querying and managing the Backstage software catalog |  |
 | `@backstage/cli-module-config` | cli-module | CLI module for Backstage CLI |  |
 | `@backstage/cli-module-github` | cli-module | CLI module for Backstage CLI |  |
 | `@backstage/cli-module-info` | cli-module | CLI module for Backstage CLI |  |
@@ -31,6 +32,8 @@
 | `@backstage/cli-module-migrate` | cli-module | CLI module for Backstage CLI |  |
 | `@backstage/cli-module-new` | cli-module | CLI module for Backstage CLI |  |
 | `@backstage/cli-module-package-manager-yarn` | cli-module | CLI module for Yarn package manager commands |  |
+| `@backstage/cli-module-scaffolder` | cli-module | CLI module for listing and executing software templates |  |
+| `@backstage/cli-module-search` | cli-module | CLI module for searching Backstage content |  |
 | `@backstage/cli-module-test-jest` | cli-module | CLI module for Backstage CLI |  |
 | `@backstage/cli-module-translations` | cli-module | CLI module for Backstage CLI |  |
 | `@backstage/cli-node` | node-library | Node.js library for Backstage CLIs |  |
