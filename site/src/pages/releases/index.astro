@@ -1,0 +1,50 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { listReleases, parseCsv, readRepoFile, withBase } from "../../lib/content";
+
+const counts = new Map(
+  parseCsv(readRepoFile("tables/number-of-changed-packages-all-releases.csv")).map((row) => [row["Release"], row]),
+);
+const columns = ["Added", "Removed", "Upgraded", "Unchanged", "Major ⚠️", "0.x Minor ⚠️", "0.0.x Patch ⚠️"];
+const releases = listReleases();
+---
+
+<Layout title="Releases" description="All Backstage releases with their package changes and changelogs.">
+  <h1>Releases</h1>
+  <p class="muted">
+    {releases.length} releases, newest first. The counts compare each release with the direct previous release.
+  </p>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Release</th>
+          <th>Changelog</th>
+          <th>Compared to</th>
+          {columns.map((column) => <th>{column}</th>)}
+        </tr>
+      </thead>
+      <tbody>
+        {
+          releases.map((release) => {
+            const row = counts.get(release.version);
+            return (
+              <tr>
+                <td>
+                  <a href={withBase(`/releases/${release.id}/`)}>{release.version}</a>
+                </td>
+                <td>
+                  <a href={withBase(`/releases/${release.id}/changelog/`)}>Changelog</a>
+                </td>
+                <td>{row?.["Compared to"] ?? "—"}</td>
+                {columns.map((column) => (
+                  <td class="num">{row?.[column] ?? ""}</td>
+                ))}
+              </tr>
+            );
+          })
+        }
+      </tbody>
+    </table>
+  </div>
+</Layout>

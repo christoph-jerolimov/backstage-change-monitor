@@ -1,0 +1,20 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { listTables, markdownTitle, readRepoFile, withBase } from "../../lib/content";
+import { renderMarkdown } from "../../lib/markdown";
+
+export function getStaticPaths() {
+  return listTables().map((table) => ({ params: { table } }));
+}
+
+const { table } = Astro.params as { table: string };
+const file = `tables/${table}.md`;
+const markdown = readRepoFile(file);
+---
+
+<Layout title={markdownTitle(markdown, table)} wide={table.startsWith("package-versions-")}>
+  <div class="breadcrumbs">
+    <a href={withBase("/tables/")}>Tables</a> / <a href={withBase(`/tables/${table}.csv`)}>{table}.csv</a>
+  </div>
+  <article class="markdown" set:html={renderMarkdown(markdown, file)} />
+</Layout>

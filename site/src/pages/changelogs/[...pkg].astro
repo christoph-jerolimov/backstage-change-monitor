@@ -1,0 +1,21 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { listChangelogPackages, readRepoFile, repoUrl, withBase } from "../../lib/content";
+import { renderMarkdown } from "../../lib/markdown";
+
+export function getStaticPaths() {
+  return listChangelogPackages().map((pkg) => ({ params: { pkg } }));
+}
+
+const { pkg } = Astro.params as { pkg: string };
+const file = `changelogs/${pkg}.md`;
+---
+
+<Layout title={`${pkg} changelog`}>
+  <div class="breadcrumbs">
+    <a href={withBase("/changelogs/")}>Changelogs</a> / {pkg} ·
+    <a href={`https://www.npmjs.com/package/${pkg}`}>npm</a> ·
+    <a href={`${repoUrl}/blob/main/${file}`}>Source</a>
+  </div>
+  <article class="markdown" set:html={renderMarkdown(readRepoFile(file), file)} />
+</Layout>

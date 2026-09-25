@@ -1,0 +1,60 @@
+---
+import "../styles/global.css";
+import { repoUrl, withBase } from "../lib/content";
+
+interface Props {
+  title: string;
+  description?: string;
+  /** Wide pages (package version tables) use the full viewport width. */
+  wide?: boolean;
+}
+
+const { title, description, wide = false } = Astro.props;
+const siteName = "Backstage Change Monitor";
+const pageTitle = title === siteName ? title : `${title} · ${siteName}`;
+const current = Astro.url.pathname;
+const nav = [
+  { href: withBase("/releases/"), label: "Releases" },
+  { href: withBase("/changelogs/"), label: "Changelogs" },
+  { href: withBase("/tables/"), label: "Tables" },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="icon" href={withBase("/favicon.svg")} type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class:list={["container", { wide }]}>
+        <a class="brand" href={withBase("/")}>🎧 {siteName}</a>
+        <nav>
+          {
+            nav.map((item) => (
+              <a href={item.href} aria-current={current.startsWith(item.href) ? "page" : undefined}>
+                {item.label}
+              </a>
+            ))
+          }
+          <a href={repoUrl}>GitHub</a>
+        </nav>
+      </div>
+    </header>
+    <main class:list={["container", { wide }]}>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class:list={["container", { wide }]}>
+        Generated from <a href={repoUrl}>christoph-jerolimov/backstage-change-monitor</a>. Data from
+        <a href="https://github.com/backstage/backstage">backstage/backstage</a>,
+        <a href="https://github.com/backstage/community-plugins">backstage/community-plugins</a> and
+        <a href="https://github.com/backstage/versions">backstage/versions</a>.
+      </div>
+    </footer>
+  </body>
+</html>

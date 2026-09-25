@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { listChangelogPackages, listReleases, listTables, NEXT, readRepoFile, withBase } from "../lib/content";
+import { renderMarkdown } from "../lib/markdown";
+
+const releases = listReleases();
+const next = releases.find((release) => release.id === NEXT);
+const latest = releases.find((release) => release.id !== NEXT);
+---
+
+<Layout
+  title="Backstage Change Monitor"
+  description="Mirror and analysis of the Backstage package changelogs, release manifests and package metadata."
+>
+  <div class="cards">
+    {
+      latest && (
+        <a class="card" href={withBase(`/releases/${latest.id}/`)}>
+          <strong>Latest release {latest.version}</strong>
+          <span>Summary and changelog</span>
+        </a>
+      )
+    }
+    {
+      next && (
+        <a class="card" href={withBase(`/releases/${next.id}/`)}>
+          <strong>Next release {next.version}</strong>
+          <span>Upcoming changes</span>
+        </a>
+      )
+    }
+    <a class="card" href={withBase("/releases/")}>
+      <strong>{releases.length} releases</strong>
+      <span>Changed packages per release</span>
+    </a>
+    <a class="card" href={withBase("/changelogs/")}>
+      <strong>{listChangelogPackages().length} changelogs</strong>
+      <span>Every package ever released</span>
+    </a>
+    <a class="card" href={withBase("/tables/")}>
+      <strong>{listTables().length} tables</strong>
+      <span>Versions, changes, descriptions</span>
+    </a>
+  </div>
+  <article class="markdown" set:html={renderMarkdown(readRepoFile("README.md"), "README.md")} />
+</Layout>

@@ -1,0 +1,20 @@
+---
+import ReleaseNav from "../../../components/ReleaseNav.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { listReleases, markdownTitle, readRepoFile, type Release } from "../../../lib/content";
+import { renderMarkdown } from "../../../lib/markdown";
+
+export function getStaticPaths() {
+  return listReleases().map((release) => ({ params: { release: release.id }, props: { release } }));
+}
+
+const { release } = Astro.props as { release: Release };
+const file = `releases/${release.id}/CHANGELOG.md`;
+const markdown = readRepoFile(file);
+---
+
+<Layout title={markdownTitle(markdown, `Release ${release.version} changelog`)}>
+  <ReleaseNav release={release} page="changelog">
+    <article class="markdown" set:html={renderMarkdown(markdown, file)} />
+  </ReleaseNav>
+</Layout>

@@ -1,0 +1,34 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { listTables, markdownTitle, readRepoFile, withBase } from "../../lib/content";
+
+const tables = listTables().map((name) => ({ name, title: markdownTitle(readRepoFile(`tables/${name}.md`), name) }));
+---
+
+<Layout title="Tables" description="Package versions, changed package counts and package descriptions.">
+  <h1>Tables</h1>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Table</th>
+          <th>CSV</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          tables.map(({ name, title }) => (
+            <tr>
+              <td>
+                <a href={withBase(`/tables/${name}/`)}>{title}</a>
+              </td>
+              <td>
+                <a href={withBase(`/tables/${name}.csv`)}>{name}.csv</a>
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</Layout>

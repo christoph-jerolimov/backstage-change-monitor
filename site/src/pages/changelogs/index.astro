@@ -1,0 +1,74 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { listChangelogPackages, parseCsv, readRepoFile, withBase } from "../../lib/content";
+
+const descriptions = new Map(
+  parseCsv(readRepoFile("tables/package-descriptions-all.csv")).map((row) => [row["Package"], row]),
+);
+const packages = listChangelogPackages();
+const scopeOf = (name: string) => (name.startsWith("@") ? name.split("/")[0] : "Unscoped");
+const scopes = [...new Set(packages.map(scopeOf))];
+---
+
+<Layout title="Changelogs" description="Changelogs of every package that ever appeared in a Backstage release.">
+  <h1>Changelogs</h1>
+  <p class="muted">
+    The changelog of every package that ever appeared in a release manifest ({packages.length} packages).
+  </p>
+  <input class="filter" type="search" placeholder="Filter packages…" aria-label="Filter packages" data-filter />
+  {
+    scopes.map((scope) => (
+      <section data-group>
+        <h2>{scope}</h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Package</th>
+                <th>Role</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {packages
+                .filter((name) => scopeOf(name) === scope)
+                .map((name) => {
+                  const info = descriptions.get(name);
+                  return (
+                    <tr data-item={`${name} ${info?.["Description"] ?? ""}`.toLowerCase()}>
+                      <td>
+                        <a href={withBase(`/changelogs/${name}/`)}>
+                          <code>{name}</code>
+                        </a>
+                        {info?.["Last included in"] && (
+                          <div class="muted">deprecated, last in {info["Last included in"]}</div>
+                        )}
+                      </td>
+                      <td>{info?.["Backstage role"] ?? ""}</td>
+                      <td>{info?.["Description"] ?? ""}</td>
+                    </tr>
+                  );
+                })}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    ))
+  }
+</Layout>
+
+<script>
+  const input = document.querySelector<HTMLInputElement>("[data-filter]");
+  input?.addEventListener("input", () => {
+    const query = input.value.trim().toLowerCase();
+    for (const group of document.querySelectorAll<HTMLElement>("[data-group]")) {
+      let visible = 0;
+      for (const item of group.querySelectorAll<HTMLElement>("[data-item]")) {
+        const match = item.dataset.item!.includes(query);
+        item.hidden = !match;
+        if (match) visible++;
+      }
+      group.hidden = visible === 0;
+    }
+  });
+</script>

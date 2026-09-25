@@ -4,6 +4,10 @@ Automatically maintained mirror and analysis of the official Backstage package c
 
 A [GitHub workflow](.github/workflows/update.yml) runs daily at 06:17 UTC (and on demand via *Run workflow*), clones both upstream repositories, regenerates everything below, and commits changes to `main` in a single commit.
 
+## Website
+
+Everything below is also published as a browsable website at <https://christoph-jerolimov.github.io/backstage-change-monitor/>. The [Astro](https://astro.build) site in [`site/`](site) renders the generated Markdown files and is deployed to GitHub Pages by the [Deploy website workflow](.github/workflows/pages.yml) on every push to `main` and after every run of the update workflow. Build it locally with `cd site && npm ci && npm run build` (or `npm run dev`).
+
 ## Package versions
 
 One column per release with the version of every package, ordered `next` (if a next release exists), then newest to oldest release. Minor releases are represented by the latest patch of their minor line. Note: the *all releases* files are large and GitHub may not render the Markdown version — use the last-10 files for browsing.

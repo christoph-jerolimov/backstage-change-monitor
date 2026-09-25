@@ -1,0 +1,34 @@
+---
+import { listReleases, withBase, type Release } from "../lib/content";
+
+interface Props {
+  release: Release;
+  page: "summary" | "changelog";
+}
+
+const { release, page } = Astro.props;
+const releases = listReleases();
+const index = releases.findIndex((r) => r.id === release.id);
+// listReleases() is newest first, so the older release follows in the list.
+const newer = releases[index - 1];
+const older = releases[index + 1];
+const href = (r: Release, target: Props["page"]) =>
+  withBase(`/releases/${r.id}/${target === "changelog" ? "changelog/" : ""}`);
+---
+
+<div class="breadcrumbs">
+  <a href={withBase("/releases/")}>Releases</a> / {release.version}
+</div>
+<ul class="tabs">
+  <li><a href={href(release, "summary")} aria-current={page === "summary" ? "page" : undefined}>Summary</a></li>
+  <li>
+    <a href={href(release, "changelog")} aria-current={page === "changelog" ? "page" : undefined}>Changelog</a>
+  </li>
+  <li><a href={withBase(`/releases/${release.id}/manifest.json`)}>manifest.json</a></li>
+  <li><a href={withBase(`/releases/${release.id}/resolutions.json`)}>resolutions.json</a></li>
+</ul>
+<slot />
+<nav class="pager" aria-label="Release navigation">
+  <span>{older && <a href={href(older, page)}>← {older.version}</a>}</span>
+  <span>{newer && <a href={href(newer, page)}>{newer.version} →</a>}</span>
+</nav>
