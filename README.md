@@ -1,4 +1,4 @@
-# Backstage Changelogs 🎧
+# Backstage Change Monitor 🎧
 
 Automatically maintained mirror and analysis of the official Backstage package changelogs and metadata from [backstage/backstage](https://github.com/backstage/backstage) and [backstage/community-plugins](https://github.com/backstage/community-plugins), and of the release manifests from [backstage/versions](https://github.com/backstage/versions).
 
