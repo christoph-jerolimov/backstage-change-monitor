@@ -1,6 +1,6 @@
 # Backstage Release 1.55.0
 
-## Compared to 1.54.8 (previous minor release)
+## Compared to 1.54.9 (previous minor release)
 
 2 added, 0 removed, 191 upgraded, 19 unchanged.
 
@@ -8,11 +8,11 @@
 
 ### ⚠️ Major version bumps
 
-| Package | 1.54.8 | 1.55.0 |
+| Package | 1.54.9 | 1.55.0 |
 | --- | --- | --- |
 | `@backstage/plugin-catalog-backend` | **3.9.1** | **4.0.0** |
 | `@backstage/plugin-search-backend-module-elasticsearch` | **1.8.7** | **2.0.0** |
-| `@backstage/plugin-techdocs-node` | **1.15.5** | **2.0.0** |
+| `@backstage/plugin-techdocs-node` | **1.15.6** | **2.0.0** |
 
 ### 🆕 Added packages
 
@@ -23,7 +23,7 @@
 
 ### Version bumps
 
-| Package | 1.54.8 | 1.55.0 | Type |
+| Package | 1.54.9 | 1.55.0 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.11 | 1.7.12 | Patch |
 | `@backstage/backend-app-api` | 1.7.3 | 1.7.4 | Patch |
@@ -208,7 +208,7 @@
 | `@backstage/plugin-techdocs-addons-test-utils` | 2.0.8 | 2.0.9 | Patch |
 | `@backstage/plugin-techdocs-backend` | 2.2.5 | 2.3.0 | Minor |
 | `@backstage/plugin-techdocs-module-addons-contrib` | 1.1.39 | 1.1.40 | Patch |
-| `@backstage/plugin-techdocs-node` | **1.15.5** | **2.0.0** | Major ⚠️ |
+| `@backstage/plugin-techdocs-node` | **1.15.6** | **2.0.0** | Major ⚠️ |
 | `@backstage/plugin-techdocs-react` | 1.3.14 | 1.3.15 | Patch |
 | `@backstage/plugin-user-settings` | 0.9.6 | 0.9.7 | Patch |
 | `@backstage/plugin-user-settings-backend` | 0.4.6 | 0.4.7 | Patch |

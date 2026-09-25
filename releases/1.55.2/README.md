@@ -1,15 +1,26 @@
-# Backstage Release 1.55.1
+# Backstage Release 1.55.2
 
-## Compared to 1.55.0 (previous patch release)
+## Compared to 1.55.1 (previous patch release)
 
-0 added, 0 removed, 2 upgraded, 210 unchanged.
+0 added, 0 removed, 1 upgraded, 211 unchanged.
 
 ### Version bumps
 
-| Package | 1.55.0 | 1.55.1 | Type |
+| Package | 1.55.1 | 1.55.2 | Type |
+| --- | --- | --- | --- |
+| `@backstage/plugin-techdocs-node` | 2.0.0 | 2.0.1 | Patch |
+
+## Compared to 1.55.0 (first release of this minor)
+
+0 added, 0 removed, 3 upgraded, 209 unchanged.
+
+### Version bumps
+
+| Package | 1.55.0 | 1.55.2 | Type |
 | --- | --- | --- | --- |
 | `@backstage/cli-module-package-manager-yarn` | 0.1.1 | 0.1.2 | Patch |
 | `@backstage/plugin-techdocs` | 1.18.1 | 1.18.2 | Patch |
+| `@backstage/plugin-techdocs-node` | 2.0.0 | 2.0.1 | Patch |
 
 ## Compared to 1.54.9 (previous minor release)
 
@@ -19,11 +30,11 @@
 
 ### ⚠️ Major version bumps
 
-| Package | 1.54.9 | 1.55.1 |
+| Package | 1.54.9 | 1.55.2 |
 | --- | --- | --- |
 | `@backstage/plugin-catalog-backend` | **3.9.1** | **4.0.0** |
 | `@backstage/plugin-search-backend-module-elasticsearch` | **1.8.7** | **2.0.0** |
-| `@backstage/plugin-techdocs-node` | **1.15.6** | **2.0.0** |
+| `@backstage/plugin-techdocs-node` | **1.15.6** | **2.0.1** |
 
 ### 🆕 Added packages
 
@@ -34,7 +45,7 @@
 
 ### Version bumps
 
-| Package | 1.54.9 | 1.55.1 | Type |
+| Package | 1.54.9 | 1.55.2 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.11 | 1.7.12 | Patch |
 | `@backstage/backend-app-api` | 1.7.3 | 1.7.4 | Patch |
@@ -219,7 +230,7 @@
 | `@backstage/plugin-techdocs-addons-test-utils` | 2.0.8 | 2.0.9 | Patch |
 | `@backstage/plugin-techdocs-backend` | 2.2.5 | 2.3.0 | Minor |
 | `@backstage/plugin-techdocs-module-addons-contrib` | 1.1.39 | 1.1.40 | Patch |
-| `@backstage/plugin-techdocs-node` | **1.15.6** | **2.0.0** | Major ⚠️ |
+| `@backstage/plugin-techdocs-node` | **1.15.6** | **2.0.1** | Major ⚠️ |
 | `@backstage/plugin-techdocs-react` | 1.3.14 | 1.3.15 | Patch |
 | `@backstage/plugin-user-settings` | 0.9.6 | 0.9.7 | Patch |
 | `@backstage/plugin-user-settings-backend` | 0.4.6 | 0.4.7 | Patch |

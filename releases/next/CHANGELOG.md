@@ -1,6 +1,6 @@
 # Backstage Release 1.56.0-next.0 changelog
 
-Changes between 1.55.1 and 1.56.0-next.0 — 3 added, 0 removed, 201 upgraded, 11 unchanged packages.
+Changes between 1.55.2 and 1.56.0-next.0 — 3 added, 0 removed, 201 upgraded, 11 unchanged packages.
 
 ## Summary
 
@@ -8,8 +8,8 @@ Changes between 1.55.1 and 1.56.0-next.0 — 3 added, 0 removed, 201 upgraded, 1
 - [0.x minor version bumps](#0x-minor-version-bumps): 1 package
 - [0.x patch version bumps](#0x-patch-version-bumps): 11 packages
 - [Other minor version bumps](#other-minor-version-bumps): 1 package
-- [Other patch version bumps](#other-patch-version-bumps): 5 packages
-- [Excluded dependency updates](#excluded-dependency-updates): 183 packages
+- [Other patch version bumps](#other-patch-version-bumps): 6 packages
+- [Excluded dependency updates](#excluded-dependency-updates): 182 packages
 
 ## Table of contents
 
@@ -39,6 +39,7 @@ Changes between 1.55.1 and 1.56.0-next.0 — 3 added, 0 removed, 201 upgraded, 1
   - [`@backstage/errors` (1.3.1 → 1.3.2-next.0)](#backstageerrors-131--132-next0)
   - [`@backstage/integration` (2.1.2 → 2.1.3-next.0)](#backstageintegration-212--213-next0)
   - [`@backstage/plugin-catalog-backend` (4.0.0 → 4.0.1-next.0)](#backstageplugin-catalog-backend-400--401-next0)
+  - [`@backstage/plugin-techdocs-node` (2.0.1 → 2.0.1-next.0)](#backstageplugin-techdocs-node-201--201-next0)
 - [Excluded dependency updates](#excluded-dependency-updates)
 
 ## Newly added packages
@@ -274,6 +275,10 @@ Changes between 1.55.1 and 1.56.0-next.0 — 3 added, 0 removed, 201 upgraded, 1
 
 - [`e783f4b`](https://github.com/backstage/backstage/commit/e783f4b): Fixed catalog processing error messages to report stable processor names in minified builds.
 
+### `@backstage/plugin-techdocs-node` (2.0.1 → [2.0.1-next.0](../../changelogs/@backstage/plugin-techdocs-node.md#201-next0))
+
+_No changelog entries found._
+
 ## Excluded dependency updates
 
 - `@backstage/app-defaults` (1.7.12 → [1.7.13-next.0](../../changelogs/@backstage/app-defaults.md#1713-next0))
@@ -453,7 +458,6 @@ Changes between 1.55.1 and 1.56.0-next.0 — 3 added, 0 removed, 201 upgraded, 1
 - `@backstage/plugin-techdocs-addons-test-utils` (2.0.9 → [2.0.10-next.0](../../changelogs/@backstage/plugin-techdocs-addons-test-utils.md#2010-next0))
 - `@backstage/plugin-techdocs-backend` (2.3.0 → [2.3.1-next.0](../../changelogs/@backstage/plugin-techdocs-backend.md#231-next0))
 - `@backstage/plugin-techdocs-module-addons-contrib` (1.1.40 → [1.1.41-next.0](../../changelogs/@backstage/plugin-techdocs-module-addons-contrib.md#1141-next0))
-- `@backstage/plugin-techdocs-node` (2.0.0 → [2.0.1-next.0](../../changelogs/@backstage/plugin-techdocs-node.md#201-next0))
 - `@backstage/plugin-techdocs-react` (1.3.15 → [1.3.16-next.0](../../changelogs/@backstage/plugin-techdocs-react.md#1316-next0))
 - `@backstage/plugin-user-settings` (0.9.7 → [0.9.8-next.0](../../changelogs/@backstage/plugin-user-settings.md#098-next0))
 - `@backstage/plugin-user-settings-backend` (0.4.7 → [0.4.8-next.0](../../changelogs/@backstage/plugin-user-settings-backend.md#048-next0))

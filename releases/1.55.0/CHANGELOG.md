@@ -1,6 +1,6 @@
 # Backstage Release 1.55.0 changelog
 
-Changes between 1.54.8 and 1.55.0 — 2 added, 0 removed, 191 upgraded, 19 unchanged packages.
+Changes between 1.54.9 and 1.55.0 — 2 added, 0 removed, 191 upgraded, 19 unchanged packages.
 
 ## Summary
 
@@ -26,7 +26,7 @@ Changes between 1.54.8 and 1.55.0 — 2 added, 0 removed, 191 upgraded, 19 uncha
   - [`@backstage/plugin-scaffolder-backend-module-github` (0.9.13 → 0.10.0)](#backstageplugin-scaffolder-backend-module-github-0913--0100)
   - [`@backstage/plugin-scaffolder-backend-module-sentry` (0.3.8 → 0.4.0)](#backstageplugin-scaffolder-backend-module-sentry-038--040)
   - [`@backstage/plugin-search-backend-module-elasticsearch` (1.8.7 → 2.0.0)](#backstageplugin-search-backend-module-elasticsearch-187--200)
-  - [`@backstage/plugin-techdocs-node` (1.15.5 → 2.0.0)](#backstageplugin-techdocs-node-1155--200)
+  - [`@backstage/plugin-techdocs-node` (1.15.6 → 2.0.0)](#backstageplugin-techdocs-node-1156--200)
   - [`@backstage/ui` (0.17.1 → 0.18.0)](#backstageui-0171--0180)
 - [0.x minor version bumps](#0x-minor-version-bumps)
   - [`@backstage/backend-defaults` (0.17.8 → 0.18.0)](#backstagebackend-defaults-0178--0180)
@@ -291,7 +291,7 @@ verify-patches` to validate Yarn patch references, local patch files,
 - [`fe6ace6`](https://github.com/backstage/backstage/commit/fe6ace6): Added optional `accountId` config to `search.elasticsearch` for resolving account-specific AWS credentials, enabling support for `webIdentityTokenFile` and `accountDefaults` when using AWS OpenSearch.
 - [`b11c9b4`](https://github.com/backstage/backstage/commit/b11c9b4): Fixed a bug where an empty document type list could result in querying all indices instead of returning empty results.
 
-### `@backstage/plugin-techdocs-node` (1.15.5 → [2.0.0](../../changelogs/@backstage/plugin-techdocs-node.md#200))
+### `@backstage/plugin-techdocs-node` (1.15.6 → [2.0.0](../../changelogs/@backstage/plugin-techdocs-node.md#200))
 
 #### 2.0.0
 
