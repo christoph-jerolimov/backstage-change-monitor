@@ -1,34 +1,68 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { listChangelogPackages, listReleases, listTables, NEXT, readRepoFile, withBase } from "../lib/content";
+import semver from "semver";
+import {
+  listChangelogPackages,
+  listReleases,
+  listTables,
+  NEXT,
+  parseCsv,
+  readRepoFile,
+  withBase,
+} from "../lib/content";
 import { renderMarkdown } from "../lib/markdown";
 
 const releases = listReleases();
 const next = releases.find((release) => release.id === NEXT);
 const latest = releases.find((release) => release.id !== NEXT);
+// All patch releases of the current minor line, newest first, with `next` in front.
+const current = [
+  ...(next ? [next] : []),
+  ...releases.filter(
+    (release) =>
+      release.id !== NEXT &&
+      latest &&
+      semver.major(release.version) === semver.major(latest.version) &&
+      semver.minor(release.version) === semver.minor(latest.version),
+  ),
+];
+const counts = new Map(
+  parseCsv(readRepoFile("tables/number-of-changed-packages-all-releases.csv")).map((row) => [row["Release"], row]),
+);
 ---
 
 <Layout
   title="Backstage Change Monitor"
   description="Mirror and analysis of the Backstage package changelogs, release manifests and package metadata."
 >
+  <h2 class="section-title">Current releases</h2>
   <div class="cards">
     {
-      latest && (
-        <a class="card" href={withBase(`/releases/${latest.id}/`)}>
-          <strong>Latest release {latest.version}</strong>
-          <span>Summary and changelog</span>
-        </a>
-      )
+      current.map((release) => {
+        const row = counts.get(release.version);
+        return (
+          <div class="card">
+            <strong>
+              <a href={withBase(`/releases/${release.id}/`)}>
+                {release.id === NEXT ? "Next" : release === latest ? "Latest" : "Release"} {release.version}
+              </a>
+            </strong>
+            {row && (
+              <span>
+                vs. {row["Compared to"]}: {row["Added"]} added, {row["Removed"]} removed, {row["Upgraded"]} upgraded
+              </span>
+            )}
+            <span>
+              <a href={withBase(`/releases/${release.id}/`)}>Summary</a> ·{" "}
+              <a href={withBase(`/releases/${release.id}/changelog/`)}>Changelog</a>
+            </span>
+          </div>
+        );
+      })
     }
-    {
-      next && (
-        <a class="card" href={withBase(`/releases/${next.id}/`)}>
-          <strong>Next release {next.version}</strong>
-          <span>Upcoming changes</span>
-        </a>
-      )
-    }
+  </div>
+  <h2 class="section-title">Browse</h2>
+  <div class="cards">
     <a class="card" href={withBase("/releases/")}>
       <strong>{releases.length} releases</strong>
       <span>Changed packages per release</span>

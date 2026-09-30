@@ -155,7 +155,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 12px;
-  margin: 16px 0 32px;
+  margin: 12px 0 24px;
 }
 
 .card {
@@ -171,8 +171,14 @@ main {
 }
 
 .card span {
+  display: block;
   color: var(--muted);
   font-size: 0.875rem;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 1.1rem;
 }
 
 .filter {
