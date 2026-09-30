@@ -1,6 +1,6 @@
 # Backstage Release 1.56.0-next.1 (next)
 
-## Compared to 1.55.2 (latest release)
+## Compared to 1.55.3 (latest release)
 
 3 added, 0 removed, 202 upgraded, 10 unchanged.
 
@@ -16,7 +16,7 @@
 
 ### Version bumps
 
-| Package | 1.55.2 | 1.56.0-next.1 | Type |
+| Package | 1.55.3 | 1.56.0-next.1 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.12 | 1.7.13-next.0 | Patch |
 | `@backstage/backend-app-api` | 1.7.4 | 1.8.0-next.1 | Minor |
@@ -212,7 +212,7 @@
 | `@backstage/plugin-techdocs-addons-test-utils` | 2.0.9 | 2.0.10-next.0 | Patch |
 | `@backstage/plugin-techdocs-backend` | 2.3.0 | 2.3.1-next.1 | Patch |
 | `@backstage/plugin-techdocs-module-addons-contrib` | 1.1.40 | 1.1.41-next.0 | Patch |
-| `@backstage/plugin-techdocs-node` | 2.0.1 | 2.0.2-next.1 | Patch |
+| `@backstage/plugin-techdocs-node` | 2.0.2 | 2.0.2-next.1 | Patch |
 | `@backstage/plugin-techdocs-react` | 1.3.15 | 1.3.16-next.1 | Patch |
 | `@backstage/plugin-user-settings` | 0.9.7 | 0.9.8-next.0 | Patch |
 | `@backstage/plugin-user-settings-backend` | 0.4.7 | 0.4.8-next.1 | Patch |

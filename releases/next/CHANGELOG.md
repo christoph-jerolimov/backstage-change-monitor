@@ -1,6 +1,6 @@
 # Backstage Release 1.56.0-next.1 changelog
 
-Changes between 1.55.2 and 1.56.0-next.1 — 3 added, 0 removed, 202 upgraded, 10 unchanged packages.
+Changes between 1.55.3 and 1.56.0-next.1 — 3 added, 0 removed, 202 upgraded, 10 unchanged packages.
 
 ## Summary
 
@@ -57,7 +57,7 @@ Changes between 1.55.2 and 1.56.0-next.1 — 3 added, 0 removed, 202 upgraded, 1
   - [`@backstage/integration` (2.1.2 → 2.1.3-next.0)](#backstageintegration-212--213-next0)
   - [`@backstage/plugin-catalog` (2.0.9 → 2.0.10-next.1)](#backstageplugin-catalog-209--2010-next1)
   - [`@backstage/plugin-catalog-backend` (4.0.0 → 4.0.1-next.1)](#backstageplugin-catalog-backend-400--401-next1)
-  - [`@backstage/plugin-techdocs-node` (2.0.1 → 2.0.2-next.1)](#backstageplugin-techdocs-node-201--202-next1)
+  - [`@backstage/plugin-techdocs-node` (2.0.2 → 2.0.2-next.1)](#backstageplugin-techdocs-node-202--202-next1)
   - [`@backstage/plugin-techdocs-react` (1.3.15 → 1.3.16-next.1)](#backstageplugin-techdocs-react-1315--1316-next1)
 - [Excluded dependency updates](#excluded-dependency-updates)
 
@@ -427,15 +427,9 @@ Changes between 1.55.2 and 1.56.0-next.1 — 3 added, 0 removed, 202 upgraded, 1
 
 - [`e783f4b`](https://github.com/backstage/backstage/commit/e783f4b): Fixed catalog processing error messages to report stable processor names in minified builds.
 
-### `@backstage/plugin-techdocs-node` (2.0.1 → [2.0.2-next.1](../../changelogs/@backstage/plugin-techdocs-node.md#202-next1))
+### `@backstage/plugin-techdocs-node` (2.0.2 → [2.0.2-next.1](../../changelogs/@backstage/plugin-techdocs-node.md#202-next1))
 
-#### 2.0.2-next.1
-
-##### Patch Changes
-
-- [`9fc5387`](https://github.com/backstage/backstage/commit/9fc5387): Improved handling of mapping-style Markdown extension configuration.
-- [`0fd5fe5`](https://github.com/backstage/backstage/commit/0fd5fe5): Fixed TechDocs allowing `custom_icons` paths in `mkdocs.yml` that resolve outside the documentation input directory. A `custom_icons` option with such a path is now removed from the configuration with a warning.
-- [`8a37336`](https://github.com/backstage/backstage/commit/8a37336): Fixed TechDocs generation rejecting `mkdocs.yml` files that use the emoji indexes and generators or the `pymdownx.superfences` custom fence formats documented by mkdocs-material, pymdown-extensions and mkdocs-mermaid2.
+_No changelog entries found._
 
 ### `@backstage/plugin-techdocs-react` (1.3.15 → [1.3.16-next.1](../../changelogs/@backstage/plugin-techdocs-react.md#1316-next1))
 
