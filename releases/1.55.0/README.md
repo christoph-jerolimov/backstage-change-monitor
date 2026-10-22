@@ -1,6 +1,6 @@
 # Backstage Release 1.55.0
 
-## Compared to 1.54.9 (previous minor release)
+## Compared to 1.54.10 (previous minor release)
 
 2 added, 0 removed, 191 upgraded, 19 unchanged.
 
@@ -8,9 +8,9 @@
 
 ### ⚠️ Major version bumps
 
-| Package | 1.54.9 | 1.55.0 |
+| Package | 1.54.10 | 1.55.0 |
 | --- | --- | --- |
-| `@backstage/plugin-catalog-backend` | **3.9.1** | **4.0.0** |
+| `@backstage/plugin-catalog-backend` | **3.9.2** | **4.0.0** |
 | `@backstage/plugin-search-backend-module-elasticsearch` | **1.8.7** | **2.0.0** |
 | `@backstage/plugin-techdocs-node` | **1.15.6** | **2.0.0** |
 
@@ -23,7 +23,7 @@
 
 ### Version bumps
 
-| Package | 1.54.9 | 1.55.0 | Type |
+| Package | 1.54.10 | 1.55.0 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.11 | 1.7.12 | Patch |
 | `@backstage/backend-app-api` | 1.7.3 | 1.7.4 | Patch |
@@ -96,7 +96,7 @@
 | `@backstage/plugin-auth-react` | 0.1.30 | 0.1.31 | Patch |
 | `@backstage/plugin-bitbucket-cloud-common` | 0.3.12 | 0.3.13 | Patch |
 | `@backstage/plugin-catalog` | 2.0.8 | 2.0.9 | Patch |
-| `@backstage/plugin-catalog-backend` | **3.9.1** | **4.0.0** | Major ⚠️ |
+| `@backstage/plugin-catalog-backend` | **3.9.2** | **4.0.0** | Major ⚠️ |
 | `@backstage/plugin-catalog-backend-module-ai-model` | 0.1.3 | 0.1.4 | Patch |
 | `@backstage/plugin-catalog-backend-module-aws` | 0.4.27 | 0.4.28 | Patch |
 | `@backstage/plugin-catalog-backend-module-azure` | 0.3.21 | 0.3.22 | Patch |

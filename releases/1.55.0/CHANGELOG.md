@@ -1,6 +1,6 @@
 # Backstage Release 1.55.0 changelog
 
-Changes between 1.54.9 and 1.55.0 — 2 added, 0 removed, 191 upgraded, 19 unchanged packages.
+Changes between 1.54.10 and 1.55.0 — 2 added, 0 removed, 191 upgraded, 19 unchanged packages.
 
 ## Summary
 
@@ -20,7 +20,7 @@ Changes between 1.54.9 and 1.55.0 — 2 added, 0 removed, 191 upgraded, 19 uncha
 - [Breaking changes](#breaking-changes)
   - [`@backstage/connections` (0.3.0 → 0.4.0)](#backstageconnections-030--040)
   - [`@backstage/plugin-auth-backend-module-cloudflare-access-provider` (0.4.18 → 0.5.0)](#backstageplugin-auth-backend-module-cloudflare-access-provider-0418--050)
-  - [`@backstage/plugin-catalog-backend` (3.9.1 → 4.0.0)](#backstageplugin-catalog-backend-391--400)
+  - [`@backstage/plugin-catalog-backend` (3.9.2 → 4.0.0)](#backstageplugin-catalog-backend-392--400)
   - [`@backstage/plugin-catalog-backend-module-incremental-ingestion` (0.7.15 → 0.8.0)](#backstageplugin-catalog-backend-module-incremental-ingestion-0715--080)
   - [`@backstage/plugin-kubernetes-react` (0.5.23 → 0.6.0)](#backstageplugin-kubernetes-react-0523--060)
   - [`@backstage/plugin-scaffolder-backend-module-github` (0.9.13 → 0.10.0)](#backstageplugin-scaffolder-backend-module-github-0913--0100)
@@ -199,7 +199,7 @@ verify-patches` to validate Yarn patch references, local patch files,
         audience: ${AUTH_CFACCESS_AUDIENCE}
   ```
 
-### `@backstage/plugin-catalog-backend` (3.9.1 → [4.0.0](../../changelogs/@backstage/plugin-catalog-backend.md#400))
+### `@backstage/plugin-catalog-backend` (3.9.2 → [4.0.0](../../changelogs/@backstage/plugin-catalog-backend.md#400))
 
 #### 4.0.0
 
