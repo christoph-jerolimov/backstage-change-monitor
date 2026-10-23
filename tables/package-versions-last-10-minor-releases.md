@@ -2,7 +2,7 @@
 
 Versions of **217 packages** across **10 releases** — columns ordered newest to oldest. Each minor release is represented by the latest patch of its minor line.
 
-| Package | 1.56.1 | 1.55.3 | 1.54.10 | 1.53.2 | 1.52.1 | 1.51.3 | 1.50.7 | 1.49.7 | 1.48.6 | 1.47.4 |
+| Package | 1.56.2 | 1.55.3 | 1.54.10 | 1.53.2 | 1.52.1 | 1.51.3 | 1.50.7 | 1.49.7 | 1.48.6 | 1.47.4 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.13 | 1.7.12 | 1.7.11 | 1.7.10 | 1.7.9 | 1.7.8 | 1.7.7 | 1.7.6 | 1.7.5 | 1.7.4 |
 | `@backstage/backend-app-api` | 1.8.0 | 1.7.4 | 1.7.3 | 1.7.2 | 1.7.1 | 1.7.0 | 1.6.1 | 1.6.0 | 1.5.0 | 1.4.1 |
@@ -28,7 +28,7 @@ Versions of **217 packages** across **10 releases** — columns ordered newest t
 | `@backstage/cli-module-maintenance` | 0.1.6 | 0.1.5 | 0.1.4 | 0.1.4 | 0.1.3 | 0.1.2 | 0.1.1 | 0.1.0 |  |  |
 | `@backstage/cli-module-migrate` | 0.2.2 | 0.2.1 | 0.2.1 | 0.2.0 | 0.1.3 | 0.1.2 | 0.1.1 | 0.1.0 |  |  |
 | `@backstage/cli-module-new` | 0.1.8 | 0.1.7 | 0.1.6 | 0.1.5 | 0.1.4 | 0.1.3 | 0.1.2 | 0.1.1 |  |  |
-| `@backstage/cli-module-package-manager-yarn` | 0.1.3 | 0.1.2 |  |  |  |  |  |  |  |  |
+| `@backstage/cli-module-package-manager-yarn` | 0.1.4 | 0.1.2 |  |  |  |  |  |  |  |  |
 | `@backstage/cli-module-scaffolder` | 0.2.0 |  |  |  |  |  |  |  |  |  |
 | `@backstage/cli-module-search` | 0.2.0 |  |  |  |  |  |  |  |  |  |
 | `@backstage/cli-module-test-jest` | 0.1.7 | 0.1.6 | 0.1.5 | 0.1.4 | 0.1.3 | 0.1.2 | 0.1.1 | 0.1.0 |  |  |
