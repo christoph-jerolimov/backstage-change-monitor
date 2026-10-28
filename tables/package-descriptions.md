@@ -1,6 +1,6 @@
 # Package descriptions
 
-**215 packages** active on the `main` branch.
+**216 packages** active on the `main` branch.
 
 | Package | Backstage role | Description |
 | --- | --- | --- |
@@ -204,6 +204,7 @@
 | `@backstage/plugin-techdocs` | frontend-plugin | The Backstage plugin that renders technical documentation for your components |
 | `@backstage/plugin-techdocs-addons-test-utils` | web-library |  |
 | `@backstage/plugin-techdocs-backend` | backend-plugin | The Backstage backend plugin that renders technical documentation for your components |
+| `@backstage/plugin-techdocs-backend-module-zensical` | backend-plugin-module | A module for the TechDocs backend that adds Zensical as a documentation engine |
 | `@backstage/plugin-techdocs-common` | common-library | Common functionality for TechDocs |
 | `@backstage/plugin-techdocs-module-addons-contrib` | frontend-plugin-module | Plugin module for contributed TechDocs Addons |
 | `@backstage/plugin-techdocs-node` | node-library | Common node.js functionalities for TechDocs, to be shared between techdocs-backend plugin and techdocs-cli |

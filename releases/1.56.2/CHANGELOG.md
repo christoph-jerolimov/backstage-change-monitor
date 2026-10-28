@@ -15,4 +15,8 @@ Changes between 1.56.1 and 1.56.2 — 0 added, 0 removed, 1 upgraded, 214 unchan
 
 ### `@backstage/cli-module-package-manager-yarn` (0.1.3 → [0.1.4](../../changelogs/@backstage/cli-module-package-manager-yarn.md#014))
 
-_No changelog entries found._
+#### 0.1.4
+
+##### Patch Changes
+
+- Bumped version to account for a patch release.

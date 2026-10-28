@@ -15,4 +15,8 @@ Changes between 1.56.0 and 1.56.1 — 0 added, 0 removed, 1 upgraded, 214 unchan
 
 ### `@backstage/plugin-catalog-backend` (4.0.1 → [4.0.2](../../changelogs/@backstage/plugin-catalog-backend.md#402))
 
-_No changelog entries found._
+#### 4.0.2
+
+##### Patch Changes
+
+- Bumped version to account for a patch release.
