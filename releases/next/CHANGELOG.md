@@ -1,27 +1,27 @@
 # Backstage Release 1.57.0-next.0 changelog
 
-Changes between 1.56.2 and 1.57.0-next.0 — 1 added, 0 removed, 186 upgraded, 29 unchanged packages.
+Changes between 1.56.3 and 1.57.0-next.0 — 0 added, 0 removed, 187 upgraded, 29 unchanged packages.
 
 ## Summary
 
-- [Newly added packages](#newly-added-packages): 1 package
 - [Breaking changes](#breaking-changes): 2 packages
 - [Major version bumps](#major-version-bumps): 1 package
+- [0.x minor version bumps](#0x-minor-version-bumps): 1 package
 - [0.0.x patch version bumps](#00x-patch-version-bumps): 1 package
 - [0.x patch version bumps](#0x-patch-version-bumps): 25 packages
-- [Minor version bumps](#minor-version-bumps): 4 packages
+- [Other minor version bumps](#other-minor-version-bumps): 4 packages
 - [Other patch version bumps](#other-patch-version-bumps): 5 packages
 - [Excluded dependency updates](#excluded-dependency-updates): 148 packages
 
 ## Table of contents
 
-- [Newly added packages](#newly-added-packages)
-  - [`@backstage/plugin-techdocs-backend-module-zensical` (new, 0.1.0-next.0)](#backstageplugin-techdocs-backend-module-zensical-new-010-next0)
 - [Breaking changes](#breaking-changes)
   - [`@backstage/frontend-test-utils` (0.6.5 → 0.7.0-next.0)](#backstagefrontend-test-utils-065--070-next0)
   - [`@backstage/plugin-scaffolder-backend-module-gcp` (0.2.26 → 0.3.0-next.0)](#backstageplugin-scaffolder-backend-module-gcp-0226--030-next0)
 - [Major version bumps](#major-version-bumps)
   - [`@backstage/plugin-scaffolder-react` (2.1.1 → 3.0.0-next.0)](#backstageplugin-scaffolder-react-211--300-next0)
+- [0.x minor version bumps](#0x-minor-version-bumps)
+  - [`@backstage/plugin-techdocs-backend-module-zensical` (0.1.0 → 0.1.0-next.0)](#backstageplugin-techdocs-backend-module-zensical-010--010-next0)
 - [0.0.x patch version bumps](#00x-patch-version-bumps)
   - [`@backstage/plugin-kubernetes-cluster` (0.0.42 → 0.0.43-next.0)](#backstageplugin-kubernetes-cluster-0042--0043-next0)
 - [0.x patch version bumps](#0x-patch-version-bumps)
@@ -50,28 +50,18 @@ Changes between 1.56.2 and 1.57.0-next.0 — 1 added, 0 removed, 186 upgraded, 2
   - [`@backstage/plugin-events-backend` (0.6.7 → 0.6.8-next.0)](#backstageplugin-events-backend-067--068-next0)
   - [`@backstage/plugin-kubernetes-common` (0.9.14 → 0.9.15-next.0)](#backstageplugin-kubernetes-common-0914--0915-next0)
   - [`@backstage/plugin-scaffolder-backend-module-gitlab` (0.12.1 → 0.12.2-next.0)](#backstageplugin-scaffolder-backend-module-gitlab-0121--0122-next0)
-- [Minor version bumps](#minor-version-bumps)
+- [Other minor version bumps](#other-minor-version-bumps)
   - [`@backstage/backend-app-api` (1.8.0 → 1.9.0-next.0)](#backstagebackend-app-api-180--190-next0)
   - [`@backstage/plugin-scaffolder` (1.40.0 → 1.41.0-next.0)](#backstageplugin-scaffolder-1400--1410-next0)
-  - [`@backstage/plugin-techdocs-node` (2.1.0 → 2.2.0-next.0)](#backstageplugin-techdocs-node-210--220-next0)
-  - [`@techdocs/cli` (1.13.0 → 1.14.0-next.0)](#techdocscli-1130--1140-next0)
+  - [`@backstage/plugin-techdocs-node` (2.2.0 → 2.2.0-next.0)](#backstageplugin-techdocs-node-220--220-next0)
+  - [`@techdocs/cli` (1.14.0 → 1.14.0-next.0)](#techdocscli-1140--1140-next0)
 - [Other patch version bumps](#other-patch-version-bumps)
   - [`@backstage/plugin-catalog-backend` (4.0.2 → 4.0.3-next.0)](#backstageplugin-catalog-backend-402--403-next0)
   - [`@backstage/plugin-scaffolder-backend` (4.2.1 → 4.2.2-next.0)](#backstageplugin-scaffolder-backend-421--422-next0)
   - [`@backstage/plugin-search-backend-module-elasticsearch` (2.0.1 → 2.0.2-next.0)](#backstageplugin-search-backend-module-elasticsearch-201--202-next0)
   - [`@backstage/plugin-techdocs` (1.19.0 → 1.19.1-next.0)](#backstageplugin-techdocs-1190--1191-next0)
-  - [`@backstage/plugin-techdocs-backend` (2.4.0 → 2.4.1-next.0)](#backstageplugin-techdocs-backend-240--241-next0)
+  - [`@backstage/plugin-techdocs-backend` (2.4.1 → 2.4.1-next.0)](#backstageplugin-techdocs-backend-241--241-next0)
 - [Excluded dependency updates](#excluded-dependency-updates)
-
-## Newly added packages
-
-### `@backstage/plugin-techdocs-backend-module-zensical` (new, [0.1.0-next.0](../../changelogs/@backstage/plugin-techdocs-backend-module-zensical.md#010-next0))
-
-#### 0.1.0-next.0
-
-##### Minor Changes
-
-- [`a4604d2`](https://github.com/backstage/backstage/commit/a4604d2): New module that adds [Zensical](https://zensical.org) as an experimental TechDocs documentation engine. Opt entities in with the `backstage.io/techdocs-engine: zensical` annotation, or set `techdocs.generator.defaultEngine: zensical`. See [Zensical Engine](https://backstage.io/docs/features/techdocs/engines-zensical) for setup and configuration.
 
 ## Breaking changes
 
@@ -120,6 +110,12 @@ Changes between 1.56.2 and 1.57.0-next.0 — 1 added, 0 removed, 186 upgraded, 2
 ##### Patch Changes
 
 - [`1c461ca`](https://github.com/backstage/backstage/commit/1c461ca): Fixed BUI array item headings to use the item schema title and honor an explicit item `ui:title` without adding a numeric suffix. Untitled items retain the numbered fallback.
+
+## 0.x minor version bumps
+
+### `@backstage/plugin-techdocs-backend-module-zensical` (0.1.0 → [0.1.0-next.0](../../changelogs/@backstage/plugin-techdocs-backend-module-zensical.md#010-next0))
+
+_No changelog entries found._
 
 ## 0.0.x patch version bumps
 
@@ -341,7 +337,7 @@ Changes between 1.56.2 and 1.57.0-next.0 — 1 added, 0 removed, 186 upgraded, 2
 - [`ae86338`](https://github.com/backstage/backstage/commit/ae86338): Added GitLab branch autocompletion to RepoBranchPicker using user SCM credentials.
 - [`ed8e58f`](https://github.com/backstage/backstage/commit/ed8e58f): Fixed `publish:gitlab:merge-request` and `gitlab:repo:push` failing with "A file with this name already exists" when `commitAction` is `auto` and the repository file list cannot be fetched, for example when the request times out on a large repository. The actions now check each file individually in that case, instead of treating every file as new.
 
-## Minor version bumps
+## Other minor version bumps
 
 ### `@backstage/backend-app-api` (1.8.0 → [1.9.0-next.0](../../changelogs/@backstage/backend-app-api.md#190-next0))
 
@@ -364,28 +360,13 @@ Changes between 1.56.2 and 1.57.0-next.0 — 1 added, 0 removed, 186 upgraded, 2
 
 - [`111c6ce`](https://github.com/backstage/backstage/commit/111c6ce): Keep the task button bar at the user's chosen visibility when a task completes, so log visibility and start-over controls remain accessible. Action availability continues to depend on task state and permissions.
 
-### `@backstage/plugin-techdocs-node` (2.1.0 → [2.2.0-next.0](../../changelogs/@backstage/plugin-techdocs-node.md#220-next0))
+### `@backstage/plugin-techdocs-node` (2.2.0 → [2.2.0-next.0](../../changelogs/@backstage/plugin-techdocs-node.md#220-next0))
 
-#### 2.2.0-next.0
+_No changelog entries found._
 
-##### Minor Changes
+### `@techdocs/cli` (1.14.0 → [1.14.0-next.0](../../changelogs/@techdocs/cli.md#1140-next0))
 
-- [`a4604d2`](https://github.com/backstage/backstage/commit/a4604d2): Added a new `@backstage/plugin-techdocs-node/alpha` entry point with building blocks for implementing additional documentation engines in separate modules: `createDockerContainerRunner`, `createOrUpdateMetadata`, `storeEtagMetadata`, `runCommand`, `validateInputDirectory`, `patchIndexPreBuild`, and the `mkdocs.yml` helpers `MKDOCS_SCHEMA`, `validateMkdocsYaml` and `sanitizeMkdocsYml`. These are alpha and may change in minor releases.
-
-##### Patch Changes
-
-- [`686d3cb`](https://github.com/backstage/backstage/commit/686d3cb): Fixed TechDocs served from Azure Blob Storage or Google Cloud Storage keeping storage connections open when a browser navigates away before a file is fully loaded. Errors that occur while streaming a file from Azure Blob Storage are now also logged and handled, instead of being left unhandled.
-- [`2e98895`](https://github.com/backstage/backstage/commit/2e98895): Fixed TechDocs served from AWS S3 leaking S3 connections when a browser navigates away before a file is fully loaded. Over time the connection pool was exhausted and all TechDocs pages failed to load with `Socket timed out without establishing a connection` errors until the backend was restarted.
-
-### `@techdocs/cli` (1.13.0 → [1.14.0-next.0](../../changelogs/@techdocs/cli.md#1140-next0))
-
-#### 1.14.0-next.0
-
-##### Minor Changes
-
-- [`a4604d2`](https://github.com/backstage/backstage/commit/a4604d2): Add Zensical support to `serve`, `serve:raw` and `generate` via `--engine zensical` (or the `backstage.io/techdocs-engine` annotation in `catalog-info.yaml`), including live reload in the preview app. The default `--docker-image` is now chosen per engine instead of always being `spotify/techdocs`, and matches the image the TechDocs backend uses for that engine, so MkDocs previews now use `spotify/techdocs:v1.2.8` instead of `latest`. Passing `--docker-image` explicitly behaves as before.
-
-  The `serve` flags `--mkdocs-port`, `--mkdocs-config-file-name` and `--mkdocs-parameter-*` are deprecated in favor of `--engine-port`, `--config-file-name` and `--parameter-*`. If both the old and new flag are given, the new one wins and the warning says the old one is ignored.
+_No changelog entries found._
 
 ## Other patch version bumps
 
@@ -425,13 +406,9 @@ Changes between 1.56.2 and 1.57.0-next.0 — 1 added, 0 removed, 186 upgraded, 2
 
 - [`9a1d5cf`](https://github.com/backstage/backstage/commit/9a1d5cf): Fixed the TechDocs table of contents drifting to the right on wide screens. It now stays aligned with the right edge of the documentation content.
 
-### `@backstage/plugin-techdocs-backend` (2.4.0 → [2.4.1-next.0](../../changelogs/@backstage/plugin-techdocs-backend.md#241-next0))
+### `@backstage/plugin-techdocs-backend` (2.4.1 → [2.4.1-next.0](../../changelogs/@backstage/plugin-techdocs-backend.md#241-next0))
 
-#### 2.4.1-next.0
-
-##### Patch Changes
-
-- [`4d7a3fe`](https://github.com/backstage/backstage/commit/4d7a3fe): Clarified in the config schema which `techdocs.generator.mkdocs` settings also apply to the Zensical engine: `legacyCopyReadmeMdToIndexMd`, `dangerouslyAllowAdditionalKeys` and `dangerouslyAllowAdditionalPlugins`.
+_No changelog entries found._
 
 ## Excluded dependency updates
 

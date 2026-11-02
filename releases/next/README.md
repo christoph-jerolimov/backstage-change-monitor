@@ -1,27 +1,21 @@
 # Backstage Release 1.57.0-next.0 (next)
 
-## Compared to 1.56.2 (latest release)
+## Compared to 1.56.3 (latest release)
 
-1 added, 0 removed, 186 upgraded, 29 unchanged.
+0 added, 0 removed, 187 upgraded, 29 unchanged.
 
-⚠️ Need extra attention: 2 major, 2 0.x minor, 3 0.0.x patch.
+⚠️ Need extra attention: 2 major, 3 0.x minor, 3 0.0.x patch.
 
 ### ⚠️ Major version bumps
 
-| Package | 1.56.2 | 1.57.0-next.0 |
+| Package | 1.56.3 | 1.57.0-next.0 |
 | --- | --- | --- |
 | `@backstage/plugin-catalog-react` | **3.3.0** | **4.0.0-next.0** |
 | `@backstage/plugin-scaffolder-react` | **2.1.1** | **3.0.0-next.0** |
 
-### 🆕 Added packages
-
-| Package | Version |
-| --- | --- |
-| `@backstage/plugin-techdocs-backend-module-zensical` | 0.1.0-next.0 |
-
 ### Version bumps
 
-| Package | 1.56.2 | 1.57.0-next.0 | Type |
+| Package | 1.56.3 | 1.57.0-next.0 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.13 | 1.7.14-next.0 | Patch |
 | `@backstage/backend-app-api` | 1.8.0 | 1.9.0-next.0 | Minor |
@@ -200,12 +194,13 @@
 | `@backstage/plugin-signals-react` | 0.0.27 | 0.0.28-next.0 | Patch ⚠️ |
 | `@backstage/plugin-techdocs` | 1.19.0 | 1.19.1-next.0 | Patch |
 | `@backstage/plugin-techdocs-addons-test-utils` | 2.0.10 | 2.0.11-next.0 | Patch |
-| `@backstage/plugin-techdocs-backend` | 2.4.0 | 2.4.1-next.0 | Patch |
+| `@backstage/plugin-techdocs-backend` | 2.4.1 | 2.4.1-next.0 | Patch |
+| `@backstage/plugin-techdocs-backend-module-zensical` | 0.1.0 | 0.1.0-next.0 | Minor ⚠️ |
 | `@backstage/plugin-techdocs-module-addons-contrib` | 1.1.41 | 1.1.42-next.0 | Patch |
-| `@backstage/plugin-techdocs-node` | 2.1.0 | 2.2.0-next.0 | Minor |
+| `@backstage/plugin-techdocs-node` | 2.2.0 | 2.2.0-next.0 | Minor |
 | `@backstage/plugin-techdocs-react` | 1.4.0 | 1.4.1-next.0 | Patch |
 | `@backstage/plugin-user-settings` | 0.9.8 | 0.9.9-next.0 | Patch |
 | `@backstage/plugin-user-settings-backend` | 0.4.8 | 0.4.9-next.0 | Patch |
 | `@backstage/repo-tools` | 0.19.2 | 0.19.3-next.0 | Patch |
 | `@backstage/test-utils` | 1.7.23 | 1.7.24-next.0 | Patch |
-| `@techdocs/cli` | 1.13.0 | 1.14.0-next.0 | Minor |
+| `@techdocs/cli` | 1.14.0 | 1.14.0-next.0 | Minor |
