@@ -1,40 +1,51 @@
-# Backstage Release 1.57.0-next.0 changelog
+# Backstage Release 1.57.0-next.1 changelog
 
-Changes between 1.56.3 and 1.57.0-next.0 — 0 added, 0 removed, 187 upgraded, 29 unchanged packages.
+Changes between 1.56.3 and 1.57.0-next.1 — 0 added, 0 removed, 191 upgraded, 25 unchanged packages.
 
 ## Summary
 
-- [Breaking changes](#breaking-changes): 2 packages
+- [Breaking changes](#breaking-changes): 5 packages
 - [Major version bumps](#major-version-bumps): 1 package
-- [0.x minor version bumps](#0x-minor-version-bumps): 1 package
-- [0.0.x patch version bumps](#00x-patch-version-bumps): 1 package
-- [0.x patch version bumps](#0x-patch-version-bumps): 25 packages
+- [0.x minor version bumps](#0x-minor-version-bumps): 3 packages
+- [0.0.x patch version bumps](#00x-patch-version-bumps): 2 packages
+- [0.x patch version bumps](#0x-patch-version-bumps): 36 packages
 - [Other minor version bumps](#other-minor-version-bumps): 4 packages
-- [Other patch version bumps](#other-patch-version-bumps): 5 packages
-- [Excluded dependency updates](#excluded-dependency-updates): 148 packages
+- [Other patch version bumps](#other-patch-version-bumps): 11 packages
+- [Excluded dependency updates](#excluded-dependency-updates): 129 packages
 
 ## Table of contents
 
 - [Breaking changes](#breaking-changes)
-  - [`@backstage/frontend-test-utils` (0.6.5 → 0.7.0-next.0)](#backstagefrontend-test-utils-065--070-next0)
+  - [`@backstage/frontend-app-api` (0.16.9 → 0.17.0-next.1)](#backstagefrontend-app-api-0169--0170-next1)
+  - [`@backstage/frontend-plugin-api` (0.18.2 → 0.19.0-next.1)](#backstagefrontend-plugin-api-0182--0190-next1)
+  - [`@backstage/frontend-test-utils` (0.6.5 → 0.7.0-next.1)](#backstagefrontend-test-utils-065--070-next1)
+  - [`@backstage/plugin-app-react` (0.2.8 → 0.3.0-next.1)](#backstageplugin-app-react-028--030-next1)
   - [`@backstage/plugin-scaffolder-backend-module-gcp` (0.2.26 → 0.3.0-next.0)](#backstageplugin-scaffolder-backend-module-gcp-0226--030-next0)
 - [Major version bumps](#major-version-bumps)
-  - [`@backstage/plugin-scaffolder-react` (2.1.1 → 3.0.0-next.0)](#backstageplugin-scaffolder-react-211--300-next0)
+  - [`@backstage/plugin-scaffolder-react` (2.1.1 → 3.0.0-next.1)](#backstageplugin-scaffolder-react-211--300-next1)
 - [0.x minor version bumps](#0x-minor-version-bumps)
+  - [`@backstage/plugin-app` (0.5.4 → 0.6.0-next.1)](#backstageplugin-app-054--060-next1)
+  - [`@backstage/plugin-events-node` (0.4.27 → 0.5.0-next.1)](#backstageplugin-events-node-0427--050-next1)
   - [`@backstage/plugin-techdocs-backend-module-zensical` (0.1.0 → 0.1.0-next.0)](#backstageplugin-techdocs-backend-module-zensical-010--010-next0)
 - [0.0.x patch version bumps](#00x-patch-version-bumps)
   - [`@backstage/plugin-kubernetes-cluster` (0.0.42 → 0.0.43-next.0)](#backstageplugin-kubernetes-cluster-0042--0043-next0)
+  - [`@backstage/release-manifests` (0.0.15 → 0.0.16-next.0)](#backstagerelease-manifests-0015--0016-next0)
 - [0.x patch version bumps](#0x-patch-version-bumps)
-  - [`@backstage/backend-defaults` (0.18.1 → 0.18.2-next.0)](#backstagebackend-defaults-0181--0182-next0)
-  - [`@backstage/backend-dynamic-feature-service` (0.8.8 → 0.8.9-next.0)](#backstagebackend-dynamic-feature-service-088--089-next0)
+  - [`@backstage/backend-defaults` (0.18.1 → 0.18.2-next.1)](#backstagebackend-defaults-0181--0182-next1)
+  - [`@backstage/backend-dynamic-feature-service` (0.8.8 → 0.8.9-next.1)](#backstagebackend-dynamic-feature-service-088--089-next1)
+  - [`@backstage/cli` (0.36.7 → 0.36.8-next.1)](#backstagecli-0367--0368-next1)
   - [`@backstage/cli-module-auth` (0.1.5 → 0.1.6-next.0)](#backstagecli-module-auth-015--016-next0)
-  - [`@backstage/cli-module-package-manager-yarn` (0.1.4 → 0.1.5-next.0)](#backstagecli-module-package-manager-yarn-014--015-next0)
-  - [`@backstage/cli-node` (0.3.5 → 0.3.6-next.0)](#backstagecli-node-035--036-next0)
-  - [`@backstage/create-app` (0.9.3 → 0.9.4-next.0)](#backstagecreate-app-093--094-next0)
+  - [`@backstage/cli-module-build` (0.1.9 → 0.1.10-next.1)](#backstagecli-module-build-019--0110-next1)
+  - [`@backstage/cli-module-new` (0.1.8 → 0.1.9-next.1)](#backstagecli-module-new-018--019-next1)
+  - [`@backstage/cli-module-package-manager-yarn` (0.1.4 → 0.1.5-next.1)](#backstagecli-module-package-manager-yarn-014--015-next1)
+  - [`@backstage/cli-node` (0.3.5 → 0.3.6-next.1)](#backstagecli-node-035--036-next1)
+  - [`@backstage/core-compat-api` (0.5.16 → 0.5.17-next.1)](#backstagecore-compat-api-0516--0517-next1)
+  - [`@backstage/create-app` (0.9.3 → 0.9.4-next.1)](#backstagecreate-app-093--094-next1)
   - [`@backstage/eslint-plugin` (0.3.3 → 0.3.4-next.0)](#backstageeslint-plugin-033--034-next0)
-  - [`@backstage/frontend-plugin-api` (0.18.2 → 0.18.3-next.0)](#backstagefrontend-plugin-api-0182--0183-next0)
+  - [`@backstage/frontend-defaults` (0.5.7 → 0.5.8-next.1)](#backstagefrontend-defaults-057--058-next1)
+  - [`@backstage/integration-aws-node` (0.2.3 → 0.2.4-next.0)](#backstageintegration-aws-node-023--024-next0)
   - [`@backstage/plugin-app-backend` (0.5.19 → 0.5.20-next.0)](#backstageplugin-app-backend-0519--0520-next0)
-  - [`@backstage/plugin-auth-backend` (0.30.2 → 0.30.3-next.0)](#backstageplugin-auth-backend-0302--0303-next0)
+  - [`@backstage/plugin-auth-backend` (0.30.2 → 0.30.3-next.1)](#backstageplugin-auth-backend-0302--0303-next1)
   - [`@backstage/plugin-auth-backend-module-auth0-provider` (0.4.6 → 0.4.7-next.0)](#backstageplugin-auth-backend-module-auth0-provider-046--047-next0)
   - [`@backstage/plugin-auth-backend-module-aws-alb-provider` (0.4.21 → 0.4.22-next.0)](#backstageplugin-auth-backend-module-aws-alb-provider-0421--0422-next0)
   - [`@backstage/plugin-auth-backend-module-azure-easyauth-provider` (0.2.25 → 0.2.26-next.0)](#backstageplugin-auth-backend-module-azure-easyauth-provider-0225--0226-next0)
@@ -44,28 +55,138 @@ Changes between 1.56.3 and 1.57.0-next.0 — 0 added, 0 removed, 187 upgraded, 2
   - [`@backstage/plugin-auth-backend-module-oidc-provider` (0.4.22 → 0.4.23-next.0)](#backstageplugin-auth-backend-module-oidc-provider-0422--0423-next0)
   - [`@backstage/plugin-auth-backend-module-pinniped-provider` (0.3.19 → 0.3.20-next.0)](#backstageplugin-auth-backend-module-pinniped-provider-0319--0320-next0)
   - [`@backstage/plugin-auth-backend-module-vmware-cloud-provider` (0.5.19 → 0.5.20-next.0)](#backstageplugin-auth-backend-module-vmware-cloud-provider-0519--0520-next0)
-  - [`@backstage/plugin-auth-node` (0.7.7 → 0.7.8-next.0)](#backstageplugin-auth-node-077--078-next0)
-  - [`@backstage/plugin-catalog-backend-module-gitlab` (0.8.9 → 0.8.10-next.0)](#backstageplugin-catalog-backend-module-gitlab-089--0810-next0)
+  - [`@backstage/plugin-auth-node` (0.7.7 → 0.7.8-next.1)](#backstageplugin-auth-node-077--078-next1)
+  - [`@backstage/plugin-catalog-backend-module-ai-model` (0.1.5 → 0.1.6-next.1)](#backstageplugin-catalog-backend-module-ai-model-015--016-next1)
+  - [`@backstage/plugin-catalog-backend-module-gitlab` (0.8.9 → 0.8.10-next.1)](#backstageplugin-catalog-backend-module-gitlab-089--0810-next1)
+  - [`@backstage/plugin-catalog-backend-module-incremental-ingestion` (0.9.0 → 0.9.1-next.1)](#backstageplugin-catalog-backend-module-incremental-ingestion-090--091-next1)
   - [`@backstage/plugin-catalog-backend-module-unprocessed` (0.6.17 → 0.6.18-next.0)](#backstageplugin-catalog-backend-module-unprocessed-0617--0618-next0)
-  - [`@backstage/plugin-events-backend` (0.6.7 → 0.6.8-next.0)](#backstageplugin-events-backend-067--068-next0)
-  - [`@backstage/plugin-kubernetes-common` (0.9.14 → 0.9.15-next.0)](#backstageplugin-kubernetes-common-0914--0915-next0)
+  - [`@backstage/plugin-events-backend` (0.6.7 → 0.6.8-next.1)](#backstageplugin-events-backend-067--068-next1)
+  - [`@backstage/plugin-events-backend-module-google-pubsub` (0.2.8 → 0.2.9-next.1)](#backstageplugin-events-backend-module-google-pubsub-028--029-next1)
+  - [`@backstage/plugin-kubernetes-backend` (0.21.12 → 0.21.13-next.1)](#backstageplugin-kubernetes-backend-02112--02113-next1)
+  - [`@backstage/plugin-kubernetes-common` (0.9.14 → 0.9.15-next.1)](#backstageplugin-kubernetes-common-0914--0915-next1)
+  - [`@backstage/plugin-notifications` (0.6.1 → 0.6.2-next.1)](#backstageplugin-notifications-061--062-next1)
+  - [`@backstage/plugin-notifications-backend` (0.6.10 → 0.6.11-next.1)](#backstageplugin-notifications-backend-0610--0611-next1)
   - [`@backstage/plugin-scaffolder-backend-module-gitlab` (0.12.1 → 0.12.2-next.0)](#backstageplugin-scaffolder-backend-module-gitlab-0121--0122-next0)
 - [Other minor version bumps](#other-minor-version-bumps)
   - [`@backstage/backend-app-api` (1.8.0 → 1.9.0-next.0)](#backstagebackend-app-api-180--190-next0)
-  - [`@backstage/plugin-scaffolder` (1.40.0 → 1.41.0-next.0)](#backstageplugin-scaffolder-1400--1410-next0)
-  - [`@backstage/plugin-techdocs-node` (2.2.0 → 2.2.0-next.0)](#backstageplugin-techdocs-node-220--220-next0)
-  - [`@techdocs/cli` (1.14.0 → 1.14.0-next.0)](#techdocscli-1140--1140-next0)
+  - [`@backstage/plugin-scaffolder` (1.40.0 → 1.41.0-next.1)](#backstageplugin-scaffolder-1400--1410-next1)
+  - [`@backstage/plugin-scaffolder-backend` (4.2.1 → 4.3.0-next.1)](#backstageplugin-scaffolder-backend-421--430-next1)
+  - [`@backstage/plugin-scaffolder-common` (2.3.1 → 2.4.0-next.0)](#backstageplugin-scaffolder-common-231--240-next0)
 - [Other patch version bumps](#other-patch-version-bumps)
-  - [`@backstage/plugin-catalog-backend` (4.0.2 → 4.0.3-next.0)](#backstageplugin-catalog-backend-402--403-next0)
-  - [`@backstage/plugin-scaffolder-backend` (4.2.1 → 4.2.2-next.0)](#backstageplugin-scaffolder-backend-421--422-next0)
-  - [`@backstage/plugin-search-backend-module-elasticsearch` (2.0.1 → 2.0.2-next.0)](#backstageplugin-search-backend-module-elasticsearch-201--202-next0)
-  - [`@backstage/plugin-techdocs` (1.19.0 → 1.19.1-next.0)](#backstageplugin-techdocs-1190--1191-next0)
-  - [`@backstage/plugin-techdocs-backend` (2.4.1 → 2.4.1-next.0)](#backstageplugin-techdocs-backend-241--241-next0)
+  - [`@backstage/catalog-client` (1.16.3 → 1.16.4-next.0)](#backstagecatalog-client-1163--1164-next0)
+  - [`@backstage/core-app-api` (1.20.6 → 1.20.7-next.1)](#backstagecore-app-api-1206--1207-next1)
+  - [`@backstage/core-plugin-api` (1.12.11 → 1.12.12-next.1)](#backstagecore-plugin-api-11211--11212-next1)
+  - [`@backstage/plugin-catalog` (2.0.10 → 2.0.11-next.1)](#backstageplugin-catalog-2010--2011-next1)
+  - [`@backstage/plugin-catalog-backend` (4.0.2 → 4.0.3-next.1)](#backstageplugin-catalog-backend-402--403-next1)
+  - [`@backstage/plugin-search-backend-module-elasticsearch` (2.0.1 → 2.0.2-next.1)](#backstageplugin-search-backend-module-elasticsearch-201--202-next1)
+  - [`@backstage/plugin-search-react` (1.11.9 → 1.11.10-next.1)](#backstageplugin-search-react-1119--11110-next1)
+  - [`@backstage/plugin-techdocs` (1.19.0 → 1.19.1-next.1)](#backstageplugin-techdocs-1190--1191-next1)
+  - [`@backstage/plugin-techdocs-backend` (2.4.1 → 2.4.2-next.1)](#backstageplugin-techdocs-backend-241--242-next1)
+  - [`@backstage/plugin-techdocs-node` (2.2.0 → 2.2.1-next.1)](#backstageplugin-techdocs-node-220--221-next1)
+  - [`@techdocs/cli` (1.14.0 → 1.14.1-next.0)](#techdocscli-1140--1141-next0)
 - [Excluded dependency updates](#excluded-dependency-updates)
 
 ## Breaking changes
 
-### `@backstage/frontend-test-utils` (0.6.5 → [0.7.0-next.0](../../changelogs/@backstage/frontend-test-utils.md#070-next0))
+### `@backstage/frontend-app-api` (0.16.9 → [0.17.0-next.1](../../changelogs/@backstage/frontend-app-api.md#0170-next1))
+
+#### 0.17.0-next.1
+
+##### Minor Changes
+
+- [`8c6c842`](https://github.com/backstage/backstage/commit/8c6c842): **BREAKING**: Removed the deprecated `createSpecializedApp` and `CreateSpecializedAppOptions` exports. Use `prepareSpecializedApp(options).finalize()` and `PrepareSpecializedAppOptions` instead. For sign-in or asynchronous session preparation, render the bootstrap app and subscribe with `onFinalized()` instead of calling `finalize()`.
+
+  Replace `advanced.apis` with `advanced.sessionState` from a previously finalized app to reuse its APIs, identity, and predicate context. Register custom APIs through `ApiBlueprint` extensions rather than passing an arbitrary API holder. Pass a supplied config API through the top-level `config` option. To reuse an identity supplied through the API holder, configure a sign-in page that calls `onSignInSuccess(identityApi)` and use the bootstrap/`onFinalized()` flow; an `ApiBlueprint` cannot override the app's identity proxy.
+
+##### Patch Changes
+
+- [`d514e4d`](https://github.com/backstage/backstage/commit/d514e4d): Updated app options to use the `ExtensionFactoryMiddleware` type from `@backstage/frontend-app-api` instead of the deprecated export from `@backstage/frontend-plugin-api`. Middleware behavior is unchanged.
+- [`e55a4a8`](https://github.com/backstage/backstage/commit/e55a4a8): Updated plugin identity handling to use `pluginId`, while preserving support for older plugin instances that only expose `id`.
+- [`c147b7a`](https://github.com/backstage/backstage/commit/c147b7a): Fixed disabled external route bindings falling back to their default targets during link resolution.
+
+  Navigation analytics now use the most specific routed extension even when it has no route reference, including nested extensions with an empty path.
+
+### `@backstage/frontend-plugin-api` (0.18.2 → [0.19.0-next.1](../../changelogs/@backstage/frontend-plugin-api.md#0190-next1))
+
+#### 0.19.0-next.1
+
+##### Minor Changes
+
+- [`d514e4d`](https://github.com/backstage/backstage/commit/d514e4d): **BREAKING**: Removed the deprecated `ExtensionFactoryMiddleware` type export. Import it from `@backstage/frontend-app-api` instead:
+
+  ```diff
+  -import type { ExtensionFactoryMiddleware } from '@backstage/frontend-plugin-api';
+  +import type { ExtensionFactoryMiddleware } from '@backstage/frontend-app-api';
+  ```
+
+  Add `@backstage/frontend-app-api` as a dependency of your app package if it is not already declared. Middleware behavior is unchanged.
+
+- [`62268a9`](https://github.com/backstage/backstage/commit/62268a9): **BREAKING**: Removed the deprecated `AnalyticsImplementationBlueprint` and `AnalyticsImplementationFactory` exports. Import them from `@backstage/plugin-app-react` instead. No changes to their usage are needed beyond updating the imports.
+- [`86ff5a3`](https://github.com/backstage/backstage/commit/86ff5a3): Removed the deprecated `PageTab` and `PluginOptions` types. Use `PageLayoutTab` and `CreateFrontendPluginOptions` instead.
+- [`dafdab8`](https://github.com/backstage/backstage/commit/dafdab8): **BREAKING**: Removed the deprecated `withApis` export. Wrap class components in a function component that uses `useApi` instead:
+
+  ```tsx
+  import { errorApiRef, useApi } from '@backstage/frontend-plugin-api';
+  import { MyClassComponent, MyClassComponentProps } from './MyClassComponent';
+
+  export function MyComponent(props: Omit<MyClassComponentProps, 'errorApi'>) {
+    const errorApi = useApi(errorApiRef);
+    return <MyClassComponent {...props} errorApi={errorApi} />;
+  }
+  ```
+
+- [`e55a4a8`](https://github.com/backstage/backstage/commit/e55a4a8): **BREAKING**: Removed the deprecated `FrontendPlugin.id` property from the public interface. Use `pluginId` instead. The runtime alias is retained for compatibility with older apps.
+- [`d84cf73`](https://github.com/backstage/backstage/commit/d84cf73): Removed the deprecated `DialogApi.show`, `DialogApi.showModal`, and `IconsApi.getIcon` methods. Use `DialogApi.open` with your own dialog presentation, and `IconsApi.icon` to retrieve icon elements.
+
+  The API references now use `core.dialog.v2` and `core.icons.v2`. Upgrade `@backstage/plugin-app` alongside this package, and update custom API implementations to use the new references.
+
+#### 0.18.3-next.0
+
+##### Patch Changes
+
+- [`ac2de0f`](https://github.com/backstage/backstage/commit/ac2de0f): Fixed a "Type instantiation is excessively deep and possibly infinite" error from `createFrontendPlugin` in plugins with many extensions, in particular with TypeScript 5.9 and later. In rare cases, the extensions in the type of a plugin may be in a different order or include extensions that were missing before.
+- [`8ca78a2`](https://github.com/backstage/backstage/commit/8ca78a2): Added `coreApis`, a namespace of core Utility API refs. The deprecated Alert API is excluded in favor of Toast. The individual refs with namespace equivalents are deprecated in favor of their `coreApis` equivalents, while remaining compatible. Provider-specific authentication refs remain separate and are not deprecated.
+
+### `@backstage/frontend-test-utils` (0.6.5 → [0.7.0-next.1](../../changelogs/@backstage/frontend-test-utils.md#070-next1))
+
+#### 0.7.0-next.1
+
+##### Minor Changes
+
+- [`76b1c3d`](https://github.com/backstage/backstage/commit/76b1c3d): Removed the deprecated standalone mock API type exports. Use the corresponding `mockApis` helpers to create instances and derive types as follows:
+
+  | Removed type                 | Replacement type                                                     |
+  | ---------------------------- | -------------------------------------------------------------------- |
+  | `MockAlertApi`               | `ReturnType<typeof mockApis.alert>`                                  |
+  | `MockAnalyticsApi`           | `ReturnType<typeof mockApis.analytics>`                              |
+  | `MockConfigApi`              | `ReturnType<typeof mockApis.config>`                                 |
+  | `MockErrorApi`               | `ReturnType<typeof mockApis.error>`                                  |
+  | `MockFeatureFlagsApi`        | `ReturnType<typeof mockApis.featureFlags>`                           |
+  | `MockFetchApi`               | `ReturnType<typeof mockApis.fetch>`                                  |
+  | `MockPermissionApi`          | `ReturnType<typeof mockApis.permission>`                             |
+  | `MockStorageApi`             | `ReturnType<typeof mockApis.storage>`                                |
+  | `MockTranslationApi`         | `ReturnType<typeof mockApis.translation>`                            |
+  | `MockErrorApiOptions`        | `NonNullable<Parameters<typeof mockApis.error>[0]>`                  |
+  | `MockFeatureFlagsApiOptions` | `NonNullable<Parameters<typeof mockApis.featureFlags>[0]>`           |
+  | `ErrorWithContext`           | `ReturnType<ReturnType<typeof mockApis.error>['getErrors']>[number]` |
+
+  Import `mockApis` from `@backstage/frontend-test-utils`. For example, use `mockApis.analytics()` to create an analytics mock and `ReturnType<typeof mockApis.analytics>` when you need an explicit instance type. Existing calls to the helpers require no changes. Inspection methods such as `getEvents`, `getErrors`, and `getAlerts`, along with legacy alert support, remain available. `MockFetchApiOptions` remains exported for configuring `mockApis.fetch`.
+
+- [`53ab1aa`](https://github.com/backstage/backstage/commit/53ab1aa): **BREAKING**: `renderInTestApp`, `renderTestApp` and `createExtensionTester` now throw for every error reported while creating the test app or extension tree, including the ones a real app only logs as warnings, such as `EXTENSION_IGNORED`. Previously `renderInTestApp` and `renderTestApp` ignored these errors, so a test could pass for an app that is broken. All three helpers accept a new `isExpectedError` option to allow specific errors.
+
+  **Migration:** fix the reported error in the test setup. The error message names the code to allow if the error is expected:
+
+  ```ts
+  renderInTestApp(<MyComponent />, {
+    isExpectedError: error =>
+      error.code === 'EXTENSION_INPUT_DATA_IGNORED' &&
+      error.context.node.spec.id === 'page:my-plugin',
+  });
+  ```
+
+  A common one is `API_FACTORY_CONFLICT` from providing an API that another plugin owns, such as a `core.*` API passed in `extensions`. That override was always rejected, so remove it, or use the `apis` option to replace an API in a test.
+
+- [`e3d50c4`](https://github.com/backstage/backstage/commit/e3d50c4): Removed the deprecated `show` and `showModal` methods from dialog test helpers, and `getIcon` from icons test helpers. Update tests to use `open` for dialogs and `icon` for icon elements.
 
 #### 0.7.0-next.0
 
@@ -87,6 +208,16 @@ Changes between 1.56.3 and 1.57.0-next.0 — 0 added, 0 removed, 187 upgraded, 2
 
   Fixed storage fake isolation for nested buckets with the same name under different parents.
 
+### `@backstage/plugin-app-react` (0.2.8 → [0.3.0-next.1](../../changelogs/@backstage/plugin-app-react.md#030-next1))
+
+#### 0.3.0-next.1
+
+##### Minor Changes
+
+- [`5c29a89`](https://github.com/backstage/backstage/commit/5c29a89): **BREAKING**: Removed the deprecated flat `items` prop from custom navigation components. Use the `navItems` collection instead.
+
+  Use `navItems.rest()` instead of iterating over `items`. Replace `item.to` with `item.href` and `item.text` with `item.title`. The `item.icon` value is a React element, so render it directly instead of using it as a component type.
+
 ### `@backstage/plugin-scaffolder-backend-module-gcp` (0.2.26 → [0.3.0-next.0](../../changelogs/@backstage/plugin-scaffolder-backend-module-gcp.md#030-next0))
 
 #### 0.3.0-next.0
@@ -99,7 +230,13 @@ Changes between 1.56.3 and 1.57.0-next.0 — 0 added, 0 removed, 187 upgraded, 2
 
 ## Major version bumps
 
-### `@backstage/plugin-scaffolder-react` (2.1.1 → [3.0.0-next.0](../../changelogs/@backstage/plugin-scaffolder-react.md#300-next0))
+### `@backstage/plugin-scaffolder-react` (2.1.1 → [3.0.0-next.1](../../changelogs/@backstage/plugin-scaffolder-react.md#300-next1))
+
+#### 3.0.0-next.1
+
+##### Minor Changes
+
+- [`ff0ef74`](https://github.com/backstage/backstage/commit/ff0ef74): The scaffolder wizard now shows or hides parameter steps based on their `when` condition, and values from hidden steps are left out of the submitted parameters.
 
 #### 3.0.0-next.0
 
@@ -112,6 +249,34 @@ Changes between 1.56.3 and 1.57.0-next.0 — 0 added, 0 removed, 187 upgraded, 2
 - [`1c461ca`](https://github.com/backstage/backstage/commit/1c461ca): Fixed BUI array item headings to use the item schema title and honor an explicit item `ui:title` without adding a numeric suffix. Untitled items retain the numbered fallback.
 
 ## 0.x minor version bumps
+
+### `@backstage/plugin-app` (0.5.4 → [0.6.0-next.1](../../changelogs/@backstage/plugin-app.md#060-next1))
+
+#### 0.6.0-next.1
+
+##### Minor Changes
+
+- [`cedb355`](https://github.com/backstage/backstage/commit/cedb355): The deprecated `DialogApi.show` and `DialogApi.showModal` methods now throw errors. Use `DialogApi.open` and provide your own dialog surface and dismissal handling.
+
+  Added support for the new icons API while preserving `IconsApi.getIcon` for older plugins.
+
+- [`86681bf`](https://github.com/backstage/backstage/commit/86681bf): Removed the ignored `anchorOrigin` option from the built-in alert display extension and toast display props. Remove this option from your extension configuration. Toasts continue to appear at the bottom center of the screen.
+- [`24bde66`](https://github.com/backstage/backstage/commit/24bde66): Custom navigation components now receive `navItems` without the deprecated flat `items` collection.
+
+##### Patch Changes
+
+- [`e55a4a8`](https://github.com/backstage/backstage/commit/e55a4a8): Updated plugin identity handling to use `pluginId`, while preserving support for older plugin instances that only expose `id`.
+- [`8f36712`](https://github.com/backstage/backstage/commit/8f36712): Updated the app runtime to use the analytics implementation APIs from `@backstage/plugin-app-react`.
+
+### `@backstage/plugin-events-node` (0.4.27 → [0.5.0-next.1](../../changelogs/@backstage/plugin-events-node.md#050-next1))
+
+#### 0.5.0-next.1
+
+##### Minor Changes
+
+- [`a70aaea`](https://github.com/backstage/backstage/commit/a70aaea): The requests passed to request validators now include the parsed query string. The request rejection details now also
+  support an optional `contentType` option for the provided payload, defaulting to `application/json` but also allowing
+  `text/plain`.
 
 ### `@backstage/plugin-techdocs-backend-module-zensical` (0.1.0 → [0.1.0-next.0](../../changelogs/@backstage/plugin-techdocs-backend-module-zensical.md#010-next0))
 
@@ -127,9 +292,24 @@ _No changelog entries found._
 
 - [`ca14116`](https://github.com/backstage/backstage/commit/ca14116): Moved `kubernetes-models` and `@kubernetes-models/apimachinery` to dev dependencies, since they are only used for types. Backends no longer install `kubernetes-models` through `@backstage/plugin-kubernetes-common`.
 
+### `@backstage/release-manifests` (0.0.15 → [0.0.16-next.0](../../changelogs/@backstage/release-manifests.md#0016-next0))
+
+#### 0.0.16-next.0
+
+##### Patch Changes
+
+- [`b8777d1`](https://github.com/backstage/backstage/commit/b8777d1): Updated the `requirements` example in the README to the Node.js 24 and 26 range.
+
 ## 0.x patch version bumps
 
-### `@backstage/backend-defaults` (0.18.1 → [0.18.2-next.0](../../changelogs/@backstage/backend-defaults.md#0182-next0))
+### `@backstage/backend-defaults` (0.18.1 → [0.18.2-next.1](../../changelogs/@backstage/backend-defaults.md#0182-next1))
+
+#### 0.18.2-next.1
+
+##### Patch Changes
+
+- [`f81ca4e`](https://github.com/backstage/backstage/commit/f81ca4e): The AWS S3 URL reader no longer assumes the configured `roleArn` a second time when the matching account under `aws.accounts` already provides credentials for that exact role, for example through a web identity token file. Previously the role had to trust itself for this setup to work. The role is still assumed explicitly when the integration sets an `externalId`.
+- [`9fc68ae`](https://github.com/backstage/backstage/commit/9fc68ae): Fixed the `valkey` cache store sharing keys between plugins. Two plugins that cached a value under the same key could read and overwrite each other's entries. Keys are now stored under the plugin namespace, the same way the `redis` store does it. Cache entries now use new key names, so existing entries are no longer read and are rebuilt as plugins write new values. Old entries stay in Valkey until their TTL expires. Entries without a TTL, and the per-plugin key index sets that the old layout created, stay until you remove them manually.
 
 #### 0.18.2-next.0
 
@@ -138,13 +318,23 @@ _No changelog entries found._
 - [`80cc892`](https://github.com/backstage/backstage/commit/80cc892): Removed the runtime dependency on `@backstage/cli-node`, which was only used for types. Backends no longer install the CLI tooling packages through `@backstage/backend-defaults`.
 - [`918ca98`](https://github.com/backstage/backstage/commit/918ca98): Updated dependency `jose` to `^6.1.0`. Existing ES256 token issuance and verification are unchanged. ML-DSA algorithms can be used when the runtime supports them.
 
-### `@backstage/backend-dynamic-feature-service` (0.8.8 → [0.8.9-next.0](../../changelogs/@backstage/backend-dynamic-feature-service.md#089-next0))
+### `@backstage/backend-dynamic-feature-service` (0.8.8 → [0.8.9-next.1](../../changelogs/@backstage/backend-dynamic-feature-service.md#089-next1))
 
 #### 0.8.9-next.0
 
 ##### Patch Changes
 
 - [`c999b77`](https://github.com/backstage/backstage/commit/c999b77): Dynamic backend plugins can now require the packages they share with the backend when those packages are not in the root `node_modules`, as with the pnpm `isolated` node linker. They are found through the backend package and through this package. With the default pnpm hoisting, this includes the packages that pnpm hoists into `node_modules/.pnpm/node_modules`. With `hoist: false`, only the direct dependencies of the backend package and of this package are found. Everything that was searched before is still searched first, so a module that was found before is found in the same place. The exception is plugins inside the Backstage root on Windows, which did not search the root `node_modules` before, other than through `NODE_PATH`. It is now searched in the same order as on other platforms.
+
+### `@backstage/cli` (0.36.7 → [0.36.8-next.1](../../changelogs/@backstage/cli.md#0368-next1))
+
+#### 0.36.8-next.1
+
+##### Patch Changes
+
+- [`04a54e2`](https://github.com/backstage/backstage/commit/04a54e2): Switched the compilation target to ES2024, which all supported Node.js versions fully support. Package builds, app bundles, and the backend development server now compile code for ES2024, and the TypeScript `target` and `lib` options in `@backstage/cli/config/tsconfig.json` are set to `ES2024`. This requires TypeScript 5.9 or later, which is now the oldest supported version according to the [versioning policy](https://backstage.io/docs/overview/versioning-policy#typescript-releases).
+
+  The `lib` change allows code to use ES2024 built-in APIs such as `Object.groupBy` and `Promise.withResolvers`. Backstage doesn't include polyfills, so frontend code that uses these APIs needs at least Chrome or Edge 119, Firefox 121, or Safari 17.4.
 
 ### `@backstage/cli-module-auth` (0.1.5 → [0.1.6-next.0](../../changelogs/@backstage/cli-module-auth.md#016-next0))
 
@@ -154,7 +344,26 @@ _No changelog entries found._
 
 - [`4d94005`](https://github.com/backstage/backstage/commit/4d94005): Fixed `auth logout` so that it revokes the refresh token on the server. Previously the revocation request was rejected because it did not identify the CLI client, which left the session valid until it expired.
 
-### `@backstage/cli-module-package-manager-yarn` (0.1.4 → [0.1.5-next.0](../../changelogs/@backstage/cli-module-package-manager-yarn.md#015-next0))
+### `@backstage/cli-module-build` (0.1.9 → [0.1.10-next.1](../../changelogs/@backstage/cli-module-build.md#0110-next1))
+
+#### 0.1.10-next.1
+
+##### Patch Changes
+
+- [`04a54e2`](https://github.com/backstage/backstage/commit/04a54e2): Switched the compilation target to ES2024, which all supported Node.js versions fully support. Package builds, app bundles, and the backend development server now compile code for ES2024, and the TypeScript `target` and `lib` options in `@backstage/cli/config/tsconfig.json` are set to `ES2024`. This requires TypeScript 5.9 or later, which is now the oldest supported version according to the [versioning policy](https://backstage.io/docs/overview/versioning-policy#typescript-releases).
+
+  The `lib` change allows code to use ES2024 built-in APIs such as `Object.groupBy` and `Promise.withResolvers`. Backstage doesn't include polyfills, so frontend code that uses these APIs needs at least Chrome or Edge 119, Firefox 121, or Safari 17.4.
+
+### `@backstage/cli-module-new` (0.1.8 → [0.1.9-next.1](../../changelogs/@backstage/cli-module-new.md#019-next1))
+
+#### 0.1.9-next.1
+
+##### Patch Changes
+
+- [`e769ccb`](https://github.com/backstage/backstage/commit/e769ccb): Fix an issue where creating a new package with the `cli-module` role would crash during the installation phase due to an unhandled role mapping.
+- [`33894d6`](https://github.com/backstage/backstage/commit/33894d6): Fixed an issue where scaffolding templates on Windows could generate corrupted file names for files in subdirectories.
+
+### `@backstage/cli-module-package-manager-yarn` (0.1.4 → [0.1.5-next.1](../../changelogs/@backstage/cli-module-package-manager-yarn.md#015-next1))
 
 #### 0.1.5-next.0
 
@@ -162,7 +371,16 @@ _No changelog entries found._
 
 - [`1cffd6f`](https://github.com/backstage/backstage/commit/1cffd6f): Made `@yarnpkg/cli`, `@yarnpkg/core`, and `@yarnpkg/plugin-patch` optional peer dependencies. `@yarnpkg/core@4.9.2` was published with a dependency on a patch file that only exists in the Yarn repository, which made installation fail for all projects depending on this module. To use the `pm verify-patches` command until this is fixed upstream, add these packages as `devDependencies` in your root `package.json`, together with the resolution `"@yarnpkg/core/got": "npm:^11.8.6"`. They will become regular dependencies again once a fixed version of `@yarnpkg/core` is published.
 
-### `@backstage/cli-node` (0.3.5 → [0.3.6-next.0](../../changelogs/@backstage/cli-node.md#036-next0))
+### `@backstage/cli-node` (0.3.5 → [0.3.6-next.1](../../changelogs/@backstage/cli-node.md#036-next1))
+
+#### 0.3.6-next.1
+
+##### Patch Changes
+
+- [`a96b99c`](https://github.com/backstage/backstage/commit/a96b99c): The Node.js module transform now uses the synchronous `module.registerHooks()` API when it is available, which avoids the `module.register()` deprecation warning printed by Node.js 26. On older Node.js versions it continues to use `module.register()`.
+- [`04a54e2`](https://github.com/backstage/backstage/commit/04a54e2): Switched the compilation target to ES2024, which all supported Node.js versions fully support. Package builds, app bundles, and the backend development server now compile code for ES2024, and the TypeScript `target` and `lib` options in `@backstage/cli/config/tsconfig.json` are set to `ES2024`. This requires TypeScript 5.9 or later, which is now the oldest supported version according to the [versioning policy](https://backstage.io/docs/overview/versioning-policy#typescript-releases).
+
+  The `lib` change allows code to use ES2024 built-in APIs such as `Object.groupBy` and `Promise.withResolvers`. Backstage doesn't include polyfills, so frontend code that uses these APIs needs at least Chrome or Edge 119, Firefox 121, or Safari 17.4.
 
 #### 0.3.6-next.0
 
@@ -170,7 +388,27 @@ _No changelog entries found._
 
 - [`4294614`](https://github.com/backstage/backstage/commit/4294614): Commands run through `runCli` now exit with the exit code they set, instead of always exiting with `0` on completion. For example, `catalog validate` and `template dry-run` now exit with a non-zero code when the input is invalid.
 
-### `@backstage/create-app` (0.9.3 → [0.9.4-next.0](../../changelogs/@backstage/create-app.md#094-next0))
+### `@backstage/core-compat-api` (0.5.16 → [0.5.17-next.1](../../changelogs/@backstage/core-compat-api.md#0517-next1))
+
+#### 0.5.17-next.1
+
+##### Patch Changes
+
+- [`e55a4a8`](https://github.com/backstage/backstage/commit/e55a4a8): Updated compatibility with the `FrontendPlugin` interface after removal of its deprecated `id` property, retaining support for older plugin instances.
+- [`e3d50c4`](https://github.com/backstage/backstage/commit/e3d50c4): Added support for the new icons API when rendering plugins in old-system apps, while continuing to provide the original icons API for older plugins. Legacy app context icon lookups continue to return components.
+
+### `@backstage/create-app` (0.9.3 → [0.9.4-next.1](../../changelogs/@backstage/create-app.md#094-next1))
+
+#### 0.9.4-next.1
+
+##### Patch Changes
+
+- [`04a54e2`](https://github.com/backstage/backstage/commit/04a54e2): Bumped TypeScript in the app templates to `~5.9.0`.
+- [`b8777d1`](https://github.com/backstage/backstage/commit/b8777d1): New apps now support Node.js 24 and 26, in line with the [versioning policy](https://backstage.io/docs/overview/versioning-policy#nodejs-releases). The `engines` field in the app template is set to `^24.15.0 || ^26.13.0`, and creating a new app now requires Node.js 24 (24.15.0 or later) or Node.js 26 (26.13.0 or later). 24.15.0 is the lowest version that all dependencies support, and 26.13.0 is the first Node.js 26 LTS release.
+
+  To update an existing app, set `engines.node` in your root `package.json` to `^24.15.0 || ^26.13.0`, and update the Node.js version used in your CI workflows and `Dockerfile` if needed.
+
+  If your `yarn.lock` resolves `avsc` to a version older than 5.7.8, run `yarn up -R avsc`. Those versions crash on load on Node.js 25 and later, which breaks Jest tests that import the AsyncAPI widget from `@backstage/plugin-api-docs`. If it resolves `node-gyp` to 12.3.0, run `yarn up -R node-gyp`, since that version can't download Node.js headers through a proxy on Node.js 26.
 
 #### 0.9.4-next.0
 
@@ -188,14 +426,21 @@ _No changelog entries found._
 
 - [`245d9e3`](https://github.com/backstage/backstage/commit/245d9e3): Internal changes for TypeScript 7 compatibility. The rules work the same as before.
 
-### `@backstage/frontend-plugin-api` (0.18.2 → [0.18.3-next.0](../../changelogs/@backstage/frontend-plugin-api.md#0183-next0))
+### `@backstage/frontend-defaults` (0.5.7 → [0.5.8-next.1](../../changelogs/@backstage/frontend-defaults.md#058-next1))
 
-#### 0.18.3-next.0
+#### 0.5.8-next.1
 
 ##### Patch Changes
 
-- [`ac2de0f`](https://github.com/backstage/backstage/commit/ac2de0f): Fixed a "Type instantiation is excessively deep and possibly infinite" error from `createFrontendPlugin` in plugins with many extensions, in particular with TypeScript 5.9 and later. In rare cases, the extensions in the type of a plugin may be in a different order or include extensions that were missing before.
-- [`8ca78a2`](https://github.com/backstage/backstage/commit/8ca78a2): Added `coreApis`, a namespace of core Utility API refs. The deprecated Alert API is excluded in favor of Toast. The individual refs with namespace equivalents are deprecated in favor of their `coreApis` equivalents, while remaining compatible. Provider-specific authentication refs remain separate and are not deprecated.
+- [`d514e4d`](https://github.com/backstage/backstage/commit/d514e4d): Updated app options to use the `ExtensionFactoryMiddleware` type from `@backstage/frontend-app-api` instead of the deprecated export from `@backstage/frontend-plugin-api`. Middleware behavior is unchanged.
+
+### `@backstage/integration-aws-node` (0.2.3 → [0.2.4-next.0](../../changelogs/@backstage/integration-aws-node.md#024-next0))
+
+#### 0.2.4-next.0
+
+##### Patch Changes
+
+- [`f81ca4e`](https://github.com/backstage/backstage/commit/f81ca4e): Credential providers returned by `DefaultAwsCredentialsManager` now include a `roleArn` field with the ARN of the IAM role the credentials are for, when the account is configured to assume a role.
 
 ### `@backstage/plugin-app-backend` (0.5.19 → [0.5.20-next.0](../../changelogs/@backstage/plugin-app-backend.md#0520-next0))
 
@@ -206,7 +451,13 @@ _No changelog entries found._
 - [`11f4455`](https://github.com/backstage/backstage/commit/11f4455): Documented that if your package manager doesn't hoist workspace packages, for example pnpm with `hoistWorkspacePackages: false`, you need to add the app package to the `dependencies` of the root `package.json`.
 - [`2fea3e2`](https://github.com/backstage/backstage/commit/2fea3e2): Reduced startup database traffic and memory usage when checking for previously cached static assets.
 
-### `@backstage/plugin-auth-backend` (0.30.2 → [0.30.3-next.0](../../changelogs/@backstage/plugin-auth-backend.md#0303-next0))
+### `@backstage/plugin-auth-backend` (0.30.2 → [0.30.3-next.1](../../changelogs/@backstage/plugin-auth-backend.md#0303-next1))
+
+#### 0.30.3-next.1
+
+##### Patch Changes
+
+- [`97ee785`](https://github.com/backstage/backstage/commit/97ee785): Allow Cursor clients to use Client ID Metadata Documents by default.
 
 #### 0.30.3-next.0
 
@@ -288,7 +539,7 @@ _No changelog entries found._
 
 - [`918ca98`](https://github.com/backstage/backstage/commit/918ca98): Updated dependency `jose` to `^6.1.0`. Existing ES256 token issuance and verification are unchanged. ML-DSA algorithms can be used when the runtime supports them.
 
-### `@backstage/plugin-auth-node` (0.7.7 → [0.7.8-next.0](../../changelogs/@backstage/plugin-auth-node.md#078-next0))
+### `@backstage/plugin-auth-node` (0.7.7 → [0.7.8-next.1](../../changelogs/@backstage/plugin-auth-node.md#078-next1))
 
 #### 0.7.8-next.0
 
@@ -296,13 +547,31 @@ _No changelog entries found._
 
 - [`918ca98`](https://github.com/backstage/backstage/commit/918ca98): Updated dependency `jose` to `^6.1.0`. Existing ES256 token issuance and verification are unchanged. ML-DSA algorithms can be used when the runtime supports them.
 
-### `@backstage/plugin-catalog-backend-module-gitlab` (0.8.9 → [0.8.10-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-gitlab.md#0810-next0))
+### `@backstage/plugin-catalog-backend-module-ai-model` (0.1.5 → [0.1.6-next.1](../../changelogs/@backstage/plugin-catalog-backend-module-ai-model.md#016-next1))
+
+#### 0.1.6-next.1
+
+##### Patch Changes
+
+- [`f74cd6a`](https://github.com/backstage/backstage/commit/f74cd6a): Document how to declare relation pairs for custom kinds when using the catalog model layer.
+
+### `@backstage/plugin-catalog-backend-module-gitlab` (0.8.9 → [0.8.10-next.1](../../changelogs/@backstage/plugin-catalog-backend-module-gitlab.md#0810-next1))
 
 #### 0.8.10-next.0
 
 ##### Patch Changes
 
 - [`ca14116`](https://github.com/backstage/backstage/commit/ca14116): Moved `@gitbeaker/rest` to dev dependencies, since it is only used for types.
+
+### `@backstage/plugin-catalog-backend-module-incremental-ingestion` (0.9.0 → [0.9.1-next.1](../../changelogs/@backstage/plugin-catalog-backend-module-incremental-ingestion.md#091-next1))
+
+#### 0.9.1-next.1
+
+##### Patch Changes
+
+- [`7baaad7`](https://github.com/backstage/backstage/commit/7baaad7): Fixed incremental ingestion getting stuck when a provider emits the same entity more than once in a single page or event. Since the previous release, this made every attempt to ingest that page fail on PostgreSQL with `ON CONFLICT DO UPDATE command cannot affect row a second time`, so the provider never got past it. Now only the last copy of each entity is kept. A warning names the provider and some of the repeated entity refs, at most once every 10 minutes per provider.
+
+  Providers should still emit each entity at most once per page. If the copies differ and arrive in a different order on each run, the stored entity can change on every run.
 
 ### `@backstage/plugin-catalog-backend-module-unprocessed` (0.6.17 → [0.6.18-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-unprocessed.md#0618-next0))
 
@@ -312,7 +581,15 @@ _No changelog entries found._
 
 - [`af39b90`](https://github.com/backstage/backstage/commit/af39b90): Fixed pending entities being returned without their entity ID and entity ref.
 
-### `@backstage/plugin-events-backend` (0.6.7 → [0.6.8-next.0](../../changelogs/@backstage/plugin-events-backend.md#068-next0))
+### `@backstage/plugin-events-backend` (0.6.7 → [0.6.8-next.1](../../changelogs/@backstage/plugin-events-backend.md#068-next1))
+
+#### 0.6.8-next.1
+
+##### Patch Changes
+
+- [`a70aaea`](https://github.com/backstage/backstage/commit/a70aaea): The requests passed to request validators now include the parsed query string. The request rejection details now also
+  support an optional `contentType` option for the provided payload, defaulting to `application/json` but also allowing
+  `text/plain`.
 
 #### 0.6.8-next.0
 
@@ -320,13 +597,51 @@ _No changelog entries found._
 
 - [`a1ca033`](https://github.com/backstage/backstage/commit/a1ca033): Fixed the database event bus listener connection inheriting the trace context of the request that first opened it. Its keepalive queries are now recorded as separate root spans instead of being attached to that request's trace for as long as the connection stays open.
 
-### `@backstage/plugin-kubernetes-common` (0.9.14 → [0.9.15-next.0](../../changelogs/@backstage/plugin-kubernetes-common.md#0915-next0))
+### `@backstage/plugin-events-backend-module-google-pubsub` (0.2.8 → [0.2.9-next.1](../../changelogs/@backstage/plugin-events-backend-module-google-pubsub.md#029-next1))
+
+#### 0.2.9-next.1
+
+##### Patch Changes
+
+- [`b03427c`](https://github.com/backstage/backstage/commit/b03427c): Updated dependency `@google-cloud/pubsub` to `^6.3.2`. The new version requires Node.js 22 or later, which matches the Node.js versions that Backstage supports.
+
+### `@backstage/plugin-kubernetes-backend` (0.21.12 → [0.21.13-next.1](../../changelogs/@backstage/plugin-kubernetes-backend.md#02113-next1))
+
+#### 0.21.13-next.1
+
+##### Patch Changes
+
+- [`68abde4`](https://github.com/backstage/backstage/commit/68abde4): Allow AWS Kubernetes clusters to select credentials from a configured AWS account without assuming another role. Set `kubernetes.io/aws-account-id` in the cluster's auth metadata to use that account's credentials directly, including credentials obtained through web identity federation.
+
+### `@backstage/plugin-kubernetes-common` (0.9.14 → [0.9.15-next.1](../../changelogs/@backstage/plugin-kubernetes-common.md#0915-next1))
+
+#### 0.9.15-next.1
+
+##### Patch Changes
+
+- [`68abde4`](https://github.com/backstage/backstage/commit/68abde4): Allow AWS Kubernetes clusters to select credentials from a configured AWS account without assuming another role. Set `kubernetes.io/aws-account-id` in the cluster's auth metadata to use that account's credentials directly, including credentials obtained through web identity federation.
 
 #### 0.9.15-next.0
 
 ##### Patch Changes
 
 - [`ca14116`](https://github.com/backstage/backstage/commit/ca14116): Moved `kubernetes-models` and `@kubernetes-models/apimachinery` to dev dependencies, since they are only used for types. Backends no longer install `kubernetes-models` through `@backstage/plugin-kubernetes-common`.
+
+### `@backstage/plugin-notifications` (0.6.1 → [0.6.2-next.1](../../changelogs/@backstage/plugin-notifications.md#062-next1))
+
+#### 0.6.2-next.1
+
+##### Patch Changes
+
+- [`555d6ff`](https://github.com/backstage/backstage/commit/555d6ff): Updated custom notification icons to use the element-based icons API. Missing icons still fall back to the notification severity icon.
+
+### `@backstage/plugin-notifications-backend` (0.6.10 → [0.6.11-next.1](../../changelogs/@backstage/plugin-notifications-backend.md#0611-next1))
+
+#### 0.6.11-next.1
+
+##### Patch Changes
+
+- [`c0ea056`](https://github.com/backstage/backstage/commit/c0ea056): Fixed broadcast notifications losing their saved status when marked as read or unread, and losing their read status when saved or unsaved.
 
 ### `@backstage/plugin-scaffolder-backend-module-gitlab` (0.12.1 → [0.12.2-next.0](../../changelogs/@backstage/plugin-scaffolder-backend-module-gitlab.md#0122-next0))
 
@@ -347,7 +662,7 @@ _No changelog entries found._
 
 - [`1c93987`](https://github.com/backstage/backstage/commit/1c93987): Add optional `beginAt` timestamps to `PluginStartupResult` and `ModuleStartupResult` in the `BackendStartupResult` returned by `backend.start()`. The new timestamp marks when a plugin's or module's init function was invoked, i.e. after its dependencies were resolved. Together with the existing `resultAt` this makes it possible to see how long each individual plugin's or module's init function took, separate from time spent waiting for other plugins to initialize. It is undefined when a plugin or module failed before reaching initialization.
 
-### `@backstage/plugin-scaffolder` (1.40.0 → [1.41.0-next.0](../../changelogs/@backstage/plugin-scaffolder.md#1410-next0))
+### `@backstage/plugin-scaffolder` (1.40.0 → [1.41.0-next.1](../../changelogs/@backstage/plugin-scaffolder.md#1410-next1))
 
 #### 1.41.0-next.0
 
@@ -360,17 +675,82 @@ _No changelog entries found._
 
 - [`111c6ce`](https://github.com/backstage/backstage/commit/111c6ce): Keep the task button bar at the user's chosen visibility when a task completes, so log visibility and start-over controls remain accessible. Action availability continues to depend on task state and permissions.
 
-### `@backstage/plugin-techdocs-node` (2.2.0 → [2.2.0-next.0](../../changelogs/@backstage/plugin-techdocs-node.md#220-next0))
+### `@backstage/plugin-scaffolder-backend` (4.2.1 → [4.3.0-next.1](../../changelogs/@backstage/plugin-scaffolder-backend.md#430-next1))
 
-_No changelog entries found._
+#### 4.3.0-next.1
 
-### `@techdocs/cli` (1.14.0 → [1.14.0-next.0](../../changelogs/@techdocs/cli.md#1140-next0))
+##### Minor Changes
 
-_No changelog entries found._
+- [`ff0ef74`](https://github.com/backstage/backstage/commit/ff0ef74): Added support for `when` conditions on parameter steps. Steps whose condition evaluates to false are skipped during validation, and their values are removed before the task runs. Also updated Nunjitsu to 0.7.0, with no change to existing templating behavior.
+
+##### Patch Changes
+
+- [`2fac95b`](https://github.com/backstage/backstage/commit/2fac95b): Group the Software Templates API documentation by functionality instead of placing all endpoints under "Untagged".
+
+#### 4.2.2-next.0
+
+##### Patch Changes
+
+- [`be5074c`](https://github.com/backstage/backstage/commit/be5074c): Preserve public task log values when rendering without secrets omits an earlier object field, while continuing to redact secret-derived keys and values.
+- [`62eaba9`](https://github.com/backstage/backstage/commit/62eaba9): Fixed custom task permission rules registered by backend modules being ignored when authorizing task access and filtering task lists.
+
+### `@backstage/plugin-scaffolder-common` (2.3.1 → [2.4.0-next.0](../../changelogs/@backstage/plugin-scaffolder-common.md#240-next0))
+
+#### 2.4.0-next.0
+
+##### Minor Changes
+
+- [`ff0ef74`](https://github.com/backstage/backstage/commit/ff0ef74): Added support for `when` conditions on parameter steps, allowing templates to show or hide wizard steps based on earlier answers, for example `${{ parameters.cloudProvider === 'AWS' }}`. Also added the alpha `resolveParameterSteps` and `filterHiddenStepValues` helpers for working out which steps are visible and removing values from hidden steps.
 
 ## Other patch version bumps
 
-### `@backstage/plugin-catalog-backend` (4.0.2 → [4.0.3-next.0](../../changelogs/@backstage/plugin-catalog-backend.md#403-next0))
+### `@backstage/catalog-client` (1.16.3 → [1.16.4-next.0](../../changelogs/@backstage/catalog-client.md#1164-next0))
+
+#### 1.16.4-next.0
+
+##### Patch Changes
+
+- [`9c76a81`](https://github.com/backstage/backstage/commit/9c76a81): Documented that the `entities/by-query` endpoint currently applies only the first `orderField`; any additional order fields are ignored. Updated the OpenAPI spec parameter description and the Software Catalog API docs accordingly. No behavior change. Refs #17560.
+
+### `@backstage/core-app-api` (1.20.6 → [1.20.7-next.1](../../changelogs/@backstage/core-app-api.md#1207-next1))
+
+#### 1.20.7-next.1
+
+##### Patch Changes
+
+- [`9c97ff4`](https://github.com/backstage/backstage/commit/9c97ff4): Fixed the OAuth "Login Required" popup (`OAuthRequestDialog`) appearing after a transient network failure during a background token refresh — for example right after the machine wakes from sleep, when the session has not actually expired.
+
+### `@backstage/core-plugin-api` (1.12.11 → [1.12.12-next.1](../../changelogs/@backstage/core-plugin-api.md#11212-next1))
+
+#### 1.12.12-next.1
+
+##### Patch Changes
+
+- [`e55a4a8`](https://github.com/backstage/backstage/commit/e55a4a8): Updated compatibility with the `FrontendPlugin` interface after removal of its deprecated `id` property, retaining support for older plugin instances.
+- [`315f7bc`](https://github.com/backstage/backstage/commit/315f7bc): Made the legacy icon component and `withApis` compatibility APIs independent of `@backstage/frontend-plugin-api` so that they remain available to legacy frontend apps.
+
+  Deprecated `withApis`. Wrap class components in a function component that uses `useApi` instead.
+
+- [`e3d50c4`](https://github.com/backstage/backstage/commit/e3d50c4): Updated `useApp` to support the new icons API. Its `getSystemIcon` and `getSystemIcons` methods continue to return icon components.
+
+### `@backstage/plugin-catalog` (2.0.10 → [2.0.11-next.1](../../changelogs/@backstage/plugin-catalog.md#2011-next1))
+
+#### 2.0.11-next.1
+
+##### Patch Changes
+
+- [`118d84a`](https://github.com/backstage/backstage/commit/118d84a): Updated catalog tabs to render icon elements through the current frontend icon API.
+
+### `@backstage/plugin-catalog-backend` (4.0.2 → [4.0.3-next.1](../../changelogs/@backstage/plugin-catalog-backend.md#403-next1))
+
+#### 4.0.3-next.1
+
+##### Patch Changes
+
+- [`9c76a81`](https://github.com/backstage/backstage/commit/9c76a81): Documented that the `entities/by-query` endpoint currently applies only the first `orderField`; any additional order fields are ignored. Updated the OpenAPI spec parameter description and the Software Catalog API docs accordingly. No behavior change. Refs #17560.
+- [`3b97016`](https://github.com/backstage/backstage/commit/3b97016): Improved the performance of entity facets and total item counts on PostgreSQL when the filter contains `$any` or `$not` conditions, such as those produced by conditional permission policies for catalog entity reads.
+- [`3b97016`](https://github.com/backstage/backstage/commit/3b97016): Entity filter predicates that combine `$all`, `$any` or `$not` with other keys in the same object, or that give `$all` or `$any` a non-array value, are now rejected with a 400 error. Previously the extra keys were silently ignored.
+- [`f7ce914`](https://github.com/backstage/backstage/commit/f7ce914): Fixed an issue where `/validate-entity` would not return after sending a 400 response on invalid entity validation, causing an unhandled `ERR_HTTP_HEADERS_SENT` error and triggering duplicate success/fail audit events.
 
 #### 4.0.3-next.0
 
@@ -381,16 +761,7 @@ _No changelog entries found._
 
   URL locations are now matched against catalog rules in a canonical form of the URL, so that rule decisions agree with how the location target is resolved when its content is fetched. URL patterns that relied on percent-encoded characters being matched as written, or on default ports being kept, no longer match and should be updated.
 
-### `@backstage/plugin-scaffolder-backend` (4.2.1 → [4.2.2-next.0](../../changelogs/@backstage/plugin-scaffolder-backend.md#422-next0))
-
-#### 4.2.2-next.0
-
-##### Patch Changes
-
-- [`be5074c`](https://github.com/backstage/backstage/commit/be5074c): Preserve public task log values when rendering without secrets omits an earlier object field, while continuing to redact secret-derived keys and values.
-- [`62eaba9`](https://github.com/backstage/backstage/commit/62eaba9): Fixed custom task permission rules registered by backend modules being ignored when authorizing task access and filtering task lists.
-
-### `@backstage/plugin-search-backend-module-elasticsearch` (2.0.1 → [2.0.2-next.0](../../changelogs/@backstage/plugin-search-backend-module-elasticsearch.md#202-next0))
+### `@backstage/plugin-search-backend-module-elasticsearch` (2.0.1 → [2.0.2-next.1](../../changelogs/@backstage/plugin-search-backend-module-elasticsearch.md#202-next1))
 
 #### 2.0.2-next.0
 
@@ -398,7 +769,15 @@ _No changelog entries found._
 
 - [`8da9c23`](https://github.com/backstage/backstage/commit/8da9c23): Internal changes for TypeScript 7 compatibility. There are no changes to behavior or the public API.
 
-### `@backstage/plugin-techdocs` (1.19.0 → [1.19.1-next.0](../../changelogs/@backstage/plugin-techdocs.md#1191-next0))
+### `@backstage/plugin-search-react` (1.11.9 → [1.11.10-next.1](../../changelogs/@backstage/plugin-search-react.md#11110-next1))
+
+#### 1.11.10-next.1
+
+##### Patch Changes
+
+- [`6c8a6b1`](https://github.com/backstage/backstage/commit/6c8a6b1): Fixed `SearchFilter.Autocomplete` with `multiple` clearing the typed text on every keystroke once a value was selected.
+
+### `@backstage/plugin-techdocs` (1.19.0 → [1.19.1-next.1](../../changelogs/@backstage/plugin-techdocs.md#1191-next1))
 
 #### 1.19.1-next.0
 
@@ -406,49 +785,59 @@ _No changelog entries found._
 
 - [`9a1d5cf`](https://github.com/backstage/backstage/commit/9a1d5cf): Fixed the TechDocs table of contents drifting to the right on wide screens. It now stays aligned with the right edge of the documentation content.
 
-### `@backstage/plugin-techdocs-backend` (2.4.1 → [2.4.1-next.0](../../changelogs/@backstage/plugin-techdocs-backend.md#241-next0))
+### `@backstage/plugin-techdocs-backend` (2.4.1 → [2.4.2-next.1](../../changelogs/@backstage/plugin-techdocs-backend.md#242-next1))
 
-_No changelog entries found._
+#### 2.4.2-next.0
+
+##### Patch Changes
+
+- Bumped version to account for a patch release.
+
+### `@backstage/plugin-techdocs-node` (2.2.0 → [2.2.1-next.1](../../changelogs/@backstage/plugin-techdocs-node.md#221-next1))
+
+#### 2.2.1-next.0
+
+##### Patch Changes
+
+- Bumped version to account for a patch release.
+
+### `@techdocs/cli` (1.14.0 → [1.14.1-next.0](../../changelogs/@techdocs/cli.md#1141-next0))
+
+#### 1.14.1-next.0
+
+##### Patch Changes
+
+- Bumped version to account for a patch release.
 
 ## Excluded dependency updates
 
-- `@backstage/app-defaults` (1.7.13 → [1.7.14-next.0](../../changelogs/@backstage/app-defaults.md#1714-next0))
+- `@backstage/app-defaults` (1.7.13 → [1.7.14-next.1](../../changelogs/@backstage/app-defaults.md#1714-next1))
 - `@backstage/backend-openapi-utils` (0.7.3 → [0.7.4-next.0](../../changelogs/@backstage/backend-openapi-utils.md#074-next0))
 - `@backstage/backend-plugin-api` (1.11.0 → [1.11.1-next.0](../../changelogs/@backstage/backend-plugin-api.md#1111-next0))
-- `@backstage/backend-test-utils` (1.11.8 → [1.11.9-next.0](../../changelogs/@backstage/backend-test-utils.md#1119-next0))
-- `@backstage/cli` (0.36.7 → [0.36.8-next.0](../../changelogs/@backstage/cli.md#0368-next0))
+- `@backstage/backend-test-utils` (1.11.8 → [1.11.9-next.1](../../changelogs/@backstage/backend-test-utils.md#1119-next1))
 - `@backstage/cli-defaults` (0.1.7 → [0.1.8-next.0](../../changelogs/@backstage/cli-defaults.md#018-next0))
 - `@backstage/cli-module-actions` (0.1.4 → [0.1.5-next.0](../../changelogs/@backstage/cli-module-actions.md#015-next0))
-- `@backstage/cli-module-build` (0.1.9 → [0.1.10-next.0](../../changelogs/@backstage/cli-module-build.md#0110-next0))
-- `@backstage/cli-module-catalog` (0.2.0 → [0.2.1-next.0](../../changelogs/@backstage/cli-module-catalog.md#021-next0))
+- `@backstage/cli-module-catalog` (0.2.0 → [0.2.1-next.1](../../changelogs/@backstage/cli-module-catalog.md#021-next1))
 - `@backstage/cli-module-config` (0.1.8 → [0.1.9-next.0](../../changelogs/@backstage/cli-module-config.md#019-next0))
 - `@backstage/cli-module-github` (0.1.5 → [0.1.6-next.0](../../changelogs/@backstage/cli-module-github.md#016-next0))
 - `@backstage/cli-module-info` (0.1.5 → [0.1.6-next.0](../../changelogs/@backstage/cli-module-info.md#016-next0))
 - `@backstage/cli-module-lint` (0.1.6 → [0.1.7-next.0](../../changelogs/@backstage/cli-module-lint.md#017-next0))
 - `@backstage/cli-module-maintenance` (0.1.6 → [0.1.7-next.0](../../changelogs/@backstage/cli-module-maintenance.md#017-next0))
-- `@backstage/cli-module-migrate` (0.2.2 → [0.2.3-next.0](../../changelogs/@backstage/cli-module-migrate.md#023-next0))
-- `@backstage/cli-module-new` (0.1.8 → [0.1.9-next.0](../../changelogs/@backstage/cli-module-new.md#019-next0))
-- `@backstage/cli-module-scaffolder` (0.2.0 → [0.2.1-next.0](../../changelogs/@backstage/cli-module-scaffolder.md#021-next0))
+- `@backstage/cli-module-migrate` (0.2.2 → [0.2.3-next.1](../../changelogs/@backstage/cli-module-migrate.md#023-next1))
+- `@backstage/cli-module-scaffolder` (0.2.0 → [0.2.1-next.1](../../changelogs/@backstage/cli-module-scaffolder.md#021-next1))
 - `@backstage/cli-module-search` (0.2.0 → [0.2.1-next.0](../../changelogs/@backstage/cli-module-search.md#021-next0))
 - `@backstage/cli-module-test-jest` (0.1.7 → [0.1.8-next.0](../../changelogs/@backstage/cli-module-test-jest.md#018-next0))
 - `@backstage/cli-module-translations` (0.1.5 → [0.1.6-next.0](../../changelogs/@backstage/cli-module-translations.md#016-next0))
-- `@backstage/core-app-api` (1.20.6 → [1.20.7-next.0](../../changelogs/@backstage/core-app-api.md#1207-next0))
-- `@backstage/core-compat-api` (0.5.16 → [0.5.17-next.0](../../changelogs/@backstage/core-compat-api.md#0517-next0))
 - `@backstage/core-components` (0.18.15 → [0.18.16-next.0](../../changelogs/@backstage/core-components.md#01816-next0))
-- `@backstage/core-plugin-api` (1.12.11 → [1.12.12-next.0](../../changelogs/@backstage/core-plugin-api.md#11212-next0))
 - `@backstage/dev-utils` (1.1.28 → [1.1.29-next.0](../../changelogs/@backstage/dev-utils.md#1129-next0))
-- `@backstage/frontend-app-api` (0.16.9 → [0.16.10-next.0](../../changelogs/@backstage/frontend-app-api.md#01610-next0))
-- `@backstage/frontend-defaults` (0.5.7 → [0.5.8-next.0](../../changelogs/@backstage/frontend-defaults.md#058-next0))
-- `@backstage/frontend-dev-utils` (0.1.7 → [0.1.8-next.0](../../changelogs/@backstage/frontend-dev-utils.md#018-next0))
-- `@backstage/frontend-dynamic-feature-loader` (0.1.17 → [0.1.18-next.0](../../changelogs/@backstage/frontend-dynamic-feature-loader.md#0118-next0))
+- `@backstage/frontend-dev-utils` (0.1.7 → [0.1.8-next.1](../../changelogs/@backstage/frontend-dev-utils.md#018-next1))
+- `@backstage/frontend-dynamic-feature-loader` (0.1.17 → [0.1.18-next.1](../../changelogs/@backstage/frontend-dynamic-feature-loader.md#0118-next1))
 - `@backstage/integration-react` (1.2.23 → [1.2.24-next.0](../../changelogs/@backstage/integration-react.md#1224-next0))
-- `@backstage/plugin-api-docs` (0.14.6 → [0.14.7-next.0](../../changelogs/@backstage/plugin-api-docs.md#0147-next0))
-- `@backstage/plugin-app` (0.5.4 → [0.5.5-next.0](../../changelogs/@backstage/plugin-app.md#055-next0))
-- `@backstage/plugin-app-module-user-settings` (0.1.3 → [0.1.4-next.0](../../changelogs/@backstage/plugin-app-module-user-settings.md#014-next0))
+- `@backstage/plugin-api-docs` (0.14.6 → [0.14.7-next.1](../../changelogs/@backstage/plugin-api-docs.md#0147-next1))
+- `@backstage/plugin-app-module-user-settings` (0.1.3 → [0.1.4-next.1](../../changelogs/@backstage/plugin-app-module-user-settings.md#014-next1))
 - `@backstage/plugin-app-node` (0.1.50 → [0.1.51-next.0](../../changelogs/@backstage/plugin-app-node.md#0151-next0))
-- `@backstage/plugin-app-react` (0.2.8 → [0.2.9-next.0](../../changelogs/@backstage/plugin-app-react.md#029-next0))
-- `@backstage/plugin-app-visualizer` (0.2.9 → [0.2.10-next.0](../../changelogs/@backstage/plugin-app-visualizer.md#0210-next0))
-- `@backstage/plugin-auth` (0.1.13 → [0.1.14-next.0](../../changelogs/@backstage/plugin-auth.md#0114-next0))
+- `@backstage/plugin-app-visualizer` (0.2.9 → [0.2.10-next.1](../../changelogs/@backstage/plugin-app-visualizer.md#0210-next1))
+- `@backstage/plugin-auth` (0.1.13 → [0.1.14-next.1](../../changelogs/@backstage/plugin-auth.md#0114-next1))
 - `@backstage/plugin-auth-backend-module-atlassian-provider` (0.5.0 → [0.5.1-next.0](../../changelogs/@backstage/plugin-auth-backend-module-atlassian-provider.md#051-next0))
 - `@backstage/plugin-auth-backend-module-bitbucket-provider` (0.3.20 → [0.3.21-next.0](../../changelogs/@backstage/plugin-auth-backend-module-bitbucket-provider.md#0321-next0))
 - `@backstage/plugin-auth-backend-module-bitbucket-server-provider` (0.2.20 → [0.2.21-next.0](../../changelogs/@backstage/plugin-auth-backend-module-bitbucket-server-provider.md#0221-next0))
@@ -462,63 +851,55 @@ _No changelog entries found._
 - `@backstage/plugin-auth-backend-module-onelogin-provider` (0.3.20 → [0.3.21-next.0](../../changelogs/@backstage/plugin-auth-backend-module-onelogin-provider.md#0321-next0))
 - `@backstage/plugin-auth-backend-module-openshift-provider` (0.1.12 → [0.1.13-next.0](../../changelogs/@backstage/plugin-auth-backend-module-openshift-provider.md#0113-next0))
 - `@backstage/plugin-auth-react` (0.1.32 → [0.1.33-next.0](../../changelogs/@backstage/plugin-auth-react.md#0133-next0))
-- `@backstage/plugin-catalog` (2.0.10 → [2.0.11-next.0](../../changelogs/@backstage/plugin-catalog.md#2011-next0))
-- `@backstage/plugin-catalog-backend-module-ai-model` (0.1.5 → [0.1.6-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-ai-model.md#016-next0))
-- `@backstage/plugin-catalog-backend-module-aws` (0.4.29 → [0.4.30-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-aws.md#0430-next0))
-- `@backstage/plugin-catalog-backend-module-azure` (0.3.23 → [0.3.24-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-azure.md#0324-next0))
+- `@backstage/plugin-catalog-backend-module-aws` (0.4.29 → [0.4.30-next.1](../../changelogs/@backstage/plugin-catalog-backend-module-aws.md#0430-next1))
+- `@backstage/plugin-catalog-backend-module-azure` (0.3.23 → [0.3.24-next.1](../../changelogs/@backstage/plugin-catalog-backend-module-azure.md#0324-next1))
 - `@backstage/plugin-catalog-backend-module-backstage-openapi` (0.5.19 → [0.5.20-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-backstage-openapi.md#0520-next0))
-- `@backstage/plugin-catalog-backend-module-bitbucket-cloud` (0.5.16 → [0.5.17-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-bitbucket-cloud.md#0517-next0))
-- `@backstage/plugin-catalog-backend-module-bitbucket-server` (0.5.16 → [0.5.17-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-bitbucket-server.md#0517-next0))
+- `@backstage/plugin-catalog-backend-module-bitbucket-cloud` (0.5.16 → [0.5.17-next.1](../../changelogs/@backstage/plugin-catalog-backend-module-bitbucket-cloud.md#0517-next1))
+- `@backstage/plugin-catalog-backend-module-bitbucket-server` (0.5.16 → [0.5.17-next.1](../../changelogs/@backstage/plugin-catalog-backend-module-bitbucket-server.md#0517-next1))
 - `@backstage/plugin-catalog-backend-module-gcp` (0.3.24 → [0.3.25-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-gcp.md#0325-next0))
 - `@backstage/plugin-catalog-backend-module-gerrit` (0.3.19 → [0.3.20-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-gerrit.md#0320-next0))
 - `@backstage/plugin-catalog-backend-module-gitea` (0.1.17 → [0.1.18-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-gitea.md#0118-next0))
-- `@backstage/plugin-catalog-backend-module-github` (0.14.1 → [0.14.2-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-github.md#0142-next0))
-- `@backstage/plugin-catalog-backend-module-github-org` (0.3.27 → [0.3.28-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-github-org.md#0328-next0))
-- `@backstage/plugin-catalog-backend-module-gitlab-org` (0.2.26 → [0.2.27-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-gitlab-org.md#0227-next0))
-- `@backstage/plugin-catalog-backend-module-incremental-ingestion` (0.9.0 → [0.9.1-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-incremental-ingestion.md#091-next0))
+- `@backstage/plugin-catalog-backend-module-github` (0.14.1 → [0.14.2-next.1](../../changelogs/@backstage/plugin-catalog-backend-module-github.md#0142-next1))
+- `@backstage/plugin-catalog-backend-module-github-org` (0.3.27 → [0.3.28-next.1](../../changelogs/@backstage/plugin-catalog-backend-module-github-org.md#0328-next1))
+- `@backstage/plugin-catalog-backend-module-gitlab-org` (0.2.26 → [0.2.27-next.1](../../changelogs/@backstage/plugin-catalog-backend-module-gitlab-org.md#0227-next1))
 - `@backstage/plugin-catalog-backend-module-ldap` (0.12.10 → [0.12.11-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-ldap.md#01211-next0))
-- `@backstage/plugin-catalog-backend-module-logs` (0.1.27 → [0.1.28-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-logs.md#0128-next0))
+- `@backstage/plugin-catalog-backend-module-logs` (0.1.27 → [0.1.28-next.1](../../changelogs/@backstage/plugin-catalog-backend-module-logs.md#0128-next1))
 - `@backstage/plugin-catalog-backend-module-msgraph` (0.10.7 → [0.10.8-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-msgraph.md#0108-next0))
 - `@backstage/plugin-catalog-backend-module-msgraph-incremental` (0.1.5 → [0.1.6-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-msgraph-incremental.md#016-next0))
 - `@backstage/plugin-catalog-backend-module-openapi` (0.2.27 → [0.2.28-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-openapi.md#0228-next0))
 - `@backstage/plugin-catalog-backend-module-puppetdb` (0.2.27 → [0.2.28-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-puppetdb.md#0228-next0))
-- `@backstage/plugin-catalog-backend-module-scaffolder-entity-model` (0.2.25 → [0.2.26-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-scaffolder-entity-model.md#0226-next0))
-- `@backstage/plugin-catalog-graph` (0.6.9 → [0.6.10-next.0](../../changelogs/@backstage/plugin-catalog-graph.md#0610-next0))
-- `@backstage/plugin-catalog-import` (0.13.19 → [0.13.20-next.0](../../changelogs/@backstage/plugin-catalog-import.md#01320-next0))
-- `@backstage/plugin-catalog-node` (2.2.6 → [2.2.7-next.0](../../changelogs/@backstage/plugin-catalog-node.md#227-next0))
-- `@backstage/plugin-catalog-react` (3.3.0 → [4.0.0-next.0](../../changelogs/@backstage/plugin-catalog-react.md#400-next0))
-- `@backstage/plugin-catalog-unprocessed-entities` (0.2.36 → [0.2.37-next.0](../../changelogs/@backstage/plugin-catalog-unprocessed-entities.md#0237-next0))
+- `@backstage/plugin-catalog-backend-module-scaffolder-entity-model` (0.2.25 → [0.2.26-next.1](../../changelogs/@backstage/plugin-catalog-backend-module-scaffolder-entity-model.md#0226-next1))
+- `@backstage/plugin-catalog-graph` (0.6.9 → [0.6.10-next.1](../../changelogs/@backstage/plugin-catalog-graph.md#0610-next1))
+- `@backstage/plugin-catalog-import` (0.13.19 → [0.13.20-next.1](../../changelogs/@backstage/plugin-catalog-import.md#01320-next1))
+- `@backstage/plugin-catalog-node` (2.2.6 → [2.2.7-next.1](../../changelogs/@backstage/plugin-catalog-node.md#227-next1))
+- `@backstage/plugin-catalog-react` (3.3.0 → [4.0.0-next.1](../../changelogs/@backstage/plugin-catalog-react.md#400-next1))
+- `@backstage/plugin-catalog-unprocessed-entities` (0.2.36 → [0.2.37-next.1](../../changelogs/@backstage/plugin-catalog-unprocessed-entities.md#0237-next1))
 - `@backstage/plugin-config-schema` (0.1.85 → [0.1.86-next.0](../../changelogs/@backstage/plugin-config-schema.md#0186-next0))
-- `@backstage/plugin-devtools` (0.1.44 → [0.1.45-next.0](../../changelogs/@backstage/plugin-devtools.md#0145-next0))
+- `@backstage/plugin-devtools` (0.1.44 → [0.1.45-next.1](../../changelogs/@backstage/plugin-devtools.md#0145-next1))
 - `@backstage/plugin-devtools-backend` (0.5.22 → [0.5.23-next.0](../../changelogs/@backstage/plugin-devtools-backend.md#0523-next0))
-- `@backstage/plugin-devtools-react` (0.2.7 → [0.2.8-next.0](../../changelogs/@backstage/plugin-devtools-react.md#028-next0))
-- `@backstage/plugin-events-backend-module-aws-sqs` (0.4.27 → [0.4.28-next.0](../../changelogs/@backstage/plugin-events-backend-module-aws-sqs.md#0428-next0))
-- `@backstage/plugin-events-backend-module-azure` (0.2.36 → [0.2.37-next.0](../../changelogs/@backstage/plugin-events-backend-module-azure.md#0237-next0))
-- `@backstage/plugin-events-backend-module-bitbucket-cloud` (0.2.36 → [0.2.37-next.0](../../changelogs/@backstage/plugin-events-backend-module-bitbucket-cloud.md#0237-next0))
-- `@backstage/plugin-events-backend-module-bitbucket-server` (0.1.17 → [0.1.18-next.0](../../changelogs/@backstage/plugin-events-backend-module-bitbucket-server.md#0118-next0))
-- `@backstage/plugin-events-backend-module-gerrit` (0.2.36 → [0.2.37-next.0](../../changelogs/@backstage/plugin-events-backend-module-gerrit.md#0237-next0))
-- `@backstage/plugin-events-backend-module-github` (0.4.17 → [0.4.18-next.0](../../changelogs/@backstage/plugin-events-backend-module-github.md#0418-next0))
-- `@backstage/plugin-events-backend-module-gitlab` (0.3.17 → [0.3.18-next.0](../../changelogs/@backstage/plugin-events-backend-module-gitlab.md#0318-next0))
-- `@backstage/plugin-events-backend-module-google-pubsub` (0.2.8 → [0.2.9-next.0](../../changelogs/@backstage/plugin-events-backend-module-google-pubsub.md#029-next0))
-- `@backstage/plugin-events-backend-module-kafka` (0.3.9 → [0.3.10-next.0](../../changelogs/@backstage/plugin-events-backend-module-kafka.md#0310-next0))
-- `@backstage/plugin-events-backend-test-utils` (0.1.60 → [0.1.61-next.0](../../changelogs/@backstage/plugin-events-backend-test-utils.md#0161-next0))
-- `@backstage/plugin-events-node` (0.4.27 → [0.4.28-next.0](../../changelogs/@backstage/plugin-events-node.md#0428-next0))
+- `@backstage/plugin-devtools-react` (0.2.7 → [0.2.8-next.1](../../changelogs/@backstage/plugin-devtools-react.md#028-next1))
+- `@backstage/plugin-events-backend-module-aws-sqs` (0.4.27 → [0.4.28-next.1](../../changelogs/@backstage/plugin-events-backend-module-aws-sqs.md#0428-next1))
+- `@backstage/plugin-events-backend-module-azure` (0.2.36 → [0.2.37-next.1](../../changelogs/@backstage/plugin-events-backend-module-azure.md#0237-next1))
+- `@backstage/plugin-events-backend-module-bitbucket-cloud` (0.2.36 → [0.2.37-next.1](../../changelogs/@backstage/plugin-events-backend-module-bitbucket-cloud.md#0237-next1))
+- `@backstage/plugin-events-backend-module-bitbucket-server` (0.1.17 → [0.1.18-next.1](../../changelogs/@backstage/plugin-events-backend-module-bitbucket-server.md#0118-next1))
+- `@backstage/plugin-events-backend-module-gerrit` (0.2.36 → [0.2.37-next.1](../../changelogs/@backstage/plugin-events-backend-module-gerrit.md#0237-next1))
+- `@backstage/plugin-events-backend-module-github` (0.4.17 → [0.4.18-next.1](../../changelogs/@backstage/plugin-events-backend-module-github.md#0418-next1))
+- `@backstage/plugin-events-backend-module-gitlab` (0.3.17 → [0.3.18-next.1](../../changelogs/@backstage/plugin-events-backend-module-gitlab.md#0318-next1))
+- `@backstage/plugin-events-backend-module-kafka` (0.3.9 → [0.3.10-next.1](../../changelogs/@backstage/plugin-events-backend-module-kafka.md#0310-next1))
+- `@backstage/plugin-events-backend-test-utils` (0.1.60 → [0.1.61-next.1](../../changelogs/@backstage/plugin-events-backend-test-utils.md#0161-next1))
 - `@backstage/plugin-gateway-backend` (1.1.10 → [1.1.11-next.0](../../changelogs/@backstage/plugin-gateway-backend.md#1111-next0))
-- `@backstage/plugin-home` (0.9.11 → [0.9.12-next.0](../../changelogs/@backstage/plugin-home.md#0912-next0))
-- `@backstage/plugin-home-react` (0.1.43 → [0.1.44-next.0](../../changelogs/@backstage/plugin-home-react.md#0144-next0))
-- `@backstage/plugin-kubernetes` (0.12.24 → [0.12.25-next.0](../../changelogs/@backstage/plugin-kubernetes.md#01225-next0))
-- `@backstage/plugin-kubernetes-backend` (0.21.12 → [0.21.13-next.0](../../changelogs/@backstage/plugin-kubernetes-backend.md#02113-next0))
+- `@backstage/plugin-home` (0.9.11 → [0.9.12-next.1](../../changelogs/@backstage/plugin-home.md#0912-next1))
+- `@backstage/plugin-home-react` (0.1.43 → [0.1.44-next.1](../../changelogs/@backstage/plugin-home-react.md#0144-next1))
+- `@backstage/plugin-kubernetes` (0.12.24 → [0.12.25-next.1](../../changelogs/@backstage/plugin-kubernetes.md#01225-next1))
 - `@backstage/plugin-kubernetes-node` (0.4.9 → [0.4.10-next.0](../../changelogs/@backstage/plugin-kubernetes-node.md#0410-next0))
 - `@backstage/plugin-kubernetes-react` (0.6.1 → [0.6.2-next.0](../../changelogs/@backstage/plugin-kubernetes-react.md#062-next0))
-- `@backstage/plugin-mcp-actions-backend` (0.2.3 → [0.2.4-next.0](../../changelogs/@backstage/plugin-mcp-actions-backend.md#024-next0))
-- `@backstage/plugin-mui-to-bui` (0.2.12 → [0.2.13-next.0](../../changelogs/@backstage/plugin-mui-to-bui.md#0213-next0))
-- `@backstage/plugin-notifications` (0.6.1 → [0.6.2-next.0](../../changelogs/@backstage/plugin-notifications.md#062-next0))
-- `@backstage/plugin-notifications-backend` (0.6.10 → [0.6.11-next.0](../../changelogs/@backstage/plugin-notifications-backend.md#0611-next0))
-- `@backstage/plugin-notifications-backend-module-email` (0.3.26 → [0.3.27-next.0](../../changelogs/@backstage/plugin-notifications-backend-module-email.md#0327-next0))
+- `@backstage/plugin-mcp-actions-backend` (0.2.3 → [0.2.4-next.1](../../changelogs/@backstage/plugin-mcp-actions-backend.md#024-next1))
+- `@backstage/plugin-mui-to-bui` (0.2.12 → [0.2.13-next.1](../../changelogs/@backstage/plugin-mui-to-bui.md#0213-next1))
+- `@backstage/plugin-notifications-backend-module-email` (0.3.26 → [0.3.27-next.1](../../changelogs/@backstage/plugin-notifications-backend-module-email.md#0327-next1))
 - `@backstage/plugin-notifications-backend-module-slack` (0.4.7 → [0.4.8-next.0](../../changelogs/@backstage/plugin-notifications-backend-module-slack.md#048-next0))
 - `@backstage/plugin-notifications-node` (0.2.31 → [0.2.32-next.0](../../changelogs/@backstage/plugin-notifications-node.md#0232-next0))
-- `@backstage/plugin-org` (0.8.0 → [0.8.1-next.0](../../changelogs/@backstage/plugin-org.md#081-next0))
-- `@backstage/plugin-org-react` (0.1.55 → [0.1.56-next.0](../../changelogs/@backstage/plugin-org-react.md#0156-next0))
+- `@backstage/plugin-org` (0.8.0 → [0.8.1-next.1](../../changelogs/@backstage/plugin-org.md#081-next1))
+- `@backstage/plugin-org-react` (0.1.55 → [0.1.56-next.1](../../changelogs/@backstage/plugin-org-react.md#0156-next1))
 - `@backstage/plugin-permission-backend` (0.7.17 → [0.7.18-next.0](../../changelogs/@backstage/plugin-permission-backend.md#0718-next0))
 - `@backstage/plugin-permission-backend-module-allow-all-policy` (0.2.24 → [0.2.25-next.0](../../changelogs/@backstage/plugin-permission-backend-module-allow-all-policy.md#0225-next0))
 - `@backstage/plugin-permission-node` (0.11.5 → [0.11.6-next.0](../../changelogs/@backstage/plugin-permission-node.md#0116-next0))
@@ -538,25 +919,24 @@ _No changelog entries found._
 - `@backstage/plugin-scaffolder-backend-module-sentry` (0.4.1 → [0.4.2-next.0](../../changelogs/@backstage/plugin-scaffolder-backend-module-sentry.md#042-next0))
 - `@backstage/plugin-scaffolder-backend-module-workspace-database` (0.1.1 → [0.1.2-next.0](../../changelogs/@backstage/plugin-scaffolder-backend-module-workspace-database.md#012-next0))
 - `@backstage/plugin-scaffolder-backend-module-yeoman` (0.4.27 → [0.4.28-next.0](../../changelogs/@backstage/plugin-scaffolder-backend-module-yeoman.md#0428-next0))
-- `@backstage/plugin-scaffolder-node` (0.13.8 → [0.13.9-next.0](../../changelogs/@backstage/plugin-scaffolder-node.md#0139-next0))
+- `@backstage/plugin-scaffolder-node` (0.13.8 → [0.13.9-next.1](../../changelogs/@backstage/plugin-scaffolder-node.md#0139-next1))
 - `@backstage/plugin-scaffolder-node-test-utils` (0.3.16 → [0.3.17-next.0](../../changelogs/@backstage/plugin-scaffolder-node-test-utils.md#0317-next0))
-- `@backstage/plugin-search` (1.7.9 → [1.7.10-next.0](../../changelogs/@backstage/plugin-search.md#1710-next0))
+- `@backstage/plugin-search` (1.7.9 → [1.7.10-next.1](../../changelogs/@backstage/plugin-search.md#1710-next1))
 - `@backstage/plugin-search-backend` (2.1.8 → [2.1.9-next.0](../../changelogs/@backstage/plugin-search-backend.md#219-next0))
-- `@backstage/plugin-search-backend-module-catalog` (0.3.20 → [0.3.21-next.0](../../changelogs/@backstage/plugin-search-backend-module-catalog.md#0321-next0))
+- `@backstage/plugin-search-backend-module-catalog` (0.3.20 → [0.3.21-next.1](../../changelogs/@backstage/plugin-search-backend-module-catalog.md#0321-next1))
 - `@backstage/plugin-search-backend-module-explore` (0.3.19 → [0.3.20-next.0](../../changelogs/@backstage/plugin-search-backend-module-explore.md#0320-next0))
 - `@backstage/plugin-search-backend-module-pg` (0.5.60 → [0.5.61-next.0](../../changelogs/@backstage/plugin-search-backend-module-pg.md#0561-next0))
 - `@backstage/plugin-search-backend-module-stack-overflow-collator` (0.3.25 → [0.3.26-next.0](../../changelogs/@backstage/plugin-search-backend-module-stack-overflow-collator.md#0326-next0))
-- `@backstage/plugin-search-backend-module-techdocs` (0.4.19 → [0.4.20-next.0](../../changelogs/@backstage/plugin-search-backend-module-techdocs.md#0420-next0))
+- `@backstage/plugin-search-backend-module-techdocs` (0.4.19 → [0.4.20-next.1](../../changelogs/@backstage/plugin-search-backend-module-techdocs.md#0420-next1))
 - `@backstage/plugin-search-backend-node` (1.4.9 → [1.4.10-next.0](../../changelogs/@backstage/plugin-search-backend-node.md#1410-next0))
-- `@backstage/plugin-search-react` (1.11.9 → [1.11.10-next.0](../../changelogs/@backstage/plugin-search-react.md#11110-next0))
-- `@backstage/plugin-signals` (0.0.36 → [0.0.37-next.0](../../changelogs/@backstage/plugin-signals.md#0037-next0))
-- `@backstage/plugin-signals-backend` (0.3.20 → [0.3.21-next.0](../../changelogs/@backstage/plugin-signals-backend.md#0321-next0))
-- `@backstage/plugin-signals-node` (0.2.6 → [0.2.7-next.0](../../changelogs/@backstage/plugin-signals-node.md#027-next0))
+- `@backstage/plugin-signals` (0.0.36 → [0.0.37-next.1](../../changelogs/@backstage/plugin-signals.md#0037-next1))
+- `@backstage/plugin-signals-backend` (0.3.20 → [0.3.21-next.1](../../changelogs/@backstage/plugin-signals-backend.md#0321-next1))
+- `@backstage/plugin-signals-node` (0.2.6 → [0.2.7-next.1](../../changelogs/@backstage/plugin-signals-node.md#027-next1))
 - `@backstage/plugin-signals-react` (0.0.27 → [0.0.28-next.0](../../changelogs/@backstage/plugin-signals-react.md#0028-next0))
 - `@backstage/plugin-techdocs-addons-test-utils` (2.0.10 → [2.0.11-next.0](../../changelogs/@backstage/plugin-techdocs-addons-test-utils.md#2011-next0))
-- `@backstage/plugin-techdocs-module-addons-contrib` (1.1.41 → [1.1.42-next.0](../../changelogs/@backstage/plugin-techdocs-module-addons-contrib.md#1142-next0))
-- `@backstage/plugin-techdocs-react` (1.4.0 → [1.4.1-next.0](../../changelogs/@backstage/plugin-techdocs-react.md#141-next0))
-- `@backstage/plugin-user-settings` (0.9.8 → [0.9.9-next.0](../../changelogs/@backstage/plugin-user-settings.md#099-next0))
+- `@backstage/plugin-techdocs-module-addons-contrib` (1.1.41 → [1.1.42-next.1](../../changelogs/@backstage/plugin-techdocs-module-addons-contrib.md#1142-next1))
+- `@backstage/plugin-techdocs-react` (1.4.0 → [1.4.1-next.1](../../changelogs/@backstage/plugin-techdocs-react.md#141-next1))
+- `@backstage/plugin-user-settings` (0.9.8 → [0.9.9-next.1](../../changelogs/@backstage/plugin-user-settings.md#099-next1))
 - `@backstage/plugin-user-settings-backend` (0.4.8 → [0.4.9-next.0](../../changelogs/@backstage/plugin-user-settings-backend.md#049-next0))
 - `@backstage/repo-tools` (0.19.2 → [0.19.3-next.0](../../changelogs/@backstage/repo-tools.md#0193-next0))
 - `@backstage/test-utils` (1.7.23 → [1.7.24-next.0](../../changelogs/@backstage/test-utils.md#1724-next0))
