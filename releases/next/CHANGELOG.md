@@ -1,6 +1,6 @@
 # Backstage Release 1.57.0-next.1 changelog
 
-Changes between 1.56.3 and 1.57.0-next.1 — 0 added, 0 removed, 191 upgraded, 25 unchanged packages.
+Changes between 1.56.4 and 1.57.0-next.1 — 0 added, 0 removed, 191 upgraded, 25 unchanged packages.
 
 ## Summary
 

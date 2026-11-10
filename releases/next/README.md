@@ -1,6 +1,6 @@
 # Backstage Release 1.57.0-next.1 (next)
 
-## Compared to 1.56.3 (latest release)
+## Compared to 1.56.4 (latest release)
 
 0 added, 0 removed, 191 upgraded, 25 unchanged.
 
@@ -8,14 +8,14 @@
 
 ### ⚠️ Major version bumps
 
-| Package | 1.56.3 | 1.57.0-next.1 |
+| Package | 1.56.4 | 1.57.0-next.1 |
 | --- | --- | --- |
 | `@backstage/plugin-catalog-react` | **3.3.0** | **4.0.0-next.1** |
 | `@backstage/plugin-scaffolder-react` | **2.1.1** | **3.0.0-next.1** |
 
 ### Version bumps
 
-| Package | 1.56.3 | 1.57.0-next.1 | Type |
+| Package | 1.56.4 | 1.57.0-next.1 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.13 | 1.7.14-next.1 | Patch |
 | `@backstage/backend-app-api` | 1.8.0 | 1.9.0-next.0 | Minor |
