@@ -1,6 +1,6 @@
 # Package descriptions
 
-**216 packages** active on the `main` branch.
+**219 packages** active on the `main` branch.
 
 | Package | Backstage role | Description |
 | --- | --- | --- |
@@ -47,6 +47,9 @@
 | `@backstage/errors` | common-library | Common utilities for error handling within Backstage |
 | `@backstage/eslint-plugin` |  | Backstage ESLint plugin |
 | `@backstage/filter-predicates` | common-library | A library for expressing filter predicates and evaluating them against values |
+| `@backstage/frontend-adapter-react-router-v6` | web-library | React Router v6 adapter for the Backstage router-agnostic plugin routing system |
+| `@backstage/frontend-adapter-react-router-v7` | web-library | React Router v7 adapter for the Backstage router-agnostic plugin routing system |
+| `@backstage/frontend-adapter-tanstack-router` | web-library | TanStack Router adapter for the Backstage router-agnostic plugin routing system |
 | `@backstage/frontend-app-api` | web-library |  |
 | `@backstage/frontend-defaults` | web-library |  |
 | `@backstage/frontend-dev-utils` | web-library | Utilities for developing Backstage frontend plugins using the new frontend system. |
