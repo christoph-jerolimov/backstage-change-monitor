@@ -1,6 +1,6 @@
 # Backstage Release 1.56.0 changelog
 
-Changes between 1.55.3 and 1.56.0 — 3 added, 0 removed, 205 upgraded, 7 unchanged packages.
+Changes between 1.55.4 and 1.56.0 — 3 added, 0 removed, 205 upgraded, 7 unchanged packages.
 
 ## Summary
 
@@ -8,10 +8,10 @@ Changes between 1.55.3 and 1.56.0 — 3 added, 0 removed, 205 upgraded, 7 unchan
 - [Breaking changes](#breaking-changes): 3 packages
 - [0.x minor version bumps](#0x-minor-version-bumps): 3 packages
 - [0.0.x patch version bumps](#00x-patch-version-bumps): 2 packages
-- [0.x patch version bumps](#0x-patch-version-bumps): 44 packages
+- [0.x patch version bumps](#0x-patch-version-bumps): 45 packages
 - [Other minor version bumps](#other-minor-version-bumps): 8 packages
 - [Other patch version bumps](#other-patch-version-bumps): 11 packages
-- [Excluded dependency updates](#excluded-dependency-updates): 134 packages
+- [Excluded dependency updates](#excluded-dependency-updates): 133 packages
 
 ## Table of contents
 
@@ -58,6 +58,7 @@ Changes between 1.55.3 and 1.56.0 — 3 added, 0 removed, 205 upgraded, 7 unchan
   - [`@backstage/plugin-auth-node` (0.7.6 → 0.7.7)](#backstageplugin-auth-node-076--077)
   - [`@backstage/plugin-bitbucket-cloud-common` (0.3.13 → 0.3.14)](#backstageplugin-bitbucket-cloud-common-0313--0314)
   - [`@backstage/plugin-catalog-backend-module-gitea` (0.1.16 → 0.1.17)](#backstageplugin-catalog-backend-module-gitea-0116--0117)
+  - [`@backstage/plugin-catalog-backend-module-gitlab` (0.8.10 → 0.8.9)](#backstageplugin-catalog-backend-module-gitlab-0810--089)
   - [`@backstage/plugin-catalog-backend-module-ldap` (0.12.9 → 0.12.10)](#backstageplugin-catalog-backend-module-ldap-0129--01210)
   - [`@backstage/plugin-catalog-graph` (0.6.8 → 0.6.9)](#backstageplugin-catalog-graph-068--069)
   - [`@backstage/plugin-catalog-import` (0.13.18 → 0.13.19)](#backstageplugin-catalog-import-01318--01319)
@@ -94,7 +95,7 @@ Changes between 1.55.3 and 1.56.0 — 3 added, 0 removed, 205 upgraded, 7 unchan
   - [`@backstage/integration` (2.1.2 → 2.1.3)](#backstageintegration-212--213)
   - [`@backstage/plugin-catalog` (2.0.9 → 2.0.10)](#backstageplugin-catalog-209--2010)
   - [`@backstage/plugin-catalog-backend` (4.0.0 → 4.0.1)](#backstageplugin-catalog-backend-400--401)
-  - [`@backstage/plugin-scaffolder-backend` (4.2.0 → 4.2.1)](#backstageplugin-scaffolder-backend-420--421)
+  - [`@backstage/plugin-scaffolder-backend` (4.2.3 → 4.2.1)](#backstageplugin-scaffolder-backend-423--421)
   - [`@backstage/plugin-search-backend-module-elasticsearch` (2.0.0 → 2.0.1)](#backstageplugin-search-backend-module-elasticsearch-200--201)
 - [Excluded dependency updates](#excluded-dependency-updates)
 
@@ -522,6 +523,10 @@ Changes between 1.55.3 and 1.56.0 — 3 added, 0 removed, 205 upgraded, 7 unchan
 
 - [`f181c5f`](https://github.com/backstage/backstage/commit/f181c5f): Fixed the Gitea entity provider registering catalog-info.yaml locations against a hardcoded 'main' branch instead of each repository's actual default branch.
 
+### `@backstage/plugin-catalog-backend-module-gitlab` (0.8.10 → [0.8.9](../../changelogs/@backstage/plugin-catalog-backend-module-gitlab.md#089))
+
+_No changelog entries found._
+
 ### `@backstage/plugin-catalog-backend-module-ldap` (0.12.9 → [0.12.10](../../changelogs/@backstage/plugin-catalog-backend-module-ldap.md#01210))
 
 #### 0.12.10
@@ -901,17 +906,9 @@ Changes between 1.55.3 and 1.56.0 — 3 added, 0 removed, 205 upgraded, 7 unchan
 
   PostgreSQL and MySQL deadlocks trigger prompt, bounded retries of the entire write transaction, skipping the write if newer stitching work has superseded it. If retries are exhausted, queued work remains available for recovery after the stitching timeout.
 
-### `@backstage/plugin-scaffolder-backend` (4.2.0 → [4.2.1](../../changelogs/@backstage/plugin-scaffolder-backend.md#421))
+### `@backstage/plugin-scaffolder-backend` (4.2.3 → [4.2.1](../../changelogs/@backstage/plugin-scaffolder-backend.md#421))
 
-#### 4.2.1
-
-##### Patch Changes
-
-- [`6e08d65`](https://github.com/backstage/backstage/commit/6e08d65): Fixes a regression where scaffolder step values consisting of a singular template statement block (ex. `if: "{% if parameters.foo == 'bar' %}true{% else %}false{% endif %}"`), were rendered as the strings `"true"` and `"false"` instead of their boolean values. This caused steps with `if` conditions to always run.
-
-  Step values with a single statement block that renders nothing, such as `{% if false %}x{% endif %}`, are once again left out of the action input instead of being passed as an empty string.
-
-  Updated `nunjitsu` to `^0.6.2`.
+_No changelog entries found._
 
 ### `@backstage/plugin-search-backend-module-elasticsearch` (2.0.0 → [2.0.1](../../changelogs/@backstage/plugin-search-backend-module-elasticsearch.md#201))
 
@@ -979,7 +976,6 @@ Changes between 1.55.3 and 1.56.0 — 3 added, 0 removed, 205 upgraded, 7 unchan
 - `@backstage/plugin-catalog-backend-module-gerrit` (0.3.18 → [0.3.19](../../changelogs/@backstage/plugin-catalog-backend-module-gerrit.md#0319))
 - `@backstage/plugin-catalog-backend-module-github` (0.14.0 → [0.14.1](../../changelogs/@backstage/plugin-catalog-backend-module-github.md#0141))
 - `@backstage/plugin-catalog-backend-module-github-org` (0.3.26 → [0.3.27](../../changelogs/@backstage/plugin-catalog-backend-module-github-org.md#0327))
-- `@backstage/plugin-catalog-backend-module-gitlab` (0.8.8 → [0.8.9](../../changelogs/@backstage/plugin-catalog-backend-module-gitlab.md#089))
 - `@backstage/plugin-catalog-backend-module-gitlab-org` (0.2.25 → [0.2.26](../../changelogs/@backstage/plugin-catalog-backend-module-gitlab-org.md#0226))
 - `@backstage/plugin-catalog-backend-module-logs` (0.1.26 → [0.1.27](../../changelogs/@backstage/plugin-catalog-backend-module-logs.md#0127))
 - `@backstage/plugin-catalog-backend-module-msgraph` (0.10.6 → [0.10.7](../../changelogs/@backstage/plugin-catalog-backend-module-msgraph.md#0107))

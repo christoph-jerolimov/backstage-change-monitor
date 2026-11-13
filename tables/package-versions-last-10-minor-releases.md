@@ -2,7 +2,7 @@
 
 Versions of **221 packages** across **11 releases** — columns ordered `next` first, then newest to oldest. Each minor release is represented by the latest patch of its minor line.
 
-| Package | next | 1.56.4 | 1.55.3 | 1.54.10 | 1.53.2 | 1.52.1 | 1.51.3 | 1.50.7 | 1.49.7 | 1.48.6 | 1.47.4 |
+| Package | next | 1.56.5 | 1.55.4 | 1.54.10 | 1.53.2 | 1.52.1 | 1.51.3 | 1.50.7 | 1.49.7 | 1.48.6 | 1.47.4 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.14-next.1 | 1.7.13 | 1.7.12 | 1.7.11 | 1.7.10 | 1.7.9 | 1.7.8 | 1.7.7 | 1.7.6 | 1.7.5 | 1.7.4 |
 | `@backstage/backend-app-api` | 1.9.0-next.1 | 1.8.0 | 1.7.4 | 1.7.3 | 1.7.2 | 1.7.1 | 1.7.0 | 1.6.1 | 1.6.0 | 1.5.0 | 1.4.1 |
@@ -108,7 +108,7 @@ Versions of **221 packages** across **11 releases** — columns ordered `next` f
 | `@backstage/plugin-catalog-backend-module-gitea` | 0.1.18-next.1 | 0.1.17 | 0.1.16 | 0.1.15 | 0.1.14 | 0.1.13 | 0.1.12 | 0.1.11 | 0.1.10 | 0.1.9 | 0.1.8 |
 | `@backstage/plugin-catalog-backend-module-github` | 0.14.2-next.2 | 0.14.1 | 0.14.0 | 0.13.5 | 0.13.4 | 0.13.3 | 0.13.2 | 0.13.1 | 0.13.0 | 0.12.2 | 0.12.1 |
 | `@backstage/plugin-catalog-backend-module-github-org` | 0.3.28-next.2 | 0.3.27 | 0.3.26 | 0.3.25 | 0.3.24 | 0.3.23 | 0.3.22 | 0.3.21 | 0.3.20 | 0.3.19 | 0.3.18 |
-| `@backstage/plugin-catalog-backend-module-gitlab` | 0.8.10-next.2 | 0.8.9 | 0.8.8 | 0.8.7 | 0.8.5 | 0.8.4 | 0.8.3 | 0.8.2 | 0.8.1 | 0.8.0 | 0.7.7 |
+| `@backstage/plugin-catalog-backend-module-gitlab` | 0.8.10-next.2 | 0.8.10 | 0.8.10 | 0.8.7 | 0.8.5 | 0.8.4 | 0.8.3 | 0.8.2 | 0.8.1 | 0.8.0 | 0.7.7 |
 | `@backstage/plugin-catalog-backend-module-gitlab-org` | 0.2.27-next.2 | 0.2.26 | 0.2.25 | 0.2.24 | 0.2.23 | 0.2.22 | 0.2.21 | 0.2.20 | 0.2.19 | 0.2.18 | 0.2.17 |
 | `@backstage/plugin-catalog-backend-module-incremental-ingestion` | 0.9.1-next.2 | 0.9.0 | 0.8.0 | 0.7.15 | 0.7.14 | 0.7.13 | 0.7.12 | 0.7.11 | 0.7.10 | 0.7.9 | 0.7.8 |
 | `@backstage/plugin-catalog-backend-module-ldap` | 0.12.11-next.1 | 0.12.10 | 0.12.9 | 0.12.8 | 0.12.7 | 0.12.6 | 0.12.5 | 0.12.4 | 0.12.3 | 0.12.2 | 0.12.1 |
@@ -170,7 +170,7 @@ Versions of **221 packages** across **11 releases** — columns ordered `next` f
 | `@backstage/plugin-proxy-backend` | 0.6.20-next.1 | 0.6.19 | 0.6.18 | 0.6.17 | 0.6.15 | 0.6.14 | 0.6.13 | 0.6.12 | 0.6.11 | 0.6.10 | 0.6.9 |
 | `@backstage/plugin-proxy-node` | 0.1.21-next.1 | 0.1.20 | 0.1.19 | 0.1.18 | 0.1.17 | 0.1.16 | 0.1.15 | 0.1.14 | 0.1.13 | 0.1.12 | 0.1.11 |
 | `@backstage/plugin-scaffolder` | 1.41.0-next.2 | 1.40.0 | 1.39.0 | 1.38.2 | 1.38.1 | 1.38.0 | 1.37.0 | 1.36.2 | 1.36.1 | 1.35.4 | 1.35.2 |
-| `@backstage/plugin-scaffolder-backend` | 4.3.0-next.2 | 4.2.1 | 4.2.0 | 4.1.0 | 4.0.3 | 4.0.1 | 4.0.0 | 3.4.1 | 3.3.1 | 3.1.5 | 3.1.2 |
+| `@backstage/plugin-scaffolder-backend` | 4.3.0-next.2 | 4.2.2 | 4.2.3 | 4.1.0 | 4.0.3 | 4.0.1 | 4.0.0 | 3.4.1 | 3.3.1 | 3.1.5 | 3.1.2 |
 | `@backstage/plugin-scaffolder-backend-module-azure` | 0.2.28-next.1 | 0.2.27 | 0.2.26 | 0.2.25 | 0.2.23 | 0.2.22 | 0.2.21 | 0.2.20 | 0.2.19 | 0.2.18 | 0.2.17 |
 | `@backstage/plugin-scaffolder-backend-module-bitbucket` |  |  |  |  |  |  |  |  |  | 0.3.19 | 0.3.18 |
 | `@backstage/plugin-scaffolder-backend-module-bitbucket-cloud` | 0.3.13-next.1 | 0.3.12 | 0.3.11 | 0.3.10 | 0.3.8 | 0.3.7 | 0.3.6 | 0.3.5 | 0.3.4 | 0.3.3 | 0.3.2 |
@@ -208,11 +208,11 @@ Versions of **221 packages** across **11 releases** — columns ordered `next` f
 | `@backstage/plugin-signals-react` | 0.0.28-next.0 | 0.0.27 | 0.0.26 | 0.0.25 | 0.0.24 | 0.0.23 | 0.0.22 | 0.0.21 | 0.0.20 | 0.0.19 | 0.0.18 |
 | `@backstage/plugin-techdocs` | 1.19.1-next.2 | 1.19.0 | 1.18.2 | 1.18.0 | 1.17.8 | 1.17.7 | 1.17.6 | 1.17.5 | 1.17.2 | 1.17.0 | 1.16.2 |
 | `@backstage/plugin-techdocs-addons-test-utils` | 2.0.11-next.0 | 2.0.10 | 2.0.9 | 2.0.8 | 2.0.7 | 2.0.6 | 2.0.5 | 2.0.4 | 2.0.3 | 2.0.2 | 2.0.1 |
-| `@backstage/plugin-techdocs-backend` | 2.4.2-next.2 | 2.4.1 | 2.3.0 | 2.2.5 | 2.2.2 | 2.2.1 | 2.2.0 | 2.1.8 | 2.1.6 | 2.1.5 | 2.1.4 |
-| `@backstage/plugin-techdocs-backend-module-zensical` | 0.1.0-next.1 | 0.1.0 |  |  |  |  |  |  |  |  |  |
+| `@backstage/plugin-techdocs-backend` | 2.4.2-next.2 | 2.4.2 | 2.3.0 | 2.2.5 | 2.2.2 | 2.2.1 | 2.2.0 | 2.1.8 | 2.1.6 | 2.1.5 | 2.1.4 |
+| `@backstage/plugin-techdocs-backend-module-zensical` | 0.1.0-next.1 | 0.1.1 |  |  |  |  |  |  |  |  |  |
 | `@backstage/plugin-techdocs-common` | 0.1.3-next.0 | 0.1.2 | 0.1.1 | 0.1.1 | 0.1.1 | 0.1.1 | 0.1.1 | 0.1.1 | 0.1.1 | 0.1.1 | 0.1.1 |
 | `@backstage/plugin-techdocs-module-addons-contrib` | 1.1.42-next.2 | 1.1.41 | 1.1.40 | 1.1.39 | 1.1.38 | 1.1.37 | 1.1.36 | 1.1.35 | 1.1.34 | 1.1.33 | 1.1.32 |
-| `@backstage/plugin-techdocs-node` | 2.2.1-next.2 | 2.2.0 | 2.0.2 | 1.15.6 | 1.15.2 | 1.15.1 | 1.15.0 | 1.14.8 | 1.14.4 | 1.14.3 | 1.14.1 |
+| `@backstage/plugin-techdocs-node` | 2.2.1-next.2 | 2.2.1 | 2.0.2 | 1.15.6 | 1.15.2 | 1.15.1 | 1.15.0 | 1.14.8 | 1.14.4 | 1.14.3 | 1.14.1 |
 | `@backstage/plugin-techdocs-react` | 1.4.1-next.2 | 1.4.0 | 1.3.15 | 1.3.14 | 1.3.13 | 1.3.12 | 1.3.11 | 1.3.10 | 1.3.9 | 1.3.8 | 1.3.7 |
 | `@backstage/plugin-user-settings` | 0.9.9-next.2 | 0.9.8 | 0.9.7 | 0.9.6 | 0.9.5 | 0.9.4 | 0.9.3 | 0.9.2 | 0.9.1 | 0.9.0 | 0.8.31 |
 | `@backstage/plugin-user-settings-backend` | 0.4.9-next.1 | 0.4.8 | 0.4.7 | 0.4.6 | 0.4.5 | 0.4.4 | 0.4.3 | 0.4.2 | 0.4.1 | 0.4.0 | 0.3.10 |
@@ -224,4 +224,4 @@ Versions of **221 packages** across **11 releases** — columns ordered `next` f
 | `@backstage/types` | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 |
 | `@backstage/ui` | 0.20.0-next.0 | 0.19.0 | 0.18.0 | 0.17.1 | 0.17.0 | 0.16.0 | 0.15.0 | 0.14.3 | 0.13.3 | 0.12.1 | 0.11.3 |
 | `@backstage/version-bridge` | 1.0.12 | 1.0.12 | 1.0.12 | 1.0.12 | 1.0.12 | 1.0.12 | 1.0.12 | 1.0.12 | 1.0.12 | 1.0.12 | 1.0.11 |
-| `@techdocs/cli` | 1.14.1-next.1 | 1.14.0 | 1.12.0 | 1.11.4 | 1.11.2 | 1.11.1 | 1.11.0 | 1.10.8 | 1.10.6 | 1.10.5 | 1.10.4 |
+| `@techdocs/cli` | 1.14.1-next.1 | 1.14.1 | 1.12.0 | 1.11.4 | 1.11.2 | 1.11.1 | 1.11.0 | 1.10.8 | 1.10.6 | 1.10.5 | 1.10.4 |

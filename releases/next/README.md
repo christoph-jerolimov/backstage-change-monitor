@@ -1,14 +1,14 @@
 # Backstage Release 1.57.0-next.2 (next)
 
-## Compared to 1.56.4 (latest release)
+## Compared to 1.56.5 (latest release)
 
 3 added, 0 removed, 209 upgraded, 7 unchanged.
 
-⚠️ Need extra attention: 4 major, 12 0.x minor, 5 0.0.x patch.
+⚠️ Need extra attention: 4 major, 11 0.x minor, 5 0.0.x patch.
 
 ### ⚠️ Major version bumps
 
-| Package | 1.56.4 | 1.57.0-next.2 |
+| Package | 1.56.5 | 1.57.0-next.2 |
 | --- | --- | --- |
 | `@backstage/plugin-catalog-node` | **2.2.6** | **3.0.0-next.2** |
 | `@backstage/plugin-catalog-react` | **3.3.0** | **4.0.0-next.2** |
@@ -25,7 +25,7 @@
 
 ### Version bumps
 
-| Package | 1.56.4 | 1.57.0-next.2 | Type |
+| Package | 1.56.5 | 1.57.0-next.2 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.13 | 1.7.14-next.1 | Patch |
 | `@backstage/backend-app-api` | 1.8.0 | 1.9.0-next.1 | Minor |
@@ -124,7 +124,7 @@
 | `@backstage/plugin-catalog-backend-module-gitea` | 0.1.17 | 0.1.18-next.1 | Patch |
 | `@backstage/plugin-catalog-backend-module-github` | 0.14.1 | 0.14.2-next.2 | Patch |
 | `@backstage/plugin-catalog-backend-module-github-org` | 0.3.27 | 0.3.28-next.2 | Patch |
-| `@backstage/plugin-catalog-backend-module-gitlab` | 0.8.9 | 0.8.10-next.2 | Patch |
+| `@backstage/plugin-catalog-backend-module-gitlab` | 0.8.10 | 0.8.10-next.2 | Patch |
 | `@backstage/plugin-catalog-backend-module-gitlab-org` | 0.2.26 | 0.2.27-next.2 | Patch |
 | `@backstage/plugin-catalog-backend-module-incremental-ingestion` | 0.9.0 | 0.9.1-next.2 | Patch |
 | `@backstage/plugin-catalog-backend-module-ldap` | 0.12.10 | 0.12.11-next.1 | Patch |
@@ -186,7 +186,7 @@
 | `@backstage/plugin-proxy-backend` | 0.6.19 | 0.6.20-next.1 | Patch |
 | `@backstage/plugin-proxy-node` | 0.1.20 | 0.1.21-next.1 | Patch |
 | `@backstage/plugin-scaffolder` | 1.40.0 | 1.41.0-next.2 | Minor |
-| `@backstage/plugin-scaffolder-backend` | 4.2.1 | 4.3.0-next.2 | Minor |
+| `@backstage/plugin-scaffolder-backend` | 4.2.2 | 4.3.0-next.2 | Minor |
 | `@backstage/plugin-scaffolder-backend-module-azure` | 0.2.27 | 0.2.28-next.1 | Patch |
 | `@backstage/plugin-scaffolder-backend-module-bitbucket-cloud` | 0.3.12 | 0.3.13-next.1 | Patch |
 | `@backstage/plugin-scaffolder-backend-module-bitbucket-server` | 0.2.27 | 0.2.28-next.1 | Patch |
@@ -223,11 +223,11 @@
 | `@backstage/plugin-signals-react` | 0.0.27 | 0.0.28-next.0 | Patch ⚠️ |
 | `@backstage/plugin-techdocs` | 1.19.0 | 1.19.1-next.2 | Patch |
 | `@backstage/plugin-techdocs-addons-test-utils` | 2.0.10 | 2.0.11-next.0 | Patch |
-| `@backstage/plugin-techdocs-backend` | 2.4.1 | 2.4.2-next.2 | Patch |
-| `@backstage/plugin-techdocs-backend-module-zensical` | 0.1.0 | 0.1.0-next.1 | Minor ⚠️ |
+| `@backstage/plugin-techdocs-backend` | 2.4.2 | 2.4.2-next.2 | Patch |
+| `@backstage/plugin-techdocs-backend-module-zensical` | 0.1.1 | 0.1.0-next.1 | Patch |
 | `@backstage/plugin-techdocs-common` | 0.1.2 | 0.1.3-next.0 | Patch |
 | `@backstage/plugin-techdocs-module-addons-contrib` | 1.1.41 | 1.1.42-next.2 | Patch |
-| `@backstage/plugin-techdocs-node` | 2.2.0 | 2.2.1-next.2 | Patch |
+| `@backstage/plugin-techdocs-node` | 2.2.1 | 2.2.1-next.2 | Patch |
 | `@backstage/plugin-techdocs-react` | 1.4.0 | 1.4.1-next.2 | Patch |
 | `@backstage/plugin-user-settings` | 0.9.8 | 0.9.9-next.2 | Patch |
 | `@backstage/plugin-user-settings-backend` | 0.4.8 | 0.4.9-next.1 | Patch |
@@ -235,4 +235,4 @@
 | `@backstage/repo-tools` | 0.19.2 | 0.19.3-next.1 | Patch |
 | `@backstage/test-utils` | 1.7.23 | 1.7.24-next.1 | Patch |
 | `@backstage/ui` | 0.19.0 | 0.20.0-next.0 | Minor ⚠️ |
-| `@techdocs/cli` | 1.14.0 | 1.14.1-next.1 | Patch |
+| `@techdocs/cli` | 1.14.1 | 1.14.1-next.1 | Patch |

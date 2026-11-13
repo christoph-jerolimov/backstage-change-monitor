@@ -1,15 +1,15 @@
 # Backstage Release 1.57.0-next.2 changelog
 
-Changes between 1.56.4 and 1.57.0-next.2 — 3 added, 0 removed, 209 upgraded, 7 unchanged packages.
+Changes between 1.56.5 and 1.57.0-next.2 — 3 added, 0 removed, 209 upgraded, 7 unchanged packages.
 
 ## Summary
 
 - [Newly added packages](#newly-added-packages): 3 packages
 - [Breaking changes](#breaking-changes): 10 packages
 - [Major version bumps](#major-version-bumps): 1 package
-- [0.x minor version bumps](#0x-minor-version-bumps): 3 packages
+- [0.x minor version bumps](#0x-minor-version-bumps): 2 packages
 - [0.0.x patch version bumps](#00x-patch-version-bumps): 2 packages
-- [0.x patch version bumps](#0x-patch-version-bumps): 47 packages
+- [0.x patch version bumps](#0x-patch-version-bumps): 48 packages
 - [Other minor version bumps](#other-minor-version-bumps): 6 packages
 - [Other patch version bumps](#other-patch-version-bumps): 12 packages
 - [Excluded dependency updates](#excluded-dependency-updates): 128 packages
@@ -36,7 +36,6 @@ Changes between 1.56.4 and 1.57.0-next.2 — 3 added, 0 removed, 209 upgraded, 7
 - [0.x minor version bumps](#0x-minor-version-bumps)
   - [`@backstage/backend-defaults` (0.18.1 → 0.19.0-next.2)](#backstagebackend-defaults-0181--0190-next2)
   - [`@backstage/plugin-events-node` (0.4.27 → 0.5.0-next.2)](#backstageplugin-events-node-0427--050-next2)
-  - [`@backstage/plugin-techdocs-backend-module-zensical` (0.1.0 → 0.1.0-next.1)](#backstageplugin-techdocs-backend-module-zensical-010--010-next1)
 - [0.0.x patch version bumps](#00x-patch-version-bumps)
   - [`@backstage/plugin-kubernetes-cluster` (0.0.42 → 0.0.43-next.1)](#backstageplugin-kubernetes-cluster-0042--0043-next1)
   - [`@backstage/release-manifests` (0.0.15 → 0.0.16-next.0)](#backstagerelease-manifests-0015--0016-next0)
@@ -73,7 +72,7 @@ Changes between 1.56.4 and 1.57.0-next.2 — 3 added, 0 removed, 209 upgraded, 7
   - [`@backstage/plugin-catalog-backend-module-ai-model` (0.1.5 → 0.1.6-next.2)](#backstageplugin-catalog-backend-module-ai-model-015--016-next2)
   - [`@backstage/plugin-catalog-backend-module-github` (0.14.1 → 0.14.2-next.2)](#backstageplugin-catalog-backend-module-github-0141--0142-next2)
   - [`@backstage/plugin-catalog-backend-module-github-org` (0.3.27 → 0.3.28-next.2)](#backstageplugin-catalog-backend-module-github-org-0327--0328-next2)
-  - [`@backstage/plugin-catalog-backend-module-gitlab` (0.8.9 → 0.8.10-next.2)](#backstageplugin-catalog-backend-module-gitlab-089--0810-next2)
+  - [`@backstage/plugin-catalog-backend-module-gitlab` (0.8.10 → 0.8.10-next.2)](#backstageplugin-catalog-backend-module-gitlab-0810--0810-next2)
   - [`@backstage/plugin-catalog-backend-module-incremental-ingestion` (0.9.0 → 0.9.1-next.2)](#backstageplugin-catalog-backend-module-incremental-ingestion-090--091-next2)
   - [`@backstage/plugin-catalog-backend-module-unprocessed` (0.6.17 → 0.6.18-next.1)](#backstageplugin-catalog-backend-module-unprocessed-0617--0618-next1)
   - [`@backstage/plugin-devtools` (0.1.44 → 0.1.45-next.2)](#backstageplugin-devtools-0144--0145-next2)
@@ -87,13 +86,14 @@ Changes between 1.56.4 and 1.57.0-next.2 — 3 added, 0 removed, 209 upgraded, 7
   - [`@backstage/plugin-scaffolder-backend-module-gitlab` (0.12.1 → 0.12.2-next.1)](#backstageplugin-scaffolder-backend-module-gitlab-0121--0122-next1)
   - [`@backstage/plugin-search-backend-module-pg` (0.5.60 → 0.5.61-next.1)](#backstageplugin-search-backend-module-pg-0560--0561-next1)
   - [`@backstage/plugin-signals-backend` (0.3.20 → 0.3.21-next.2)](#backstageplugin-signals-backend-0320--0321-next2)
+  - [`@backstage/plugin-techdocs-backend-module-zensical` (0.1.1 → 0.1.0-next.1)](#backstageplugin-techdocs-backend-module-zensical-011--010-next1)
   - [`@backstage/repo-tools` (0.19.2 → 0.19.3-next.1)](#backstagerepo-tools-0192--0193-next1)
 - [Other minor version bumps](#other-minor-version-bumps)
   - [`@backstage/backend-app-api` (1.8.0 → 1.9.0-next.1)](#backstagebackend-app-api-180--190-next1)
   - [`@backstage/backend-test-utils` (1.11.8 → 1.12.0-next.2)](#backstagebackend-test-utils-1118--1120-next2)
   - [`@backstage/errors` (1.3.2 → 1.4.0-next.0)](#backstageerrors-132--140-next0)
   - [`@backstage/plugin-scaffolder` (1.40.0 → 1.41.0-next.2)](#backstageplugin-scaffolder-1400--1410-next2)
-  - [`@backstage/plugin-scaffolder-backend` (4.2.1 → 4.3.0-next.2)](#backstageplugin-scaffolder-backend-421--430-next2)
+  - [`@backstage/plugin-scaffolder-backend` (4.2.2 → 4.3.0-next.2)](#backstageplugin-scaffolder-backend-422--430-next2)
   - [`@backstage/plugin-scaffolder-common` (2.3.1 → 2.4.0-next.1)](#backstageplugin-scaffolder-common-231--240-next1)
 - [Other patch version bumps](#other-patch-version-bumps)
   - [`@backstage/catalog-client` (1.16.3 → 1.16.4-next.1)](#backstagecatalog-client-1163--1164-next1)
@@ -105,9 +105,9 @@ Changes between 1.56.4 and 1.57.0-next.2 — 3 added, 0 removed, 209 upgraded, 7
   - [`@backstage/plugin-search-backend-module-elasticsearch` (2.0.1 → 2.0.2-next.2)](#backstageplugin-search-backend-module-elasticsearch-201--202-next2)
   - [`@backstage/plugin-search-react` (1.11.9 → 1.11.10-next.2)](#backstageplugin-search-react-1119--11110-next2)
   - [`@backstage/plugin-techdocs` (1.19.0 → 1.19.1-next.2)](#backstageplugin-techdocs-1190--1191-next2)
-  - [`@backstage/plugin-techdocs-backend` (2.4.1 → 2.4.2-next.2)](#backstageplugin-techdocs-backend-241--242-next2)
-  - [`@backstage/plugin-techdocs-node` (2.2.0 → 2.2.1-next.2)](#backstageplugin-techdocs-node-220--221-next2)
-  - [`@techdocs/cli` (1.14.0 → 1.14.1-next.1)](#techdocscli-1140--1141-next1)
+  - [`@backstage/plugin-techdocs-backend` (2.4.2 → 2.4.2-next.2)](#backstageplugin-techdocs-backend-242--242-next2)
+  - [`@backstage/plugin-techdocs-node` (2.2.1 → 2.2.1-next.2)](#backstageplugin-techdocs-node-221--221-next2)
+  - [`@techdocs/cli` (1.14.1 → 1.14.1-next.1)](#techdocscli-1141--1141-next1)
 - [Excluded dependency updates](#excluded-dependency-updates)
 
 ## Newly added packages
@@ -478,10 +478,6 @@ Changes between 1.56.4 and 1.57.0-next.2 — 3 added, 0 removed, 209 upgraded, 7
 - [`a70aaea`](https://github.com/backstage/backstage/commit/a70aaea): The requests passed to request validators now include the parsed query string. The request rejection details now also
   support an optional `contentType` option for the provided payload, defaulting to `application/json` but also allowing
   `text/plain`.
-
-### `@backstage/plugin-techdocs-backend-module-zensical` (0.1.0 → [0.1.0-next.1](../../changelogs/@backstage/plugin-techdocs-backend-module-zensical.md#010-next1))
-
-_No changelog entries found._
 
 ## 0.0.x patch version bumps
 
@@ -865,13 +861,9 @@ _No changelog entries found._
 
 - [`d926160`](https://github.com/backstage/backstage/commit/d926160): Added `fetchEmailForGithubApps` config option to the GitHub org entity providers (`GithubOrgEntityProvider` and `GithubMultiOrgEntityProvider`). When enabled, the provider requests the public email field from the GitHub GraphQL API even when using a GitHub App for authentication. By default, the public email is only requested with personal access tokens due to a historical GitHub API limitation that may no longer apply to all instances. If the GitHub instance does not support this, the user sync will fail — only enable it after confirming your GitHub App can access user emails.
 
-### `@backstage/plugin-catalog-backend-module-gitlab` (0.8.9 → [0.8.10-next.2](../../changelogs/@backstage/plugin-catalog-backend-module-gitlab.md#0810-next2))
+### `@backstage/plugin-catalog-backend-module-gitlab` (0.8.10 → [0.8.10-next.2](../../changelogs/@backstage/plugin-catalog-backend-module-gitlab.md#0810-next2))
 
-#### 0.8.10-next.0
-
-##### Patch Changes
-
-- [`ca14116`](https://github.com/backstage/backstage/commit/ca14116): Moved `@gitbeaker/rest` to dev dependencies, since it is only used for types.
+_No changelog entries found._
 
 ### `@backstage/plugin-catalog-backend-module-incremental-ingestion` (0.9.0 → [0.9.1-next.2](../../changelogs/@backstage/plugin-catalog-backend-module-incremental-ingestion.md#091-next2))
 
@@ -994,6 +986,10 @@ _No changelog entries found._
 
 - [`bcb1697`](https://github.com/backstage/backstage/commit/bcb1697): Register WebSocket upgrades through the framework router so the first connection works without a prior HTTP request. Preserve user-only authentication and existing token-as-protocol clients, while keeping only the health endpoint public over HTTP.
 
+### `@backstage/plugin-techdocs-backend-module-zensical` (0.1.1 → [0.1.0-next.1](../../changelogs/@backstage/plugin-techdocs-backend-module-zensical.md#010-next1))
+
+_No changelog entries found._
+
 ### `@backstage/repo-tools` (0.19.2 → [0.19.3-next.1](../../changelogs/@backstage/repo-tools.md#0193-next1))
 
 #### 0.19.3-next.1
@@ -1049,7 +1045,7 @@ _No changelog entries found._
 
 - [`111c6ce`](https://github.com/backstage/backstage/commit/111c6ce): Keep the task button bar at the user's chosen visibility when a task completes, so log visibility and start-over controls remain accessible. Action availability continues to depend on task state and permissions.
 
-### `@backstage/plugin-scaffolder-backend` (4.2.1 → [4.3.0-next.2](../../changelogs/@backstage/plugin-scaffolder-backend.md#430-next2))
+### `@backstage/plugin-scaffolder-backend` (4.2.2 → [4.3.0-next.2](../../changelogs/@backstage/plugin-scaffolder-backend.md#430-next2))
 
 #### 4.3.0-next.1
 
@@ -1060,13 +1056,6 @@ _No changelog entries found._
 ##### Patch Changes
 
 - [`2fac95b`](https://github.com/backstage/backstage/commit/2fac95b): Group the Software Templates API documentation by functionality instead of placing all endpoints under "Untagged".
-
-#### 4.2.2-next.0
-
-##### Patch Changes
-
-- [`be5074c`](https://github.com/backstage/backstage/commit/be5074c): Preserve public task log values when rendering without secrets omits an earlier object field, while continuing to redact secret-derived keys and values.
-- [`62eaba9`](https://github.com/backstage/backstage/commit/62eaba9): Fixed custom task permission rules registered by backend modules being ignored when authorizing task access and filtering task lists.
 
 ### `@backstage/plugin-scaffolder-common` (2.3.1 → [2.4.0-next.1](../../changelogs/@backstage/plugin-scaffolder-common.md#240-next1))
 
@@ -1189,29 +1178,17 @@ _No changelog entries found._
 
 - [`9a1d5cf`](https://github.com/backstage/backstage/commit/9a1d5cf): Fixed the TechDocs table of contents drifting to the right on wide screens. It now stays aligned with the right edge of the documentation content.
 
-### `@backstage/plugin-techdocs-backend` (2.4.1 → [2.4.2-next.2](../../changelogs/@backstage/plugin-techdocs-backend.md#242-next2))
+### `@backstage/plugin-techdocs-backend` (2.4.2 → [2.4.2-next.2](../../changelogs/@backstage/plugin-techdocs-backend.md#242-next2))
 
-#### 2.4.2-next.0
+_No changelog entries found._
 
-##### Patch Changes
+### `@backstage/plugin-techdocs-node` (2.2.1 → [2.2.1-next.2](../../changelogs/@backstage/plugin-techdocs-node.md#221-next2))
 
-- Bumped version to account for a patch release.
+_No changelog entries found._
 
-### `@backstage/plugin-techdocs-node` (2.2.0 → [2.2.1-next.2](../../changelogs/@backstage/plugin-techdocs-node.md#221-next2))
+### `@techdocs/cli` (1.14.1 → [1.14.1-next.1](../../changelogs/@techdocs/cli.md#1141-next1))
 
-#### 2.2.1-next.0
-
-##### Patch Changes
-
-- Bumped version to account for a patch release.
-
-### `@techdocs/cli` (1.14.0 → [1.14.1-next.1](../../changelogs/@techdocs/cli.md#1141-next1))
-
-#### 1.14.1-next.0
-
-##### Patch Changes
-
-- Bumped version to account for a patch release.
+_No changelog entries found._
 
 ## Excluded dependency updates
 

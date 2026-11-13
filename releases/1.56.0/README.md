@@ -1,6 +1,6 @@
 # Backstage Release 1.56.0
 
-## Compared to 1.55.3 (previous minor release)
+## Compared to 1.55.4 (previous minor release)
 
 3 added, 0 removed, 205 upgraded, 7 unchanged.
 
@@ -16,7 +16,7 @@
 
 ### Version bumps
 
-| Package | 1.55.3 | 1.56.0 | Type |
+| Package | 1.55.4 | 1.56.0 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.12 | 1.7.13 | Patch |
 | `@backstage/backend-app-api` | 1.7.4 | 1.8.0 | Minor |
@@ -112,7 +112,7 @@
 | `@backstage/plugin-catalog-backend-module-gitea` | 0.1.16 | 0.1.17 | Patch |
 | `@backstage/plugin-catalog-backend-module-github` | 0.14.0 | 0.14.1 | Patch |
 | `@backstage/plugin-catalog-backend-module-github-org` | 0.3.26 | 0.3.27 | Patch |
-| `@backstage/plugin-catalog-backend-module-gitlab` | 0.8.8 | 0.8.9 | Patch |
+| `@backstage/plugin-catalog-backend-module-gitlab` | 0.8.10 | 0.8.9 | Patch |
 | `@backstage/plugin-catalog-backend-module-gitlab-org` | 0.2.25 | 0.2.26 | Patch |
 | `@backstage/plugin-catalog-backend-module-incremental-ingestion` | 0.8.0 | 0.9.0 | Minor ⚠️ |
 | `@backstage/plugin-catalog-backend-module-ldap` | 0.12.9 | 0.12.10 | Patch |
@@ -174,7 +174,7 @@
 | `@backstage/plugin-proxy-backend` | 0.6.18 | 0.6.19 | Patch |
 | `@backstage/plugin-proxy-node` | 0.1.19 | 0.1.20 | Patch |
 | `@backstage/plugin-scaffolder` | 1.39.0 | 1.40.0 | Minor |
-| `@backstage/plugin-scaffolder-backend` | 4.2.0 | 4.2.1 | Patch |
+| `@backstage/plugin-scaffolder-backend` | 4.2.3 | 4.2.1 | Patch |
 | `@backstage/plugin-scaffolder-backend-module-azure` | 0.2.26 | 0.2.27 | Patch |
 | `@backstage/plugin-scaffolder-backend-module-bitbucket-cloud` | 0.3.11 | 0.3.12 | Patch |
 | `@backstage/plugin-scaffolder-backend-module-bitbucket-server` | 0.2.26 | 0.2.27 | Patch |
