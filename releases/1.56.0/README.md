@@ -1,6 +1,6 @@
 # Backstage Release 1.56.0
 
-## Compared to 1.55.4 (previous minor release)
+## Compared to 1.55.5 (previous minor release)
 
 3 added, 0 removed, 205 upgraded, 7 unchanged.
 
@@ -16,7 +16,7 @@
 
 ### Version bumps
 
-| Package | 1.55.4 | 1.56.0 | Type |
+| Package | 1.55.5 | 1.56.0 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.12 | 1.7.13 | Patch |
 | `@backstage/backend-app-api` | 1.7.4 | 1.8.0 | Minor |
@@ -174,7 +174,7 @@
 | `@backstage/plugin-proxy-backend` | 0.6.18 | 0.6.19 | Patch |
 | `@backstage/plugin-proxy-node` | 0.1.19 | 0.1.20 | Patch |
 | `@backstage/plugin-scaffolder` | 1.39.0 | 1.40.0 | Minor |
-| `@backstage/plugin-scaffolder-backend` | 4.2.3 | 4.2.1 | Patch |
+| `@backstage/plugin-scaffolder-backend` | 4.2.4 | 4.2.1 | Patch |
 | `@backstage/plugin-scaffolder-backend-module-azure` | 0.2.26 | 0.2.27 | Patch |
 | `@backstage/plugin-scaffolder-backend-module-bitbucket-cloud` | 0.3.11 | 0.3.12 | Patch |
 | `@backstage/plugin-scaffolder-backend-module-bitbucket-server` | 0.2.26 | 0.2.27 | Patch |

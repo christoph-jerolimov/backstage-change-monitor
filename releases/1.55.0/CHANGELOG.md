@@ -1,6 +1,6 @@
 # Backstage Release 1.55.0 changelog
 
-Changes between 1.54.10 and 1.55.0 — 2 added, 0 removed, 191 upgraded, 19 unchanged packages.
+Changes between 1.54.12 and 1.55.0 — 2 added, 0 removed, 191 upgraded, 19 unchanged packages.
 
 ## Summary
 
@@ -20,10 +20,10 @@ Changes between 1.54.10 and 1.55.0 — 2 added, 0 removed, 191 upgraded, 19 unch
 - [Breaking changes](#breaking-changes)
   - [`@backstage/connections` (0.3.0 → 0.4.0)](#backstageconnections-030--040)
   - [`@backstage/plugin-auth-backend-module-cloudflare-access-provider` (0.4.18 → 0.5.0)](#backstageplugin-auth-backend-module-cloudflare-access-provider-0418--050)
-  - [`@backstage/plugin-catalog-backend` (3.9.2 → 4.0.0)](#backstageplugin-catalog-backend-392--400)
+  - [`@backstage/plugin-catalog-backend` (3.9.3 → 4.0.0)](#backstageplugin-catalog-backend-393--400)
   - [`@backstage/plugin-catalog-backend-module-incremental-ingestion` (0.7.15 → 0.8.0)](#backstageplugin-catalog-backend-module-incremental-ingestion-0715--080)
   - [`@backstage/plugin-kubernetes-react` (0.5.23 → 0.6.0)](#backstageplugin-kubernetes-react-0523--060)
-  - [`@backstage/plugin-scaffolder-backend-module-github` (0.9.13 → 0.10.0)](#backstageplugin-scaffolder-backend-module-github-0913--0100)
+  - [`@backstage/plugin-scaffolder-backend-module-github` (0.9.14 → 0.10.0)](#backstageplugin-scaffolder-backend-module-github-0914--0100)
   - [`@backstage/plugin-scaffolder-backend-module-sentry` (0.3.8 → 0.4.0)](#backstageplugin-scaffolder-backend-module-sentry-038--040)
   - [`@backstage/plugin-search-backend-module-elasticsearch` (1.8.7 → 2.0.0)](#backstageplugin-search-backend-module-elasticsearch-187--200)
   - [`@backstage/plugin-techdocs-node` (1.15.6 → 2.0.0)](#backstageplugin-techdocs-node-1156--200)
@@ -32,7 +32,7 @@ Changes between 1.54.10 and 1.55.0 — 2 added, 0 removed, 191 upgraded, 19 unch
   - [`@backstage/backend-defaults` (0.17.8 → 0.18.0)](#backstagebackend-defaults-0178--0180)
   - [`@backstage/plugin-catalog-backend-module-github` (0.13.5 → 0.14.0)](#backstageplugin-catalog-backend-module-github-0135--0140)
   - [`@backstage/plugin-notifications` (0.5.20 → 0.6.0)](#backstageplugin-notifications-0520--060)
-  - [`@backstage/plugin-scaffolder-backend-module-gitlab` (0.11.10 → 0.12.0)](#backstageplugin-scaffolder-backend-module-gitlab-01110--0120)
+  - [`@backstage/plugin-scaffolder-backend-module-gitlab` (0.11.11 → 0.12.0)](#backstageplugin-scaffolder-backend-module-gitlab-01111--0120)
 - [0.x patch version bumps](#0x-patch-version-bumps)
   - [`@backstage/backend-dynamic-feature-service` (0.8.6 → 0.8.7)](#backstagebackend-dynamic-feature-service-086--087)
   - [`@backstage/backend-openapi-utils` (0.7.1 → 0.7.2)](#backstagebackend-openapi-utils-071--072)
@@ -199,7 +199,7 @@ verify-patches` to validate Yarn patch references, local patch files,
         audience: ${AUTH_CFACCESS_AUDIENCE}
   ```
 
-### `@backstage/plugin-catalog-backend` (3.9.2 → [4.0.0](../../changelogs/@backstage/plugin-catalog-backend.md#400))
+### `@backstage/plugin-catalog-backend` (3.9.3 → [4.0.0](../../changelogs/@backstage/plugin-catalog-backend.md#400))
 
 #### 4.0.0
 
@@ -253,7 +253,7 @@ verify-patches` to validate Yarn patch references, local patch files,
 - [`c0ebaa7`](https://github.com/backstage/backstage/commit/c0ebaa7): chore(deps): bump `js-yaml` from 4.3.1 to 4.3.2
 - [`83f34f2`](https://github.com/backstage/backstage/commit/83f34f2): The pod exec terminal now loads `@xterm/xterm` and its stylesheet when a terminal is opened, instead of including them in the initial bundle.
 
-### `@backstage/plugin-scaffolder-backend-module-github` (0.9.13 → [0.10.0](../../changelogs/@backstage/plugin-scaffolder-backend-module-github.md#0100))
+### `@backstage/plugin-scaffolder-backend-module-github` (0.9.14 → [0.10.0](../../changelogs/@backstage/plugin-scaffolder-backend-module-github.md#0100))
 
 #### 0.10.0
 
@@ -407,7 +407,7 @@ verify-patches` to validate Yarn patch references, local patch files,
 - [`736d84e`](https://github.com/backstage/backstage/commit/736d84e): Use locale-insensitive Unicode casing for consistent string handling across environments.
 - [`b31afcf`](https://github.com/backstage/backstage/commit/b31afcf): Fixed circular dependency warnings when building the notification settings UI.
 
-### `@backstage/plugin-scaffolder-backend-module-gitlab` (0.11.10 → [0.12.0](../../changelogs/@backstage/plugin-scaffolder-backend-module-gitlab.md#0120))
+### `@backstage/plugin-scaffolder-backend-module-gitlab` (0.11.11 → [0.12.0](../../changelogs/@backstage/plugin-scaffolder-backend-module-gitlab.md#0120))
 
 #### 0.12.0
 

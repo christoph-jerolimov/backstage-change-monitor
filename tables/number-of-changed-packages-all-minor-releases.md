@@ -1,13 +1,13 @@
 # Number of changed packages — all minor releases
 
-**58 releases**, newest to oldest — each row compares a release with the direct previous minor release. Each minor release is represented by the latest patch of its minor line. The `next` release is compared against the latest stable release.
+**58 releases**, newest to oldest — each row compares a release with the direct previous minor release. Each minor release is represented by the latest patch of its minor line.
 
 | Release | Compared to | Added | Removed | Upgraded | Unchanged | Major ⚠️ | 0.x Minor ⚠️ | 0.0.x Patch ⚠️ |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1.57.0-next.2 | 1.56.5 | 3 | 0 | 209 | 7 | 4 | 11 | 5 |
-| 1.56.5 | 1.55.4 | 4 | 0 | 204 | 8 | 0 | 5 | 5 |
-| 1.55.4 | 1.54.10 | 2 | 0 | 191 | 19 | 3 | 11 | 4 |
-| 1.54.10 | 1.53.2 | 0 | 1 | 183 | 27 | 0 | 4 | 4 |
+| 1.57.1 | 1.56.6 | 3 | 0 | 212 | 4 | 8 | 12 | 5 |
+| 1.56.6 | 1.55.5 | 4 | 0 | 204 | 8 | 0 | 5 | 5 |
+| 1.55.5 | 1.54.12 | 2 | 0 | 191 | 19 | 3 | 11 | 4 |
+| 1.54.12 | 1.53.2 | 0 | 1 | 183 | 27 | 0 | 4 | 4 |
 | 1.53.2 | 1.52.1 | 1 | 0 | 186 | 24 | 0 | 8 | 3 |
 | 1.52.1 | 1.51.3 | 1 | 0 | 185 | 24 | 0 | 3 | 3 |
 | 1.51.3 | 1.50.7 | 2 | 0 | 198 | 9 | 3 | 8 | 4 |

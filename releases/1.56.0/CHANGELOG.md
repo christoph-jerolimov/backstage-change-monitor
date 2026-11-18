@@ -1,6 +1,6 @@
 # Backstage Release 1.56.0 changelog
 
-Changes between 1.55.4 and 1.56.0 — 3 added, 0 removed, 205 upgraded, 7 unchanged packages.
+Changes between 1.55.5 and 1.56.0 — 3 added, 0 removed, 205 upgraded, 7 unchanged packages.
 
 ## Summary
 
@@ -95,7 +95,7 @@ Changes between 1.55.4 and 1.56.0 — 3 added, 0 removed, 205 upgraded, 7 unchan
   - [`@backstage/integration` (2.1.2 → 2.1.3)](#backstageintegration-212--213)
   - [`@backstage/plugin-catalog` (2.0.9 → 2.0.10)](#backstageplugin-catalog-209--2010)
   - [`@backstage/plugin-catalog-backend` (4.0.0 → 4.0.1)](#backstageplugin-catalog-backend-400--401)
-  - [`@backstage/plugin-scaffolder-backend` (4.2.3 → 4.2.1)](#backstageplugin-scaffolder-backend-423--421)
+  - [`@backstage/plugin-scaffolder-backend` (4.2.4 → 4.2.1)](#backstageplugin-scaffolder-backend-424--421)
   - [`@backstage/plugin-search-backend-module-elasticsearch` (2.0.0 → 2.0.1)](#backstageplugin-search-backend-module-elasticsearch-200--201)
 - [Excluded dependency updates](#excluded-dependency-updates)
 
@@ -906,7 +906,7 @@ _No changelog entries found._
 
   PostgreSQL and MySQL deadlocks trigger prompt, bounded retries of the entire write transaction, skipping the write if newer stitching work has superseded it. If retries are exhausted, queued work remains available for recovery after the stitching timeout.
 
-### `@backstage/plugin-scaffolder-backend` (4.2.3 → [4.2.1](../../changelogs/@backstage/plugin-scaffolder-backend.md#421))
+### `@backstage/plugin-scaffolder-backend` (4.2.4 → [4.2.1](../../changelogs/@backstage/plugin-scaffolder-backend.md#421))
 
 _No changelog entries found._
 
