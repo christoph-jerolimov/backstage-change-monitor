@@ -22,26 +22,50 @@ Changes between 1.57.0 and 1.57.1 — 0 added, 0 removed, 6 upgraded, 213 unchan
 
 ### `@backstage/plugin-api-docs` (0.14.7 → [0.14.9](../../changelogs/@backstage/plugin-api-docs.md#0149))
 
-_No changelog entries found._
+#### 0.14.9
+
+##### Patch Changes
+
+- Bumped version to account for a patch release.
 
 ### `@backstage/plugin-kubernetes-backend` (0.21.13 → [0.21.15](../../changelogs/@backstage/plugin-kubernetes-backend.md#02115))
 
-_No changelog entries found._
+#### 0.21.15
+
+##### Patch Changes
+
+- Bumped version to account for a patch release.
 
 ### `@backstage/plugin-scaffolder-backend-module-github` (0.10.2 → [0.10.4](../../changelogs/@backstage/plugin-scaffolder-backend-module-github.md#0104))
 
-_No changelog entries found._
+#### 0.10.4
+
+##### Patch Changes
+
+- Bumped version to account for a patch release.
 
 ### `@backstage/plugin-scaffolder-backend-module-gitlab` (0.12.2 → [0.12.4](../../changelogs/@backstage/plugin-scaffolder-backend-module-gitlab.md#0124))
 
-_No changelog entries found._
+#### 0.12.4
+
+##### Patch Changes
+
+- Bumped version to account for a patch release.
 
 ### `@backstage/plugin-techdocs-backend-module-zensical` (0.1.0 → [0.1.2](../../changelogs/@backstage/plugin-techdocs-backend-module-zensical.md#012))
 
-_No changelog entries found._
+#### 0.1.2
+
+##### Patch Changes
+
+- Bumped version to account for a patch release.
 
 ## Other patch version bumps
 
 ### `@backstage/plugin-catalog-backend` (4.0.3 → [4.0.5](../../changelogs/@backstage/plugin-catalog-backend.md#405))
 
-_No changelog entries found._
+#### 4.0.5
+
+##### Patch Changes
+
+- Bumped version to account for a patch release.

@@ -1,9 +1,10 @@
 # Number of changed packages — all releases
 
-**238 releases**, newest to oldest — each row compares a release with the direct previous release.
+**239 releases**, newest to oldest — each row compares a release with the direct previous release. The `next` release is compared against the latest stable release.
 
 | Release | Compared to | Added | Removed | Upgraded | Unchanged | Major ⚠️ | 0.x Minor ⚠️ | 0.0.x Patch ⚠️ |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1.58.0-next.0 | 1.57.1 | 0 | 0 | 181 | 38 | 0 | 3 | 2 |
 | 1.57.1 | 1.57.0 | 0 | 0 | 6 | 213 | 0 | 0 | 0 |
 | 1.57.0 | 1.56.6 | 3 | 0 | 212 | 4 | 8 | 12 | 5 |
 | 1.56.6 | 1.56.5 | 0 | 0 | 6 | 210 | 0 | 0 | 0 |
