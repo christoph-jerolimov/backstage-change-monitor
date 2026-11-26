@@ -2,7 +2,7 @@
 
 Versions of **221 packages** across **11 releases** — columns ordered `next` first, then newest to oldest. Each minor release is represented by the latest patch of its minor line.
 
-| Package | next | 1.57.1 | 1.56.6 | 1.55.5 | 1.54.12 | 1.53.2 | 1.52.1 | 1.51.3 | 1.50.7 | 1.49.7 | 1.48.6 |
+| Package | next | 1.57.3 | 1.56.6 | 1.55.5 | 1.54.12 | 1.53.2 | 1.52.1 | 1.51.3 | 1.50.7 | 1.49.7 | 1.48.6 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.8.1-next.0 | 1.8.0 | 1.7.13 | 1.7.12 | 1.7.11 | 1.7.10 | 1.7.9 | 1.7.8 | 1.7.7 | 1.7.6 | 1.7.5 |
 | `@backstage/backend-app-api` | 1.9.1-next.0 | 1.9.0 | 1.8.0 | 1.7.4 | 1.7.3 | 1.7.2 | 1.7.1 | 1.7.0 | 1.6.1 | 1.6.0 | 1.5.0 |
@@ -38,7 +38,7 @@ Versions of **221 packages** across **11 releases** — columns ordered `next` f
 | `@backstage/config` | 1.3.11 | 1.3.11 | 1.3.10 | 1.3.9 | 1.3.8 | 1.3.8 | 1.3.8 | 1.3.8 | 1.3.7 | 1.3.6 | 1.3.6 |
 | `@backstage/config-loader` | 1.11.5 | 1.11.5 | 1.11.4 | 1.11.3 | 1.11.2 | 1.11.1 | 1.10.12 | 1.10.11 | 1.10.10 | 1.10.9 | 1.10.8 |
 | `@backstage/connections` | 0.5.0-next.0 | 0.4.2 | 0.4.1 | 0.4.0 | 0.3.0 | 0.2.0 | 0.1.0 |  |  |  |  |
-| `@backstage/core-app-api` | 1.20.8-next.0 | 1.20.7 | 1.20.6 | 1.20.5 | 1.20.4 | 1.20.3 | 1.20.2 | 1.20.1 | 1.20.0 | 1.19.6 | 1.19.5 |
+| `@backstage/core-app-api` | 1.20.8-next.0 | 1.20.8 | 1.20.6 | 1.20.5 | 1.20.4 | 1.20.3 | 1.20.2 | 1.20.1 | 1.20.0 | 1.19.6 | 1.19.5 |
 | `@backstage/core-compat-api` | 0.6.1-next.0 | 0.6.0 | 0.5.16 | 0.5.15 | 0.5.14 | 0.5.13 | 0.5.12 | 0.5.11 | 0.5.10 | 0.5.9 | 0.5.8 |
 | `@backstage/core-components` | 0.18.17-next.0 | 0.18.16 | 0.18.15 | 0.18.14 | 0.18.13 | 0.18.12 | 0.18.11 | 0.18.10 | 0.18.9 | 0.18.8 | 0.18.7 |
 | `@backstage/core-plugin-api` | 1.13.0 | 1.13.0 | 1.12.11 | 1.12.10 | 1.12.9 | 1.12.8 | 1.12.7 | 1.12.6 | 1.12.5 | 1.12.4 | 1.12.3 |
@@ -51,7 +51,7 @@ Versions of **221 packages** across **11 releases** — columns ordered `next` f
 | `@backstage/frontend-adapter-react-router-v6` | 0.2.0 | 0.2.0 |  |  |  |  |  |  |  |  |  |
 | `@backstage/frontend-adapter-react-router-v7` | 0.2.0 | 0.2.0 |  |  |  |  |  |  |  |  |  |
 | `@backstage/frontend-adapter-tanstack-router` | 0.2.0 | 0.2.0 |  |  |  |  |  |  |  |  |  |
-| `@backstage/frontend-app-api` | 1.0.1-next.0 | 1.0.0 | 0.16.9 | 0.16.8 | 0.16.7 | 0.16.6 | 0.16.5 | 0.16.3 | 0.16.2 | 0.16.1 | 0.15.0 |
+| `@backstage/frontend-app-api` | 1.0.1-next.0 | 1.0.1 | 0.16.9 | 0.16.8 | 0.16.7 | 0.16.6 | 0.16.5 | 0.16.3 | 0.16.2 | 0.16.1 | 0.15.0 |
 | `@backstage/frontend-defaults` | 0.5.9-next.0 | 0.5.8 | 0.5.7 | 0.5.6 | 0.5.5 | 0.5.4 | 0.5.3 | 0.5.2 | 0.5.1 | 0.5.0 | 0.4.0 |
 | `@backstage/frontend-dev-utils` | 1.0.1-next.0 | 1.0.0 | 0.1.7 | 0.1.6 | 0.1.5 | 0.1.4 | 0.1.3 | 0.1.2 | 0.1.1 | 0.1.0 |  |
 | `@backstage/frontend-dynamic-feature-loader` | 0.1.18 | 0.1.18 | 0.1.17 | 0.1.16 | 0.1.15 | 0.1.14 | 0.1.13 | 0.1.12 | 0.1.11 | 0.1.10 | 0.1.9 |
@@ -63,7 +63,7 @@ Versions of **221 packages** across **11 releases** — columns ordered `next` f
 | `@backstage/module-federation-common` | 0.1.7 | 0.1.7 | 0.1.6 | 0.1.5 | 0.1.4 | 0.1.4 | 0.1.4 | 0.1.4 | 0.1.3 | 0.1.2 | 0.1.1 |
 | `@backstage/plugin-api-docs` | 0.14.10-next.0 | 0.14.9 | 0.14.8 | 0.14.5 | 0.14.4 | 0.14.3 | 0.14.2 | 0.14.1 | 0.14.0 | 0.13.5 | 0.13.4 |
 | `@backstage/plugin-api-docs-module-protoc-gen-doc` | 0.1.12 | 0.1.12 | 0.1.11 | 0.1.11 | 0.1.11 | 0.1.11 | 0.1.11 | 0.1.11 | 0.1.11 | 0.1.11 | 0.1.11 |
-| `@backstage/plugin-app` | 0.6.1-next.0 | 0.6.0 | 0.5.4 | 0.5.3 | 0.5.2 | 0.5.1 | 0.5.0 | 0.4.6 | 0.4.5 | 0.4.3 | 0.4.0 |
+| `@backstage/plugin-app` | 0.6.1-next.0 | 0.6.1 | 0.5.4 | 0.5.3 | 0.5.2 | 0.5.1 | 0.5.0 | 0.4.6 | 0.4.5 | 0.4.3 | 0.4.0 |
 | `@backstage/plugin-app-backend` | 0.5.21-next.0 | 0.5.20 | 0.5.19 | 0.5.18 | 0.5.17 | 0.5.16 | 0.5.15 | 0.5.14 | 0.5.13 | 0.5.12 | 0.5.11 |
 | `@backstage/plugin-app-module-user-settings` | 0.1.5-next.0 | 0.1.4 | 0.1.3 | 0.1.2 | 0.1.1 | 0.1.0 |  |  |  |  |  |
 | `@backstage/plugin-app-node` | 0.1.52-next.0 | 0.1.51 | 0.1.50 | 0.1.49 | 0.1.48 | 0.1.47 | 0.1.46 | 0.1.45 | 0.1.44 | 0.1.43 | 0.1.42 |

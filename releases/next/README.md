@@ -1,6 +1,6 @@
 # Backstage Release 1.58.0-next.0 (next)
 
-## Compared to 1.57.1 (latest release)
+## Compared to 1.57.3 (latest release)
 
 0 added, 0 removed, 181 upgraded, 38 unchanged.
 
@@ -8,7 +8,7 @@
 
 ### Version bumps
 
-| Package | 1.57.1 | 1.58.0-next.0 | Type |
+| Package | 1.57.3 | 1.58.0-next.0 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.8.0 | 1.8.1-next.0 | Patch |
 | `@backstage/backend-app-api` | 1.9.0 | 1.9.1-next.0 | Patch |
@@ -37,12 +37,12 @@
 | `@backstage/cli-module-translations` | 0.1.6 | 0.1.7-next.0 | Patch |
 | `@backstage/cli-node` | 0.3.6 | 0.3.7-next.0 | Patch |
 | `@backstage/connections` | 0.4.2 | 0.5.0-next.0 | Minor ⚠️ |
-| `@backstage/core-app-api` | 1.20.7 | 1.20.8-next.0 | Patch |
+| `@backstage/core-app-api` | 1.20.8 | 1.20.8-next.0 | Patch |
 | `@backstage/core-compat-api` | 0.6.0 | 0.6.1-next.0 | Patch |
 | `@backstage/core-components` | 0.18.16 | 0.18.17-next.0 | Patch |
 | `@backstage/create-app` | 0.9.4 | 0.9.5-next.0 | Patch |
 | `@backstage/dev-utils` | 1.2.0 | 1.2.1-next.0 | Patch |
-| `@backstage/frontend-app-api` | 1.0.0 | 1.0.1-next.0 | Patch |
+| `@backstage/frontend-app-api` | 1.0.1 | 1.0.1-next.0 | Patch |
 | `@backstage/frontend-defaults` | 0.5.8 | 0.5.9-next.0 | Patch |
 | `@backstage/frontend-dev-utils` | 1.0.0 | 1.0.1-next.0 | Patch |
 | `@backstage/frontend-test-utils` | 1.0.0 | 1.0.1-next.0 | Patch |
@@ -50,7 +50,7 @@
 | `@backstage/integration-aws-node` | 0.2.4 | 0.2.5-next.0 | Patch |
 | `@backstage/integration-react` | 1.3.0 | 1.3.1-next.0 | Patch |
 | `@backstage/plugin-api-docs` | 0.14.9 | 0.14.10-next.0 | Patch |
-| `@backstage/plugin-app` | 0.6.0 | 0.6.1-next.0 | Patch |
+| `@backstage/plugin-app` | 0.6.1 | 0.6.1-next.0 | Patch |
 | `@backstage/plugin-app-backend` | 0.5.20 | 0.5.21-next.0 | Patch |
 | `@backstage/plugin-app-module-user-settings` | 0.1.4 | 0.1.5-next.0 | Patch |
 | `@backstage/plugin-app-node` | 0.1.51 | 0.1.52-next.0 | Patch |

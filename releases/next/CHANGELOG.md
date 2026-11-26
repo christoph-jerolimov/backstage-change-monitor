@@ -1,6 +1,6 @@
 # Backstage Release 1.58.0-next.0 changelog
 
-Changes between 1.57.1 and 1.58.0-next.0 — 0 added, 0 removed, 181 upgraded, 38 unchanged packages.
+Changes between 1.57.3 and 1.58.0-next.0 — 0 added, 0 removed, 181 upgraded, 38 unchanged packages.
 
 ## Summary
 
@@ -23,7 +23,7 @@ Changes between 1.57.1 and 1.58.0-next.0 — 0 added, 0 removed, 181 upgraded, 3
   - [`@backstage/cli-node` (0.3.6 → 0.3.7-next.0)](#backstagecli-node-036--037-next0)
   - [`@backstage/core-components` (0.18.16 → 0.18.17-next.0)](#backstagecore-components-01816--01817-next0)
   - [`@backstage/create-app` (0.9.4 → 0.9.5-next.0)](#backstagecreate-app-094--095-next0)
-  - [`@backstage/plugin-app` (0.6.0 → 0.6.1-next.0)](#backstageplugin-app-060--061-next0)
+  - [`@backstage/plugin-app` (0.6.1 → 0.6.1-next.0)](#backstageplugin-app-061--061-next0)
   - [`@backstage/plugin-catalog-backend-module-unprocessed` (0.6.18 → 0.6.19-next.0)](#backstageplugin-catalog-backend-module-unprocessed-0618--0619-next0)
   - [`@backstage/plugin-catalog-unprocessed-entities` (0.2.37 → 0.2.38-next.0)](#backstageplugin-catalog-unprocessed-entities-0237--0238-next0)
   - [`@backstage/plugin-devtools` (0.1.45 → 0.1.46-next.0)](#backstageplugin-devtools-0145--0146-next0)
@@ -32,8 +32,8 @@ Changes between 1.57.1 and 1.58.0-next.0 — 0 added, 0 removed, 181 upgraded, 3
   - [`@backstage/repo-tools` (0.19.3 → 0.19.4-next.0)](#backstagerepo-tools-0193--0194-next0)
 - [Other patch version bumps](#other-patch-version-bumps)
   - [`@backstage/backend-app-api` (1.9.0 → 1.9.1-next.0)](#backstagebackend-app-api-190--191-next0)
-  - [`@backstage/core-app-api` (1.20.7 → 1.20.8-next.0)](#backstagecore-app-api-1207--1208-next0)
-  - [`@backstage/frontend-app-api` (1.0.0 → 1.0.1-next.0)](#backstagefrontend-app-api-100--101-next0)
+  - [`@backstage/core-app-api` (1.20.8 → 1.20.8-next.0)](#backstagecore-app-api-1208--1208-next0)
+  - [`@backstage/frontend-app-api` (1.0.1 → 1.0.1-next.0)](#backstagefrontend-app-api-101--101-next0)
   - [`@backstage/frontend-test-utils` (1.0.0 → 1.0.1-next.0)](#backstagefrontend-test-utils-100--101-next0)
   - [`@backstage/plugin-scaffolder-backend` (4.3.0 → 4.3.1-next.0)](#backstageplugin-scaffolder-backend-430--431-next0)
   - [`@backstage/test-utils` (1.8.0 → 1.8.1-next.0)](#backstagetest-utils-180--181-next0)
@@ -132,14 +132,9 @@ Changes between 1.57.1 and 1.58.0-next.0 — 0 added, 0 removed, 181 upgraded, 3
 
 - Bumped create-app version.
 
-### `@backstage/plugin-app` (0.6.0 → [0.6.1-next.0](../../changelogs/@backstage/plugin-app.md#061-next0))
+### `@backstage/plugin-app` (0.6.1 → [0.6.1-next.0](../../changelogs/@backstage/plugin-app.md#061-next0))
 
-#### 0.6.1-next.0
-
-##### Patch Changes
-
-- [`3ab90f0`](https://github.com/backstage/backstage/commit/3ab90f0): The built-in default icons no longer trigger the warning about icons registered as `IconComponent`. The warning now only lists icons from icon bundles.
-- [`e2378df`](https://github.com/backstage/backstage/commit/e2378df): Updated dependency `i18next` to `^26.0.0`.
+_No changelog entries found._
 
 ### `@backstage/plugin-catalog-backend-module-unprocessed` (0.6.18 → [0.6.19-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-unprocessed.md#0619-next0))
 
@@ -201,21 +196,13 @@ Changes between 1.57.1 and 1.58.0-next.0 — 0 added, 0 removed, 181 upgraded, 3
 
 - [`057b255`](https://github.com/backstage/backstage/commit/057b255): Fixed repeated shutdown signals causing the backend to exit before cleanup finishes. Process shutdown also waits for an explicit `backend.stop()` that is already in progress.
 
-### `@backstage/core-app-api` (1.20.7 → [1.20.8-next.0](../../changelogs/@backstage/core-app-api.md#1208-next0))
+### `@backstage/core-app-api` (1.20.8 → [1.20.8-next.0](../../changelogs/@backstage/core-app-api.md#1208-next0))
 
-#### 1.20.8-next.0
+_No changelog entries found._
 
-##### Patch Changes
+### `@backstage/frontend-app-api` (1.0.1 → [1.0.1-next.0](../../changelogs/@backstage/frontend-app-api.md#101-next0))
 
-- [`e2378df`](https://github.com/backstage/backstage/commit/e2378df): Updated dependency `i18next` to `^26.0.0`.
-
-### `@backstage/frontend-app-api` (1.0.0 → [1.0.1-next.0](../../changelogs/@backstage/frontend-app-api.md#101-next0))
-
-#### 1.0.1-next.0
-
-##### Patch Changes
-
-- [`fcca1d0`](https://github.com/backstage/backstage/commit/fcca1d0): Fixed sub-pages with an empty path not rendering for paths below them, such as a detail route inside an index tab. The catch-all route that every page gets is now ranked after the page's own sub-pages.
+_No changelog entries found._
 
 ### `@backstage/frontend-test-utils` (1.0.0 → [1.0.1-next.0](../../changelogs/@backstage/frontend-test-utils.md#101-next0))
 
