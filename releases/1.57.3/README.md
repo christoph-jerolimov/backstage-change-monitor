@@ -29,7 +29,7 @@
 | `@backstage/plugin-scaffolder-backend-module-gitlab` | 0.12.2 | 0.12.4 | Patch |
 | `@backstage/plugin-techdocs-backend-module-zensical` | 0.1.0 | 0.1.2 | Patch |
 
-## Compared to 1.56.6 (previous minor release)
+## Compared to 1.56.7 (previous minor release)
 
 3 added, 0 removed, 212 upgraded, 4 unchanged.
 
@@ -37,7 +37,7 @@
 
 ### ⚠️ Major version bumps
 
-| Package | 1.56.6 | 1.57.3 |
+| Package | 1.56.7 | 1.57.3 |
 | --- | --- | --- |
 | `@backstage/frontend-app-api` | **0.16.9** | **1.0.1** |
 | `@backstage/frontend-dev-utils` | **0.1.7** | **1.0.0** |
@@ -45,7 +45,7 @@
 | `@backstage/frontend-test-utils` | **0.6.5** | **1.0.0** |
 | `@backstage/plugin-catalog-node` | **2.2.6** | **3.0.0** |
 | `@backstage/plugin-catalog-react` | **3.3.0** | **4.0.0** |
-| `@backstage/plugin-scaffolder-node` | **0.13.8** | **1.0.0** |
+| `@backstage/plugin-scaffolder-node` | **0.13.9** | **1.0.0** |
 | `@backstage/plugin-scaffolder-react` | **2.1.1** | **3.0.0** |
 
 ### 🆕 Added packages
@@ -58,11 +58,11 @@
 
 ### Version bumps
 
-| Package | 1.56.6 | 1.57.3 | Type |
+| Package | 1.56.7 | 1.57.3 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.13 | 1.8.0 | Minor |
 | `@backstage/backend-app-api` | 1.8.0 | 1.9.0 | Minor |
-| `@backstage/backend-defaults` | 0.18.1 | 0.19.0 | Minor ⚠️ |
+| `@backstage/backend-defaults` | 0.18.2 | 0.19.0 | Minor ⚠️ |
 | `@backstage/backend-dynamic-feature-service` | 0.8.8 | 0.8.9 | Patch |
 | `@backstage/backend-openapi-utils` | 0.7.3 | 0.7.4 | Patch |
 | `@backstage/backend-plugin-api` | 1.11.0 | 1.12.0 | Minor |
@@ -120,7 +120,7 @@
 | `@backstage/plugin-app-react` | 0.2.8 | 0.3.0 | Minor ⚠️ |
 | `@backstage/plugin-app-visualizer` | 0.2.9 | 0.2.10 | Patch |
 | `@backstage/plugin-auth` | 0.1.13 | 0.1.14 | Patch |
-| `@backstage/plugin-auth-backend` | 0.30.2 | 0.31.0 | Minor ⚠️ |
+| `@backstage/plugin-auth-backend` | 0.30.3 | 0.31.0 | Minor ⚠️ |
 | `@backstage/plugin-auth-backend-module-atlassian-provider` | 0.5.0 | 0.5.1 | Patch |
 | `@backstage/plugin-auth-backend-module-auth0-provider` | 0.4.6 | 0.4.7 | Patch |
 | `@backstage/plugin-auth-backend-module-aws-alb-provider` | 0.4.21 | 0.4.22 | Patch |
@@ -237,7 +237,7 @@
 | `@backstage/plugin-scaffolder-backend-module-workspace-database` | 0.1.1 | 0.1.2 | Patch |
 | `@backstage/plugin-scaffolder-backend-module-yeoman` | 0.4.27 | 0.4.28 | Patch |
 | `@backstage/plugin-scaffolder-common` | 2.3.1 | 2.4.0 | Minor |
-| `@backstage/plugin-scaffolder-node` | **0.13.8** | **1.0.0** | Major ⚠️ |
+| `@backstage/plugin-scaffolder-node` | **0.13.9** | **1.0.0** | Major ⚠️ |
 | `@backstage/plugin-scaffolder-node-test-utils` | 0.3.16 | 0.3.17 | Patch |
 | `@backstage/plugin-scaffolder-react` | **2.1.1** | **3.0.0** | Major ⚠️ |
 | `@backstage/plugin-search` | 1.7.9 | 1.8.0 | Minor |

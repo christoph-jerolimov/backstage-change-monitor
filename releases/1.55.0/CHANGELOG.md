@@ -1,6 +1,6 @@
 # Backstage Release 1.55.0 changelog
 
-Changes between 1.54.12 and 1.55.0 — 2 added, 0 removed, 191 upgraded, 19 unchanged packages.
+Changes between 1.54.13 and 1.55.0 — 2 added, 0 removed, 191 upgraded, 19 unchanged packages.
 
 ## Summary
 
@@ -19,8 +19,8 @@ Changes between 1.54.12 and 1.55.0 — 2 added, 0 removed, 191 upgraded, 19 unch
   - [`@backstage/plugin-scaffolder-backend-module-workspace-database` (new, 0.1.0)](#backstageplugin-scaffolder-backend-module-workspace-database-new-010)
 - [Breaking changes](#breaking-changes)
   - [`@backstage/connections` (0.3.0 → 0.4.0)](#backstageconnections-030--040)
-  - [`@backstage/plugin-auth-backend-module-cloudflare-access-provider` (0.4.18 → 0.5.0)](#backstageplugin-auth-backend-module-cloudflare-access-provider-0418--050)
-  - [`@backstage/plugin-catalog-backend` (3.9.3 → 4.0.0)](#backstageplugin-catalog-backend-393--400)
+  - [`@backstage/plugin-auth-backend-module-cloudflare-access-provider` (0.4.19 → 0.5.0)](#backstageplugin-auth-backend-module-cloudflare-access-provider-0419--050)
+  - [`@backstage/plugin-catalog-backend` (3.9.4 → 4.0.0)](#backstageplugin-catalog-backend-394--400)
   - [`@backstage/plugin-catalog-backend-module-incremental-ingestion` (0.7.15 → 0.8.0)](#backstageplugin-catalog-backend-module-incremental-ingestion-0715--080)
   - [`@backstage/plugin-kubernetes-react` (0.5.23 → 0.6.0)](#backstageplugin-kubernetes-react-0523--060)
   - [`@backstage/plugin-scaffolder-backend-module-github` (0.9.14 → 0.10.0)](#backstageplugin-scaffolder-backend-module-github-0914--0100)
@@ -29,8 +29,8 @@ Changes between 1.54.12 and 1.55.0 — 2 added, 0 removed, 191 upgraded, 19 unch
   - [`@backstage/plugin-techdocs-node` (1.15.6 → 2.0.0)](#backstageplugin-techdocs-node-1156--200)
   - [`@backstage/ui` (0.17.1 → 0.18.0)](#backstageui-0171--0180)
 - [0.x minor version bumps](#0x-minor-version-bumps)
-  - [`@backstage/backend-defaults` (0.17.8 → 0.18.0)](#backstagebackend-defaults-0178--0180)
-  - [`@backstage/plugin-catalog-backend-module-github` (0.13.5 → 0.14.0)](#backstageplugin-catalog-backend-module-github-0135--0140)
+  - [`@backstage/backend-defaults` (0.17.9 → 0.18.0)](#backstagebackend-defaults-0179--0180)
+  - [`@backstage/plugin-catalog-backend-module-github` (0.13.6 → 0.14.0)](#backstageplugin-catalog-backend-module-github-0136--0140)
   - [`@backstage/plugin-notifications` (0.5.20 → 0.6.0)](#backstageplugin-notifications-0520--060)
   - [`@backstage/plugin-scaffolder-backend-module-gitlab` (0.11.11 → 0.12.0)](#backstageplugin-scaffolder-backend-module-gitlab-01111--0120)
 - [0.x patch version bumps](#0x-patch-version-bumps)
@@ -183,7 +183,7 @@ verify-patches` to validate Yarn patch references, local patch files,
 - [`736d84e`](https://github.com/backstage/backstage/commit/736d84e): Use locale-insensitive Unicode casing for consistent string handling across environments.
 - [`9cf2287`](https://github.com/backstage/backstage/commit/9cf2287): Added support for calling `find` without `authMethods`, which returns connection info (type, title, and config fields) without any auth data. This is useful for consumers that only need connection metadata like API base URLs and don't handle authentication themselves.
 
-### `@backstage/plugin-auth-backend-module-cloudflare-access-provider` (0.4.18 → [0.5.0](../../changelogs/@backstage/plugin-auth-backend-module-cloudflare-access-provider.md#050))
+### `@backstage/plugin-auth-backend-module-cloudflare-access-provider` (0.4.19 → [0.5.0](../../changelogs/@backstage/plugin-auth-backend-module-cloudflare-access-provider.md#050))
 
 #### 0.5.0
 
@@ -199,7 +199,7 @@ verify-patches` to validate Yarn patch references, local patch files,
         audience: ${AUTH_CFACCESS_AUDIENCE}
   ```
 
-### `@backstage/plugin-catalog-backend` (3.9.3 → [4.0.0](../../changelogs/@backstage/plugin-catalog-backend.md#400))
+### `@backstage/plugin-catalog-backend` (3.9.4 → [4.0.0](../../changelogs/@backstage/plugin-catalog-backend.md#400))
 
 #### 4.0.0
 
@@ -355,7 +355,7 @@ verify-patches` to validate Yarn patch references, local patch files,
 
 ## 0.x minor version bumps
 
-### `@backstage/backend-defaults` (0.17.8 → [0.18.0](../../changelogs/@backstage/backend-defaults.md#0180))
+### `@backstage/backend-defaults` (0.17.9 → [0.18.0](../../changelogs/@backstage/backend-defaults.md#0180))
 
 #### 0.18.0
 
@@ -382,7 +382,7 @@ verify-patches` to validate Yarn patch references, local patch files,
 - [`e13e278`](https://github.com/backstage/backstage/commit/e13e278): Updated URL reader allow list matching so configured paths match either the exact path or paths below it at a segment boundary.
 - [`e3b587c`](https://github.com/backstage/backstage/commit/e3b587c): Improve authentication reliability during signing key rotation by performing budgeted JWKS reloads when a newly published key is requested during the remote key set cooldown.
 
-### `@backstage/plugin-catalog-backend-module-github` (0.13.5 → [0.14.0](../../changelogs/@backstage/plugin-catalog-backend-module-github.md#0140))
+### `@backstage/plugin-catalog-backend-module-github` (0.13.6 → [0.14.0](../../changelogs/@backstage/plugin-catalog-backend-module-github.md#0140))
 
 #### 0.14.0
 

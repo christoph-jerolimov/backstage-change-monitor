@@ -1,14 +1,15 @@
 # Backstage Release 1.58.0-next.0 changelog
 
-Changes between 1.57.3 and 1.58.0-next.0 — 0 added, 0 removed, 181 upgraded, 38 unchanged packages.
+Changes between 1.57.4 and 1.58.0-next.0 — 0 added, 0 removed, 181 upgraded, 38 unchanged packages.
 
 ## Summary
 
 - [Breaking changes](#breaking-changes): 2 packages
 - [0.x minor version bumps](#0x-minor-version-bumps): 1 package
-- [0.x patch version bumps](#0x-patch-version-bumps): 12 packages
-- [Other patch version bumps](#other-patch-version-bumps): 6 packages
-- [Excluded dependency updates](#excluded-dependency-updates): 160 packages
+- [0.x patch version bumps](#0x-patch-version-bumps): 18 packages
+- [Other minor version bumps](#other-minor-version-bumps): 1 package
+- [Other patch version bumps](#other-patch-version-bumps): 8 packages
+- [Excluded dependency updates](#excluded-dependency-updates): 151 packages
 
 ## Table of contents
 
@@ -18,24 +19,34 @@ Changes between 1.57.3 and 1.58.0-next.0 — 0 added, 0 removed, 181 upgraded, 3
 - [0.x minor version bumps](#0x-minor-version-bumps)
   - [`@backstage/connections` (0.4.2 → 0.5.0-next.0)](#backstageconnections-042--050-next0)
 - [0.x patch version bumps](#0x-patch-version-bumps)
+  - [`@backstage/backend-defaults` (0.19.1 → 0.19.1-next.0)](#backstagebackend-defaults-0191--0191-next0)
   - [`@backstage/cli` (0.36.8 → 0.36.9-next.0)](#backstagecli-0368--0369-next0)
   - [`@backstage/cli-module-package-manager-yarn` (0.1.5 → 0.1.6-next.0)](#backstagecli-module-package-manager-yarn-015--016-next0)
   - [`@backstage/cli-node` (0.3.6 → 0.3.7-next.0)](#backstagecli-node-036--037-next0)
   - [`@backstage/core-components` (0.18.16 → 0.18.17-next.0)](#backstagecore-components-01816--01817-next0)
   - [`@backstage/create-app` (0.9.4 → 0.9.5-next.0)](#backstagecreate-app-094--095-next0)
   - [`@backstage/plugin-app` (0.6.1 → 0.6.1-next.0)](#backstageplugin-app-061--061-next0)
+  - [`@backstage/plugin-auth-backend` (0.31.1 → 0.31.1-next.0)](#backstageplugin-auth-backend-0311--0311-next0)
+  - [`@backstage/plugin-auth-backend-module-auth0-provider` (0.4.8 → 0.4.8-next.0)](#backstageplugin-auth-backend-module-auth0-provider-048--048-next0)
+  - [`@backstage/plugin-auth-backend-module-cloudflare-access-provider` (0.5.3 → 0.5.3-next.0)](#backstageplugin-auth-backend-module-cloudflare-access-provider-053--053-next0)
+  - [`@backstage/plugin-catalog-backend-module-azure` (0.3.25 → 0.3.25-next.0)](#backstageplugin-catalog-backend-module-azure-0325--0325-next0)
+  - [`@backstage/plugin-catalog-backend-module-github` (0.14.3 → 0.14.3-next.0)](#backstageplugin-catalog-backend-module-github-0143--0143-next0)
   - [`@backstage/plugin-catalog-backend-module-unprocessed` (0.6.18 → 0.6.19-next.0)](#backstageplugin-catalog-backend-module-unprocessed-0618--0619-next0)
   - [`@backstage/plugin-catalog-unprocessed-entities` (0.2.37 → 0.2.38-next.0)](#backstageplugin-catalog-unprocessed-entities-0237--0238-next0)
   - [`@backstage/plugin-devtools` (0.1.45 → 0.1.46-next.0)](#backstageplugin-devtools-0145--0146-next0)
   - [`@backstage/plugin-kubernetes-backend` (0.21.15 → 0.21.16-next.0)](#backstageplugin-kubernetes-backend-02115--02116-next0)
   - [`@backstage/plugin-scaffolder-backend-module-gitlab` (0.12.4 → 0.12.5-next.0)](#backstageplugin-scaffolder-backend-module-gitlab-0124--0125-next0)
   - [`@backstage/repo-tools` (0.19.3 → 0.19.4-next.0)](#backstagerepo-tools-0193--0194-next0)
+- [Other minor version bumps](#other-minor-version-bumps)
+  - [`@backstage/integration` (2.3.0 → 2.2.1-next.0)](#backstageintegration-230--221-next0)
 - [Other patch version bumps](#other-patch-version-bumps)
   - [`@backstage/backend-app-api` (1.9.0 → 1.9.1-next.0)](#backstagebackend-app-api-190--191-next0)
   - [`@backstage/core-app-api` (1.20.8 → 1.20.8-next.0)](#backstagecore-app-api-1208--1208-next0)
   - [`@backstage/frontend-app-api` (1.0.1 → 1.0.1-next.0)](#backstagefrontend-app-api-101--101-next0)
   - [`@backstage/frontend-test-utils` (1.0.0 → 1.0.1-next.0)](#backstagefrontend-test-utils-100--101-next0)
-  - [`@backstage/plugin-scaffolder-backend` (4.3.0 → 4.3.1-next.0)](#backstageplugin-scaffolder-backend-430--431-next0)
+  - [`@backstage/plugin-catalog-backend` (4.0.6 → 4.0.6-next.0)](#backstageplugin-catalog-backend-406--406-next0)
+  - [`@backstage/plugin-scaffolder-backend` (4.3.1 → 4.3.1-next.0)](#backstageplugin-scaffolder-backend-431--431-next0)
+  - [`@backstage/plugin-scaffolder-node` (1.0.1 → 1.0.1-next.0)](#backstageplugin-scaffolder-node-101--101-next0)
   - [`@backstage/test-utils` (1.8.0 → 1.8.1-next.0)](#backstagetest-utils-180--181-next0)
 - [Excluded dependency updates](#excluded-dependency-updates)
 
@@ -91,6 +102,10 @@ Changes between 1.57.3 and 1.58.0-next.0 — 0 added, 0 removed, 181 upgraded, 3
 
 ## 0.x patch version bumps
 
+### `@backstage/backend-defaults` (0.19.1 → [0.19.1-next.0](../../changelogs/@backstage/backend-defaults.md#0191-next0))
+
+_No changelog entries found._
+
 ### `@backstage/cli` (0.36.8 → [0.36.9-next.0](../../changelogs/@backstage/cli.md#0369-next0))
 
 #### 0.36.9-next.0
@@ -133,6 +148,26 @@ Changes between 1.57.3 and 1.58.0-next.0 — 0 added, 0 removed, 181 upgraded, 3
 - Bumped create-app version.
 
 ### `@backstage/plugin-app` (0.6.1 → [0.6.1-next.0](../../changelogs/@backstage/plugin-app.md#061-next0))
+
+_No changelog entries found._
+
+### `@backstage/plugin-auth-backend` (0.31.1 → [0.31.1-next.0](../../changelogs/@backstage/plugin-auth-backend.md#0311-next0))
+
+_No changelog entries found._
+
+### `@backstage/plugin-auth-backend-module-auth0-provider` (0.4.8 → [0.4.8-next.0](../../changelogs/@backstage/plugin-auth-backend-module-auth0-provider.md#048-next0))
+
+_No changelog entries found._
+
+### `@backstage/plugin-auth-backend-module-cloudflare-access-provider` (0.5.3 → [0.5.3-next.0](../../changelogs/@backstage/plugin-auth-backend-module-cloudflare-access-provider.md#053-next0))
+
+_No changelog entries found._
+
+### `@backstage/plugin-catalog-backend-module-azure` (0.3.25 → [0.3.25-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-azure.md#0325-next0))
+
+_No changelog entries found._
+
+### `@backstage/plugin-catalog-backend-module-github` (0.14.3 → [0.14.3-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-github.md#0143-next0))
 
 _No changelog entries found._
 
@@ -186,6 +221,12 @@ _No changelog entries found._
 - [`cc9871a`](https://github.com/backstage/backstage/commit/cc9871a): `package schema openapi generate` now writes an `.openapi-manifest.json` file into each generated directory, and `repo schema openapi validate` uses it to report generated server and client code that is out of date with its `openapi.yaml` or has been edited by hand, along with the command that fixes it. Directories without a manifest, or generated with a different generator version, only produce a warning.
 - [`33532db`](https://github.com/backstage/backstage/commit/33532db): The OpenAPI `generate` commands no longer run Prettier on generated code, so the output stays as emitted by the generator. Add `**/src/schema/openapi/generated/**` to your `.prettierignore` to keep your formatter from rewriting it.
 
+## Other minor version bumps
+
+### `@backstage/integration` (2.3.0 → [2.2.1-next.0](../../changelogs/@backstage/integration.md#221-next0))
+
+_No changelog entries found._
+
 ## Other patch version bumps
 
 ### `@backstage/backend-app-api` (1.9.0 → [1.9.1-next.0](../../changelogs/@backstage/backend-app-api.md#191-next0))
@@ -212,13 +253,17 @@ _No changelog entries found._
 
 - [`e2378df`](https://github.com/backstage/backstage/commit/e2378df): Updated dependency `i18next` to `^26.0.0`.
 
-### `@backstage/plugin-scaffolder-backend` (4.3.0 → [4.3.1-next.0](../../changelogs/@backstage/plugin-scaffolder-backend.md#431-next0))
+### `@backstage/plugin-catalog-backend` (4.0.6 → [4.0.6-next.0](../../changelogs/@backstage/plugin-catalog-backend.md#406-next0))
 
-#### 4.3.1-next.0
+_No changelog entries found._
 
-##### Patch Changes
+### `@backstage/plugin-scaffolder-backend` (4.3.1 → [4.3.1-next.0](../../changelogs/@backstage/plugin-scaffolder-backend.md#431-next0))
 
-- [`c85c174`](https://github.com/backstage/backstage/commit/c85c174): Fixed a memory leak in the task event stream endpoint. If a client disconnected before the stream was opened, the backend kept polling the task events and writing them to the closed connection. For tasks that use `EXPERIMENTAL_recovery`, this continued for the lifetime of the process and memory grew until the backend ran out of memory.
+_No changelog entries found._
+
+### `@backstage/plugin-scaffolder-node` (1.0.1 → [1.0.1-next.0](../../changelogs/@backstage/plugin-scaffolder-node.md#101-next0))
+
+_No changelog entries found._
 
 ### `@backstage/test-utils` (1.8.0 → [1.8.1-next.0](../../changelogs/@backstage/test-utils.md#181-next0))
 
@@ -231,7 +276,6 @@ _No changelog entries found._
 ## Excluded dependency updates
 
 - `@backstage/app-defaults` (1.8.0 → [1.8.1-next.0](../../changelogs/@backstage/app-defaults.md#181-next0))
-- `@backstage/backend-defaults` (0.19.0 → [0.19.1-next.0](../../changelogs/@backstage/backend-defaults.md#0191-next0))
 - `@backstage/backend-dynamic-feature-service` (0.8.9 → [0.8.10-next.0](../../changelogs/@backstage/backend-dynamic-feature-service.md#0810-next0))
 - `@backstage/backend-openapi-utils` (0.7.4 → [0.7.5-next.0](../../changelogs/@backstage/backend-openapi-utils.md#075-next0))
 - `@backstage/backend-plugin-api` (1.12.0 → [1.12.1-next.0](../../changelogs/@backstage/backend-plugin-api.md#1121-next0))
@@ -255,7 +299,6 @@ _No changelog entries found._
 - `@backstage/dev-utils` (1.2.0 → [1.2.1-next.0](../../changelogs/@backstage/dev-utils.md#121-next0))
 - `@backstage/frontend-defaults` (0.5.8 → [0.5.9-next.0](../../changelogs/@backstage/frontend-defaults.md#059-next0))
 - `@backstage/frontend-dev-utils` (1.0.0 → [1.0.1-next.0](../../changelogs/@backstage/frontend-dev-utils.md#101-next0))
-- `@backstage/integration` (2.2.0 → [2.2.1-next.0](../../changelogs/@backstage/integration.md#221-next0))
 - `@backstage/integration-aws-node` (0.2.4 → [0.2.5-next.0](../../changelogs/@backstage/integration-aws-node.md#025-next0))
 - `@backstage/integration-react` (1.3.0 → [1.3.1-next.0](../../changelogs/@backstage/integration-react.md#131-next0))
 - `@backstage/plugin-api-docs` (0.14.9 → [0.14.10-next.0](../../changelogs/@backstage/plugin-api-docs.md#01410-next0))
@@ -263,13 +306,10 @@ _No changelog entries found._
 - `@backstage/plugin-app-module-user-settings` (0.1.4 → [0.1.5-next.0](../../changelogs/@backstage/plugin-app-module-user-settings.md#015-next0))
 - `@backstage/plugin-app-node` (0.1.51 → [0.1.52-next.0](../../changelogs/@backstage/plugin-app-node.md#0152-next0))
 - `@backstage/plugin-app-visualizer` (0.2.10 → [0.2.11-next.0](../../changelogs/@backstage/plugin-app-visualizer.md#0211-next0))
-- `@backstage/plugin-auth-backend` (0.31.0 → [0.31.1-next.0](../../changelogs/@backstage/plugin-auth-backend.md#0311-next0))
 - `@backstage/plugin-auth-backend-module-atlassian-provider` (0.5.1 → [0.5.2-next.0](../../changelogs/@backstage/plugin-auth-backend-module-atlassian-provider.md#052-next0))
-- `@backstage/plugin-auth-backend-module-auth0-provider` (0.4.7 → [0.4.8-next.0](../../changelogs/@backstage/plugin-auth-backend-module-auth0-provider.md#048-next0))
 - `@backstage/plugin-auth-backend-module-azure-easyauth-provider` (0.2.26 → [0.2.27-next.0](../../changelogs/@backstage/plugin-auth-backend-module-azure-easyauth-provider.md#0227-next0))
 - `@backstage/plugin-auth-backend-module-bitbucket-provider` (0.3.21 → [0.3.22-next.0](../../changelogs/@backstage/plugin-auth-backend-module-bitbucket-provider.md#0322-next0))
 - `@backstage/plugin-auth-backend-module-bitbucket-server-provider` (0.2.21 → [0.2.22-next.0](../../changelogs/@backstage/plugin-auth-backend-module-bitbucket-server-provider.md#0222-next0))
-- `@backstage/plugin-auth-backend-module-cloudflare-access-provider` (0.5.2 → [0.5.3-next.0](../../changelogs/@backstage/plugin-auth-backend-module-cloudflare-access-provider.md#053-next0))
 - `@backstage/plugin-auth-backend-module-gcp-iap-provider` (0.4.21 → [0.4.22-next.0](../../changelogs/@backstage/plugin-auth-backend-module-gcp-iap-provider.md#0422-next0))
 - `@backstage/plugin-auth-backend-module-github-provider` (0.5.9 → [0.5.10-next.0](../../changelogs/@backstage/plugin-auth-backend-module-github-provider.md#0510-next0))
 - `@backstage/plugin-auth-backend-module-gitlab-provider` (0.4.9 → [0.4.10-next.0](../../changelogs/@backstage/plugin-auth-backend-module-gitlab-provider.md#0410-next0))
@@ -288,17 +328,14 @@ _No changelog entries found._
 - `@backstage/plugin-auth-react` (0.1.33 → [0.1.34-next.0](../../changelogs/@backstage/plugin-auth-react.md#0134-next0))
 - `@backstage/plugin-bitbucket-cloud-common` (0.3.15 → [0.3.16-next.0](../../changelogs/@backstage/plugin-bitbucket-cloud-common.md#0316-next0))
 - `@backstage/plugin-catalog` (2.1.0 → [2.1.1-next.0](../../changelogs/@backstage/plugin-catalog.md#211-next0))
-- `@backstage/plugin-catalog-backend` (4.0.5 → [4.0.6-next.0](../../changelogs/@backstage/plugin-catalog-backend.md#406-next0))
 - `@backstage/plugin-catalog-backend-module-ai-model` (0.1.6 → [0.1.7-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-ai-model.md#017-next0))
 - `@backstage/plugin-catalog-backend-module-aws` (0.4.30 → [0.4.31-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-aws.md#0431-next0))
-- `@backstage/plugin-catalog-backend-module-azure` (0.3.24 → [0.3.25-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-azure.md#0325-next0))
 - `@backstage/plugin-catalog-backend-module-backstage-openapi` (0.5.20 → [0.5.21-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-backstage-openapi.md#0521-next0))
 - `@backstage/plugin-catalog-backend-module-bitbucket-cloud` (0.5.17 → [0.5.18-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-bitbucket-cloud.md#0518-next0))
 - `@backstage/plugin-catalog-backend-module-bitbucket-server` (0.5.17 → [0.5.18-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-bitbucket-server.md#0518-next0))
 - `@backstage/plugin-catalog-backend-module-gcp` (0.3.25 → [0.3.26-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-gcp.md#0326-next0))
 - `@backstage/plugin-catalog-backend-module-gerrit` (0.3.20 → [0.3.21-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-gerrit.md#0321-next0))
 - `@backstage/plugin-catalog-backend-module-gitea` (0.1.18 → [0.1.19-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-gitea.md#0119-next0))
-- `@backstage/plugin-catalog-backend-module-github` (0.14.2 → [0.14.3-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-github.md#0143-next0))
 - `@backstage/plugin-catalog-backend-module-github-org` (0.3.28 → [0.3.29-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-github-org.md#0329-next0))
 - `@backstage/plugin-catalog-backend-module-gitlab` (0.8.11 → [0.8.12-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-gitlab.md#0812-next0))
 - `@backstage/plugin-catalog-backend-module-gitlab-org` (0.2.27 → [0.2.28-next.0](../../changelogs/@backstage/plugin-catalog-backend-module-gitlab-org.md#0228-next0))
@@ -364,7 +401,6 @@ _No changelog entries found._
 - `@backstage/plugin-scaffolder-backend-module-workspace-database` (0.1.2 → [0.1.3-next.0](../../changelogs/@backstage/plugin-scaffolder-backend-module-workspace-database.md#013-next0))
 - `@backstage/plugin-scaffolder-backend-module-yeoman` (0.4.28 → [0.4.29-next.0](../../changelogs/@backstage/plugin-scaffolder-backend-module-yeoman.md#0429-next0))
 - `@backstage/plugin-scaffolder-common` (2.4.0 → [2.4.1-next.0](../../changelogs/@backstage/plugin-scaffolder-common.md#241-next0))
-- `@backstage/plugin-scaffolder-node` (1.0.0 → [1.0.1-next.0](../../changelogs/@backstage/plugin-scaffolder-node.md#101-next0))
 - `@backstage/plugin-scaffolder-node-test-utils` (0.3.17 → [0.3.18-next.0](../../changelogs/@backstage/plugin-scaffolder-node-test-utils.md#0318-next0))
 - `@backstage/plugin-scaffolder-react` (3.0.0 → [3.0.1-next.0](../../changelogs/@backstage/plugin-scaffolder-react.md#301-next0))
 - `@backstage/plugin-search` (1.8.0 → [1.8.1-next.0](../../changelogs/@backstage/plugin-search.md#181-next0))

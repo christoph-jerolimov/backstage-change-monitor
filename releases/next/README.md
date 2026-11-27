@@ -1,6 +1,6 @@
 # Backstage Release 1.58.0-next.0 (next)
 
-## Compared to 1.57.3 (latest release)
+## Compared to 1.57.4 (latest release)
 
 0 added, 0 removed, 181 upgraded, 38 unchanged.
 
@@ -8,11 +8,11 @@
 
 ### Version bumps
 
-| Package | 1.57.3 | 1.58.0-next.0 | Type |
+| Package | 1.57.4 | 1.58.0-next.0 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.8.0 | 1.8.1-next.0 | Patch |
 | `@backstage/backend-app-api` | 1.9.0 | 1.9.1-next.0 | Patch |
-| `@backstage/backend-defaults` | 0.19.0 | 0.19.1-next.0 | Patch |
+| `@backstage/backend-defaults` | 0.19.1 | 0.19.1-next.0 | Patch |
 | `@backstage/backend-dynamic-feature-service` | 0.8.9 | 0.8.10-next.0 | Patch |
 | `@backstage/backend-openapi-utils` | 0.7.4 | 0.7.5-next.0 | Patch |
 | `@backstage/backend-plugin-api` | 1.12.0 | 1.12.1-next.0 | Patch |
@@ -46,7 +46,7 @@
 | `@backstage/frontend-defaults` | 0.5.8 | 0.5.9-next.0 | Patch |
 | `@backstage/frontend-dev-utils` | 1.0.0 | 1.0.1-next.0 | Patch |
 | `@backstage/frontend-test-utils` | 1.0.0 | 1.0.1-next.0 | Patch |
-| `@backstage/integration` | 2.2.0 | 2.2.1-next.0 | Patch |
+| `@backstage/integration` | 2.3.0 | 2.2.1-next.0 | Minor |
 | `@backstage/integration-aws-node` | 0.2.4 | 0.2.5-next.0 | Patch |
 | `@backstage/integration-react` | 1.3.0 | 1.3.1-next.0 | Patch |
 | `@backstage/plugin-api-docs` | 0.14.9 | 0.14.10-next.0 | Patch |
@@ -55,14 +55,14 @@
 | `@backstage/plugin-app-module-user-settings` | 0.1.4 | 0.1.5-next.0 | Patch |
 | `@backstage/plugin-app-node` | 0.1.51 | 0.1.52-next.0 | Patch |
 | `@backstage/plugin-app-visualizer` | 0.2.10 | 0.2.11-next.0 | Patch |
-| `@backstage/plugin-auth-backend` | 0.31.0 | 0.31.1-next.0 | Patch |
+| `@backstage/plugin-auth-backend` | 0.31.1 | 0.31.1-next.0 | Patch |
 | `@backstage/plugin-auth-backend-module-atlassian-provider` | 0.5.1 | 0.5.2-next.0 | Patch |
-| `@backstage/plugin-auth-backend-module-auth0-provider` | 0.4.7 | 0.4.8-next.0 | Patch |
+| `@backstage/plugin-auth-backend-module-auth0-provider` | 0.4.8 | 0.4.8-next.0 | Patch |
 | `@backstage/plugin-auth-backend-module-aws-alb-provider` | 0.4.22 | 0.5.0-next.0 | Minor ⚠️ |
 | `@backstage/plugin-auth-backend-module-azure-easyauth-provider` | 0.2.26 | 0.2.27-next.0 | Patch |
 | `@backstage/plugin-auth-backend-module-bitbucket-provider` | 0.3.21 | 0.3.22-next.0 | Patch |
 | `@backstage/plugin-auth-backend-module-bitbucket-server-provider` | 0.2.21 | 0.2.22-next.0 | Patch |
-| `@backstage/plugin-auth-backend-module-cloudflare-access-provider` | 0.5.2 | 0.5.3-next.0 | Patch |
+| `@backstage/plugin-auth-backend-module-cloudflare-access-provider` | 0.5.3 | 0.5.3-next.0 | Patch |
 | `@backstage/plugin-auth-backend-module-gcp-iap-provider` | 0.4.21 | 0.4.22-next.0 | Patch |
 | `@backstage/plugin-auth-backend-module-github-provider` | 0.5.9 | 0.5.10-next.0 | Patch |
 | `@backstage/plugin-auth-backend-module-gitlab-provider` | 0.4.9 | 0.4.10-next.0 | Patch |
@@ -81,17 +81,17 @@
 | `@backstage/plugin-auth-react` | 0.1.33 | 0.1.34-next.0 | Patch |
 | `@backstage/plugin-bitbucket-cloud-common` | 0.3.15 | 0.3.16-next.0 | Patch |
 | `@backstage/plugin-catalog` | 2.1.0 | 2.1.1-next.0 | Patch |
-| `@backstage/plugin-catalog-backend` | 4.0.5 | 4.0.6-next.0 | Patch |
+| `@backstage/plugin-catalog-backend` | 4.0.6 | 4.0.6-next.0 | Patch |
 | `@backstage/plugin-catalog-backend-module-ai-model` | 0.1.6 | 0.1.7-next.0 | Patch |
 | `@backstage/plugin-catalog-backend-module-aws` | 0.4.30 | 0.4.31-next.0 | Patch |
-| `@backstage/plugin-catalog-backend-module-azure` | 0.3.24 | 0.3.25-next.0 | Patch |
+| `@backstage/plugin-catalog-backend-module-azure` | 0.3.25 | 0.3.25-next.0 | Patch |
 | `@backstage/plugin-catalog-backend-module-backstage-openapi` | 0.5.20 | 0.5.21-next.0 | Patch |
 | `@backstage/plugin-catalog-backend-module-bitbucket-cloud` | 0.5.17 | 0.5.18-next.0 | Patch |
 | `@backstage/plugin-catalog-backend-module-bitbucket-server` | 0.5.17 | 0.5.18-next.0 | Patch |
 | `@backstage/plugin-catalog-backend-module-gcp` | 0.3.25 | 0.3.26-next.0 | Patch |
 | `@backstage/plugin-catalog-backend-module-gerrit` | 0.3.20 | 0.3.21-next.0 | Patch |
 | `@backstage/plugin-catalog-backend-module-gitea` | 0.1.18 | 0.1.19-next.0 | Patch |
-| `@backstage/plugin-catalog-backend-module-github` | 0.14.2 | 0.14.3-next.0 | Patch |
+| `@backstage/plugin-catalog-backend-module-github` | 0.14.3 | 0.14.3-next.0 | Patch |
 | `@backstage/plugin-catalog-backend-module-github-org` | 0.3.28 | 0.3.29-next.0 | Patch |
 | `@backstage/plugin-catalog-backend-module-gitlab` | 0.8.11 | 0.8.12-next.0 | Patch |
 | `@backstage/plugin-catalog-backend-module-gitlab-org` | 0.2.27 | 0.2.28-next.0 | Patch |
@@ -146,7 +146,7 @@
 | `@backstage/plugin-proxy-backend` | 0.6.20 | 0.6.21-next.0 | Patch |
 | `@backstage/plugin-proxy-node` | 0.1.21 | 0.1.22-next.0 | Patch |
 | `@backstage/plugin-scaffolder` | 1.41.0 | 1.41.1-next.0 | Patch |
-| `@backstage/plugin-scaffolder-backend` | 4.3.0 | 4.3.1-next.0 | Patch |
+| `@backstage/plugin-scaffolder-backend` | 4.3.1 | 4.3.1-next.0 | Patch |
 | `@backstage/plugin-scaffolder-backend-module-azure` | 0.2.28 | 0.2.29-next.0 | Patch |
 | `@backstage/plugin-scaffolder-backend-module-bitbucket-cloud` | 0.3.13 | 0.3.14-next.0 | Patch |
 | `@backstage/plugin-scaffolder-backend-module-bitbucket-server` | 0.2.28 | 0.2.29-next.0 | Patch |
@@ -163,7 +163,7 @@
 | `@backstage/plugin-scaffolder-backend-module-workspace-database` | 0.1.2 | 0.1.3-next.0 | Patch |
 | `@backstage/plugin-scaffolder-backend-module-yeoman` | 0.4.28 | 0.4.29-next.0 | Patch |
 | `@backstage/plugin-scaffolder-common` | 2.4.0 | 2.4.1-next.0 | Patch |
-| `@backstage/plugin-scaffolder-node` | 1.0.0 | 1.0.1-next.0 | Patch |
+| `@backstage/plugin-scaffolder-node` | 1.0.1 | 1.0.1-next.0 | Patch |
 | `@backstage/plugin-scaffolder-node-test-utils` | 0.3.17 | 0.3.18-next.0 | Patch |
 | `@backstage/plugin-scaffolder-react` | 3.0.0 | 3.0.1-next.0 | Patch |
 | `@backstage/plugin-search` | 1.8.0 | 1.8.1-next.0 | Patch |

@@ -22,7 +22,7 @@
 | `@backstage/plugin-techdocs` | 1.18.1 | 1.18.2 | Patch |
 | `@backstage/plugin-techdocs-node` | 2.0.0 | 2.0.2 | Patch |
 
-## Compared to 1.54.12 (previous minor release)
+## Compared to 1.54.13 (previous minor release)
 
 2 added, 0 removed, 191 upgraded, 19 unchanged.
 
@@ -30,9 +30,9 @@
 
 ### ⚠️ Major version bumps
 
-| Package | 1.54.12 | 1.55.3 |
+| Package | 1.54.13 | 1.55.3 |
 | --- | --- | --- |
-| `@backstage/plugin-catalog-backend` | **3.9.3** | **4.0.0** |
+| `@backstage/plugin-catalog-backend` | **3.9.4** | **4.0.0** |
 | `@backstage/plugin-search-backend-module-elasticsearch` | **1.8.7** | **2.0.0** |
 | `@backstage/plugin-techdocs-node` | **1.15.6** | **2.0.2** |
 
@@ -45,11 +45,11 @@
 
 ### Version bumps
 
-| Package | 1.54.12 | 1.55.3 | Type |
+| Package | 1.54.13 | 1.55.3 | Type |
 | --- | --- | --- | --- |
 | `@backstage/app-defaults` | 1.7.11 | 1.7.12 | Patch |
 | `@backstage/backend-app-api` | 1.7.3 | 1.7.4 | Patch |
-| `@backstage/backend-defaults` | 0.17.8 | 0.18.0 | Minor ⚠️ |
+| `@backstage/backend-defaults` | 0.17.9 | 0.18.0 | Minor ⚠️ |
 | `@backstage/backend-dynamic-feature-service` | 0.8.6 | 0.8.7 | Patch |
 | `@backstage/backend-openapi-utils` | 0.7.1 | 0.7.2 | Patch |
 | `@backstage/backend-plugin-api` | 1.10.0 | 1.10.1 | Patch |
@@ -99,7 +99,7 @@
 | `@backstage/plugin-auth-backend-module-azure-easyauth-provider` | 0.2.23 | 0.2.24 | Patch |
 | `@backstage/plugin-auth-backend-module-bitbucket-provider` | 0.3.18 | 0.3.19 | Patch |
 | `@backstage/plugin-auth-backend-module-bitbucket-server-provider` | 0.2.18 | 0.2.19 | Patch |
-| `@backstage/plugin-auth-backend-module-cloudflare-access-provider` | 0.4.18 | 0.5.0 | Minor ⚠️ |
+| `@backstage/plugin-auth-backend-module-cloudflare-access-provider` | 0.4.19 | 0.5.0 | Minor ⚠️ |
 | `@backstage/plugin-auth-backend-module-gcp-iap-provider` | 0.4.18 | 0.4.19 | Patch |
 | `@backstage/plugin-auth-backend-module-github-provider` | 0.5.6 | 0.5.7 | Patch |
 | `@backstage/plugin-auth-backend-module-gitlab-provider` | 0.4.6 | 0.4.7 | Patch |
@@ -118,7 +118,7 @@
 | `@backstage/plugin-auth-react` | 0.1.30 | 0.1.31 | Patch |
 | `@backstage/plugin-bitbucket-cloud-common` | 0.3.12 | 0.3.13 | Patch |
 | `@backstage/plugin-catalog` | 2.0.8 | 2.0.9 | Patch |
-| `@backstage/plugin-catalog-backend` | **3.9.3** | **4.0.0** | Major ⚠️ |
+| `@backstage/plugin-catalog-backend` | **3.9.4** | **4.0.0** | Major ⚠️ |
 | `@backstage/plugin-catalog-backend-module-ai-model` | 0.1.3 | 0.1.4 | Patch |
 | `@backstage/plugin-catalog-backend-module-aws` | 0.4.27 | 0.4.28 | Patch |
 | `@backstage/plugin-catalog-backend-module-azure` | 0.3.21 | 0.3.22 | Patch |
@@ -128,7 +128,7 @@
 | `@backstage/plugin-catalog-backend-module-gcp` | 0.3.22 | 0.3.23 | Patch |
 | `@backstage/plugin-catalog-backend-module-gerrit` | 0.3.17 | 0.3.18 | Patch |
 | `@backstage/plugin-catalog-backend-module-gitea` | 0.1.15 | 0.1.16 | Patch |
-| `@backstage/plugin-catalog-backend-module-github` | 0.13.5 | 0.14.0 | Minor ⚠️ |
+| `@backstage/plugin-catalog-backend-module-github` | 0.13.6 | 0.14.0 | Minor ⚠️ |
 | `@backstage/plugin-catalog-backend-module-github-org` | 0.3.25 | 0.3.26 | Patch |
 | `@backstage/plugin-catalog-backend-module-gitlab` | 0.8.7 | 0.8.8 | Patch |
 | `@backstage/plugin-catalog-backend-module-gitlab-org` | 0.2.24 | 0.2.25 | Patch |

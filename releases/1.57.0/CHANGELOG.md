@@ -1,6 +1,6 @@
 # Backstage Release 1.57.0 changelog
 
-Changes between 1.56.6 and 1.57.0 — 3 added, 0 removed, 212 upgraded, 4 unchanged packages.
+Changes between 1.56.7 and 1.57.0 — 3 added, 0 removed, 212 upgraded, 4 unchanged packages.
 
 ## Summary
 
@@ -21,7 +21,7 @@ Changes between 1.56.6 and 1.57.0 — 3 added, 0 removed, 212 upgraded, 4 unchan
   - [`@backstage/frontend-adapter-react-router-v7` (new, 0.2.0)](#backstagefrontend-adapter-react-router-v7-new-020)
   - [`@backstage/frontend-adapter-tanstack-router` (new, 0.2.0)](#backstagefrontend-adapter-tanstack-router-new-020)
 - [Breaking changes](#breaking-changes)
-  - [`@backstage/backend-defaults` (0.18.1 → 0.19.0)](#backstagebackend-defaults-0181--0190)
+  - [`@backstage/backend-defaults` (0.18.2 → 0.19.0)](#backstagebackend-defaults-0182--0190)
   - [`@backstage/backend-plugin-api` (1.11.0 → 1.12.0)](#backstagebackend-plugin-api-1110--1120)
   - [`@backstage/core-compat-api` (0.5.16 → 0.6.0)](#backstagecore-compat-api-0516--060)
   - [`@backstage/core-plugin-api` (1.12.11 → 1.13.0)](#backstagecore-plugin-api-11211--1130)
@@ -30,7 +30,7 @@ Changes between 1.56.6 and 1.57.0 — 3 added, 0 removed, 212 upgraded, 4 unchan
   - [`@backstage/frontend-test-utils` (0.6.5 → 1.0.0)](#backstagefrontend-test-utils-065--100)
   - [`@backstage/plugin-app` (0.5.4 → 0.6.0)](#backstageplugin-app-054--060)
   - [`@backstage/plugin-app-react` (0.2.8 → 0.3.0)](#backstageplugin-app-react-028--030)
-  - [`@backstage/plugin-auth-backend` (0.30.2 → 0.31.0)](#backstageplugin-auth-backend-0302--0310)
+  - [`@backstage/plugin-auth-backend` (0.30.3 → 0.31.0)](#backstageplugin-auth-backend-0303--0310)
   - [`@backstage/plugin-catalog-backend-module-ldap` (0.12.10 → 0.13.0)](#backstageplugin-catalog-backend-module-ldap-01210--0130)
   - [`@backstage/plugin-events-backend-module-azure` (0.2.36 → 0.3.0)](#backstageplugin-events-backend-module-azure-0236--030)
   - [`@backstage/plugin-events-backend-module-github` (0.4.17 → 0.5.0)](#backstageplugin-events-backend-module-github-0417--050)
@@ -196,7 +196,7 @@ Changes between 1.56.6 and 1.57.0 — 3 added, 0 removed, 212 upgraded, 4 unchan
 
 ## Breaking changes
 
-### `@backstage/backend-defaults` (0.18.1 → [0.19.0](../../changelogs/@backstage/backend-defaults.md#0190))
+### `@backstage/backend-defaults` (0.18.2 → [0.19.0](../../changelogs/@backstage/backend-defaults.md#0190))
 
 #### 0.19.0
 
@@ -531,7 +531,7 @@ Changes between 1.56.6 and 1.57.0 — 3 added, 0 removed, 212 upgraded, 4 unchan
 - [`77c1622`](https://github.com/backstage/backstage/commit/77c1622): Added the `AnalyticsImplementation` type, moved from `@backstage/frontend-plugin-api`, alongside `AnalyticsImplementationBlueprint` and `AnalyticsImplementationFactory`.
 - [`4bbc7a9`](https://github.com/backstage/backstage/commit/4bbc7a9): Removed explicit support for React 17: the peer dependency range for `react`, `react-dom` and `@types/react` is now `^18.0.0`. React 17 is no longer tested or guaranteed to work, although it may continue to work in some cases. See the [migration guide](https://backstage.io/docs/frontend-system/architecture/migrations#157).
 
-### `@backstage/plugin-auth-backend` (0.30.2 → [0.31.0](../../changelogs/@backstage/plugin-auth-backend.md#0310))
+### `@backstage/plugin-auth-backend` (0.30.3 → [0.31.0](../../changelogs/@backstage/plugin-auth-backend.md#0310))
 
 #### 0.31.0
 
@@ -1771,7 +1771,7 @@ _No changelog entries found._
 - `@backstage/plugin-scaffolder-backend-module-rails` (0.5.26 → [0.5.27](../../changelogs/@backstage/plugin-scaffolder-backend-module-rails.md#0527))
 - `@backstage/plugin-scaffolder-backend-module-sentry` (0.4.1 → [0.4.2](../../changelogs/@backstage/plugin-scaffolder-backend-module-sentry.md#042))
 - `@backstage/plugin-scaffolder-backend-module-yeoman` (0.4.27 → [0.4.28](../../changelogs/@backstage/plugin-scaffolder-backend-module-yeoman.md#0428))
-- `@backstage/plugin-scaffolder-node` (0.13.8 → [1.0.0](../../changelogs/@backstage/plugin-scaffolder-node.md#100))
+- `@backstage/plugin-scaffolder-node` (0.13.9 → [1.0.0](../../changelogs/@backstage/plugin-scaffolder-node.md#100))
 - `@backstage/plugin-search-backend` (2.1.8 → [2.1.9](../../changelogs/@backstage/plugin-search-backend.md#219))
 - `@backstage/plugin-search-backend-module-catalog` (0.3.20 → [0.3.21](../../changelogs/@backstage/plugin-search-backend-module-catalog.md#0321))
 - `@backstage/plugin-search-backend-module-explore` (0.3.19 → [0.3.20](../../changelogs/@backstage/plugin-search-backend-module-explore.md#0320))
